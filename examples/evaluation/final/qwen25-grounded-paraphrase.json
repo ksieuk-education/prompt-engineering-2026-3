@@ -1,0 +1,215 @@
+{
+  "variant": "fts-dense-and-citation-check",
+  "model": "qwen2.5:7b",
+  "suite": "paraphrase",
+  "passed": 4,
+  "total": 7,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "With what did the NASA astronaut compare the dust adhering to the soles of the boots in the transcript?, astronaut, dust, soles, boots",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": false,
+      "seconds": 4.8
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 429. Время от старта миссии 114:45:50, оператор связи в Хьюстоне. «You commented, Neil, that on your approach to the landing spot, you had passed over a football field sized crater containing rather large blocks of solid rock perhaps 10 to 15 feet in size.»",
+      "sources": [
+        "AP11-429"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 6069,
+            "page": 429,
+            "get": "114:45:50",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Copy. That's also the way it appeared from the television, I think. And now the final question. You commented, Neil, that on your approach to the landing spot, you had passed over a football field sized crater containing rather large blocks of solid rock perhaps 10 to 15 feet in size. Can you estimate the distance to this football sized crater from your present position? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Copy.%20That%27s%20also%20the%20way%20it%20appeared%20from"
+          }
+        ],
+        "query": "Find in the transcript of Apollo 11 a description of a crater the size of a football field., Apollo 11 crater football field",
+        "mode": "fts+embeddinggemma",
+        "quote": "a football field sized crater"
+      },
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": true,
+      "seconds": 4.25
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 382. Время от старта миссии 109:43:24, пилот лунного модуля Эдвин Олдрин. «Magnificent desolation.»",
+      "sources": [
+        "AP11-382"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5367,
+            "page": 382,
+            "get": "109:43:24",
+            "speaker": "LMP (EVA)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Magnificent desolation.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Magnificent%20desolation."
+          }
+        ],
+        "query": "Find in the NASA transcript the words of Aldrin about the majestic desolation., NASA, Aldrin, majestic desolation",
+        "mode": "fts+embeddinggemma",
+        "quote": "Magnificent desolation."
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": true,
+      "seconds": 3.97
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "In what place in the NASA Houston transcript after landing did they say that they can breathe again?, NASA Houston transcript breathe",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": false,
+      "seconds": 3.79
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 transcript is there mention of humanity's unquenchable curiosity?, Apollo 11, unquenchable curiosity",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 5.55
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript is it said that the Moon is made of green cheese?, NASA transcript green cheese",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": true,
+      "seconds": 4.53
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the transcript of Apollo 11 the words about violet pineapple orchestra., Apollo 11, violet, pineapple, orchestra",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": true,
+      "seconds": 3.27
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "browser": "chrome",
+    "version": "158.0.8127.38",
+    "viewport_width": 1440,
+    "exact_repeat_id": 8438,
+    "same_second_rows": [
+      5289,
+      5290
+    ],
+    "duplicate_pages": [
+      182,
+      253
+    ],
+    "separate_scan_opened": true,
+    "compared_html_and_print": [
+      234,
+      320
+    ],
+    "empty_and_invalid": true,
+    "wide_range_total": 8449,
+    "wide_range_shown": 8,
+    "dialog_horizontal_overflow": false
+  },
+  {
+    "browser": "firefox",
+    "version": "159.0",
+    "viewport_width": 1280,
+    "exact_repeat_id": 8438,
+    "same_second_rows": [
+      5289,
+      5290
+    ],
+    "duplicate_pages": [
+      182,
+      253
+    ],
+    "separate_scan_opened": true,
+    "compared_html_and_print": [
+      234,
+      320
+    ],
+    "empty_and_invalid": true,
+    "wide_range_total": 8449,
+    "wide_range_shown": 8,
+    "dialog_horizontal_overflow": false
+  },
+  {
+    "browser": "webkit",
+    "version": "27.2",
+    "viewport_width": 390,
+    "exact_repeat_id": 8438,
+    "same_second_rows": [
+      5289,
+      5290
+    ],
+    "duplicate_pages": [
+      182,
+      253
+    ],
+    "separate_scan_opened": true,
+    "compared_html_and_print": [
+      234,
+      320
+    ],
+    "empty_and_invalid": true,
+    "wide_range_total": 8449,
+    "wide_range_shown": 8,
+    "dialog_horizontal_overflow": false
+  }
+]

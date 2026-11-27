@@ -1,0 +1,403 @@
+{
+  "variant": "До поиска по времени миссии",
+  "model": "qwen2.5:7b",
+  "suite": "mission",
+  "passed": 0,
+  "total": 14,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 218. Время от старта миссии 076:22:35, оператор связи в Хьюстоне. «Roger. We copy your burn status report. And the spacecraft is looking good to us on telemetry.»",
+      "sources": [
+        "AP11-218"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 2946,
+            "page": 218,
+            "get": "076:22:35",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. We copy your burn status report. And the spacecraft is looking good to us on telemetry.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20We%20copy%20your%20burn%20status%20report.%20And%20the"
+          }
+        ],
+        "query": "What is said in the NASA transcript at 102:46:04 from mission start?, NASA transcript time",
+        "mode": "fts+embeddinggemma",
+        "quote": "Roger. We copy your burn status report. And the spacecraft is looking good to us on telemetry."
+      },
+      "id": "mission/landing",
+      "case": "signal",
+      "question": "Что в стенограмме NASA сказано в 102:46:04 от старта миссии?",
+      "passed": false,
+      "seconds": 4.88
+    },
+    {
+      "status": "answered",
+      "answer": "Эта реплика напечатана на странице 218.",
+      "sources": [
+        "AP11-218"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 2946,
+            "page": 218,
+            "get": "076:22:35",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. We copy your burn status report. And the spacecraft is looking good to us on telemetry.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20We%20copy%20your%20burn%20status%20report.%20And%20the"
+          }
+        ],
+        "query": "",
+        "metadata": "page"
+      },
+      "id": "mission/landing-page",
+      "case": "signal",
+      "question": "А на какой странице?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "У записи нет подписи, времени и указания на конкретный фрагмент. Объяснение задержки остается предположением.",
+      "sources": [
+        "A4"
+      ],
+      "passages": [
+        "A4.2",
+        "A4.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "locate_marker",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "mission/range",
+      "case": "signal",
+      "question": "Покажи переговоры NASA с 102:45:59 до 102:46:06 по времени миссии.",
+      "passed": false,
+      "seconds": 4.28
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "mission/which",
+      "case": "signal",
+      "question": "Кто это сказал?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "mission/ground",
+      "case": "signal",
+      "question": "А в 102:46:06?",
+      "passed": false,
+      "seconds": 2.94
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Who speaks in the NASA transcript at the mark 007:53:01?, NASA transcript mark",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "mission/overlap",
+      "case": "signal",
+      "question": "Кто говорит в стенограмме NASA на отметке 007:53:01?",
+      "passed": false,
+      "seconds": 4.84
+    },
+    {
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "mission/collins",
+      "case": "signal",
+      "question": "Что в 007:53:01 сказал Коллинз?",
+      "passed": false,
+      "seconds": 4.1
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Is there a beginning of a quote in the Apollo 11 transcript exactly at 102:46:05?, Apollo 11 transcript time",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "mission/no-start",
+      "case": "signal",
+      "question": "Есть ли начало реплики в стенограмме Apollo 11 ровно в 102:46:05?",
+      "passed": false,
+      "seconds": 4.18
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "the Eagle has landed",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "mission/wrong-quote",
+      "case": "signal",
+      "question": "Есть ли в стенограмме NASA ровно в 102:46:06 фраза «the Eagle has landed»?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "On which pages of the NASA transcript does 059:26:41 appear?, NASA transcript pages",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "mission/separate-pages",
+      "case": "signal",
+      "question": "На каких страницах стенограммы NASA стоит 059:26:41?",
+      "passed": false,
+      "seconds": 5.98
+    },
+    {
+      "status": "answered",
+      "answer": "На странице 253 размечено реплик: 18.",
+      "sources": [
+        "AP11-253"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "page": 253
+      },
+      "id": "mission/one-folio",
+      "case": "signal",
+      "question": "А на странице 253 в 059:26:41?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Read the NASA transcript at the mark 130:04:54., NASA transcript mark",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "mission/restored",
+      "case": "signal",
+      "question": "Прочитай в стенограмме NASA реплику с меткой 130:04:54.",
+      "passed": false,
+      "seconds": 4.02
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 503. Время от старта миссии 134:04:14, пилот лунного модуля Эдвин Олдрин. «TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, NA three lines, plus 1103, minus 17237 11806 36275 195 04 52, Deneb and Vega, 242 172 012, two jet ullage, 16 seconds, horizon out of the window, 10 degrees, TIG minus 2 minutes, sextant star at 134 10.»",
+      "sources": [
+        "AP11-503"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7077,
+            "page": 503,
+            "get": "134:04:14",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Roger. TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, NA three lines, plus 1103, minus 17237 11806 36275 195 04 52, Deneb and Vega, 242 172 012, two jet ullage, 16 seconds, horizon out of the window, 10 degrees, TIG minus 2 minutes, sextant star at 134 10. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20TEI%2030%2C%20SPS%2FG%26N%3A%2036691%2C%20minus%20061%2C%20plus%20066"
+          }
+        ],
+        "query": "Show in NASA transcript 102:66:05 by mission time., NASA transcript time",
+        "mode": "fts+embeddinggemma",
+        "quote": "TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, "
+      },
+      "id": "mission/invalid",
+      "case": "signal",
+      "question": "Покажи в стенограмме NASA 102:66:05 по времени миссии.",
+      "passed": false,
+      "seconds": 7.1
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 503. Время от старта миссии 134:04:14, пилот лунного модуля Эдвин Олдрин. «TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, NA three lines, plus 1103, minus 17237 11806 36275 195 04 52, Deneb and Vega, 242 172 012, two jet ullage, 16 seconds, horizon out of the window, 10 degrees, TIG minus 2 minutes, sextant star at 134 10.»",
+      "sources": [
+        "AP11-503"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7077,
+            "page": 503,
+            "get": "134:04:14",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Roger. TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, NA three lines, plus 1103, minus 17237 11806 36275 195 04 52, Deneb and Vega, 242 172 012, two jet ullage, 16 seconds, horizon out of the window, 10 degrees, TIG minus 2 minutes, sextant star at 134 10. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20TEI%2030%2C%20SPS%2FG%26N%3A%2036691%2C%20minus%20061%2C%20plus%20066"
+          }
+        ],
+        "query": "Show the NASA transcript from 102:46:06 to 102:46:04, NASA transcript",
+        "mode": "fts+embeddinggemma",
+        "quote": "TEI 30, SPS/G&N: 36691, minus 061, plus 066 135 23 4156, plus 32011, plus 06 818, minus 02650, 181 054 014; apogee NA, plus 00230 32836 228 32628 42 1511 357, "
+      },
+      "id": "mission/reversed",
+      "case": "signal",
+      "question": "Покажи стенограмму NASA с 102:46:06 до 102:46:04.",
+      "passed": false,
+      "seconds": 7.61
+    }
+  ],
+  "action_token_limit": 2048
+}

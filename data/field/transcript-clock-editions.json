@@ -1,0 +1,23 @@
+{
+  "source": "https://www.nasa.gov/wp-content/uploads/2026/01/as11-tec.pdf",
+  "local_scan": "/field-audio/nasa-clock-variants.pdf",
+  "scan_pages": [
+    234,
+    320
+  ],
+  "sha256": "5edc91b3e51dbf9ed0344ab5ea4f111ae059fed8bec4b0e317205f16e3bfa5c3",
+  "verified": [
+    {
+      "id": 3145,
+      "page": 234,
+      "html_stamp": "05 06 46 31",
+      "scan_stamp": "03 06 46 31"
+    },
+    {
+      "id": 4426,
+      "page": 320,
+      "html_stamp": "02 06 58 12",
+      "scan_stamp": "04 06 58 12"
+    }
+  ]
+}

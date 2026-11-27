@@ -1,0 +1,305 @@
+{
+  "variant": "phi4-mini before",
+  "model": "phi4-mini:3.8b",
+  "suite": "positions",
+  "passed": 0,
+  "total": 10,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-031 на 00:20. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 25.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "untimed",
+              "code": "ФН-031",
+              "second": 20.0,
+              "score": 0.9996
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-031 на 00:20. Позиции указаны от начала файлов.",
+          "marker": "music"
+        }
+      ],
+      "tools": [
+        "search",
+        "read",
+        "match_sound",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/music",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": false,
+      "seconds": 3.81
+    },
+    {
+      "status": "answered",
+      "answer": "Счетчик запущен вместе с этой копией.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.4"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/tone",
+      "case": "signal",
+      "question": "А контрольный тон?",
+      "passed": false,
+      "seconds": 3.12
+    },
+    {
+      "status": "answered",
+      "answer": "Отдельной записи о начале позывного в журнале нет.",
+      "sources": [
+        "A3"
+      ],
+      "passages": [
+        "A3.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read",
+        "check_excerpt"
+      ],
+      "id": "position/ident",
+      "case": "signal",
+      "question": "А три ноты позывного?",
+      "passed": false,
+      "seconds": 3.25
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/room",
+      "case": "splice",
+      "question": "На какой отметке ленты слышен шум зала?",
+      "passed": false,
+      "seconds": 2.41
+    },
+    {
+      "status": "answered",
+      "answer": "Похожих фрагментов не найдено. Проверено катушек: 1. При пороге 0.87 других совпадений нет.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "untimed",
+          "reference_second": 20.0,
+          "window_seconds": 1.6,
+          "scope": "case",
+          "minimum_score": 0.87,
+          "matches": [],
+          "status": "no_match",
+          "value": "Похожих фрагментов не найдено",
+          "detail": "Проверено катушек: 1. При пороге 0.87 других совпадений нет.",
+          "marker": "music"
+        }
+      ],
+      "tools": [
+        "search",
+        "match_sound",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/click",
+      "case": "untimed",
+      "question": "Какой таймкод у щелчка пуска на этой ленте?",
+      "passed": false,
+      "seconds": 3.36
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/intro",
+      "case": "untimed",
+      "question": "А начало заставки?",
+      "passed": false,
+      "seconds": 2.96
+    },
+    {
+      "status": "incomplete",
+      "answer": "Не удалось собрать подтвержденное заключение. Выбери предложение, которое отвечает на вопрос, или открой нужный документ.",
+      "sources": [
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "passages": null,
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/which",
+      "case": "splice",
+      "question": "На какой секунде на копии удар?",
+      "passed": false,
+      "seconds": 3.0
+    },
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-027 на 00:05. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "splice",
+          "reference_second": 25.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "splice",
+              "code": "ФН-027",
+              "second": 5.0,
+              "score": 0.9983
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-027 на 00:05. Позиции указаны от начала файлов.",
+          "marker": "last"
+        }
+      ],
+      "tools": [
+        "search",
+        "read",
+        "match_sound",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/second",
+      "case": "splice",
+      "question": "Второй.",
+      "passed": false,
+      "seconds": 2.81
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Первый удар» прозвучала в 19:05:12 по эфирным часам. На ленте это 00:05.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "first",
+          "label": "Первый удар",
+          "tape": "00:05",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:12",
+          "anchor": "19:05:12",
+          "anchor_tape": "00:05",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:12 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "position/air",
+      "case": "splice",
+      "question": "А в эфире во сколько прозвучал этот же удар?",
+      "passed": false,
+      "seconds": 0.62
+    },
+    {
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/unknown",
+      "case": "signal",
+      "question": "На какой секунде копии слышен звонок телефона?",
+      "passed": false,
+      "seconds": 2.53
+    }
+  ],
+  "action_token_limit": 2048
+}

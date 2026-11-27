@@ -1,0 +1,200 @@
+{
+  "variant": "attribution-and-source-verification",
+  "model": "gemma3:1b",
+  "suite": "holdout",
+  "passed": 3,
+  "total": 6,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "NASA is recording Oldrin for a competition to eat oatmeal., oatmeal",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/oatmeal",
+      "case": "signal",
+      "question": "Где в стенограмме NASA предлагают записать Олдрина на соревнование по поеданию овсянки?",
+      "passed": false,
+      "seconds": 2.31
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "The location of NASA transcripts that list breakfast with sliced peaches, sausage rolls, and two cups of coffee., breakfast, peaches, sausage, coffee",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 7869,
+            "page": 578,
+            "get": "173:49:18",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Breakfast%20was%20magnificent%20as%20usual.%20I%20had%20sliced%20peaches%2C"
+          }
+        ]
+      },
+      "id": "paraphrase/breakfast",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA перечисляют завтрак с нарезанными персиками, колбасными котлетами и двумя чашками кофе?",
+      "passed": false,
+      "seconds": 2.51
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 554. Время от старта миссии 157:03:55, оператор связи в Хьюстоне. «Apollo 11, Houston. Based on our sighting since the midcourse, we're showing a gamma of minus 6.57. This is preliminary, though, and we think that after some more tracking it should come on in, and we could tweak it right on into the corridor. It's just about in the center of the corridor; everything's looking fine. We'll have you an entry PAD in a couple of hours before you go to sleep. And from our friends in public affairs, a few headlines, other than your flight. You're still dominating the news. However, there are some other things of interest for you. As I mentioned earlier, the All Star game was rained out. It's going to be played tomorrow. However, President Nixon will not be able to see it as he planned. We'll keep you posted on results. And, also, the weathermen are going to be good to you. Our forecast is, looks like it's holding good for the recovery area; it should be real fine out there. President Nixon, as he prepares to fly out to greet»",
+      "sources": [
+        "AP11-554"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7661,
+            "page": 554,
+            "get": "157:03:55",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Apollo 11, Houston. Based on our sighting since the midcourse, we're showing a gamma of minus 6.57. This is preliminary, though, and we think that after some more tracking it should come on in, and we could tweak it right on into the corridor. It's just about in the center of the corridor; everything's looking fine. We'll have you an entry PAD in a couple of hours before you go to sleep. And from our friends in public affairs, a few headlines, other than your flight. You're still dominating the news. However, there are some other things of interest for you. As I mentioned earlier, the All Star game was rained out. It's going to be played tomorrow. However, President Nixon will not be able to see it as he planned. We'll keep you posted on results. And, also, the weathermen are going to be good to you. Our forecast is, looks like it's holding good for the recovery area; it should be real fine out there. President Nixon, as he prepares to fly out to greet",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Apollo%2011%2C%20Houston.%20Based%20on%20our%20sighting%20since%20the"
+          }
+        ],
+        "query": "Artest says a heartfelt greeting to California, expressing his admiration for its history and future, and wishing it a long and prosperous life., history, prosperity, greeting, admiration",
+        "mode": "fts+embeddinggemma",
+        "quote": "Apollo 11, Houston. Based on our sighting since the midcourse, we’re showing a gamma of minus 6.57. This is preliminary, though, and we think that after some…"
+      },
+      "id": "paraphrase/california",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11, как Армстронг поздравляет Калифорнию с двухсотлетием.",
+      "passed": false,
+      "seconds": 2.62
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Oldrin won a competition eating oats., oats",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/winner",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA сообщение, что Олдрин победил в соревновании по поеданию овсянки.",
+      "passed": true,
+      "seconds": 2.36
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Three cups of coffee, coffee",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 1212,
+            "page": 87,
+            "get": "027:31:17",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20made%20three%20cups%20of%20coffee%20today.%20The%20last"
+          }
+        ]
+      },
+      "id": "paraphrase/three-cups",
+      "case": "signal",
+      "question": "Где в стенограмме NASA говорит, что за завтраком с персиками астронавт выпил три чашки кофе?",
+      "passed": true,
+      "seconds": 2.48
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Harvesting of sugarcane., sugar",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/moon-maple",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 фразу о добыче кленового сиропа на поверхности Луны.",
+      "passed": true,
+      "seconds": 2.35
+    }
+  ],
+  "action_token_limit": 2048
+}

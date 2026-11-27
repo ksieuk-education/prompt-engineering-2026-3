@@ -1,0 +1,257 @@
+{
+  "variant": "supplemented-edition",
+  "model": "qwen2.5:7b",
+  "suite": "transcript",
+  "passed": 8,
+  "total": 8,
+  "cases": [
+    {
+      "status": "needs_input",
+      "answer": "Какую фразу найти в стенограмме? Можно написать ее на английском или описать по-русски.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [],
+      "transcript": {
+        "matches": [],
+        "query": ""
+      },
+      "id": "document-start",
+      "case": "signal",
+      "question": "Открой стенограмму NASA.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "The Eagle has landed",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "document-landing",
+      "case": "signal",
+      "question": "The Eagle has landed",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Следующая размеченная реплика на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "",
+        "mode": "",
+        "quote": ""
+      },
+      "id": "document-next",
+      "case": "signal",
+      "question": "Что ответили затем?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Предыдущая размеченная реплика на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "mode": "",
+        "quote": ""
+      },
+      "id": "document-back",
+      "case": "signal",
+      "question": "А перед этой репликой?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 377. Время от старта миссии 109:24:48, командир Нил Армстронг. «THAT'S ONE SMALL STEP FOR (A) MAN, ONE GIANT LEAP FOR MANKIND.»",
+      "sources": [
+        "AP11-377"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5289,
+            "page": 377,
+            "get": "109:24:48",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THAT'S ONE SMALL STEP FOR (A) MAN, ONE GIANT LEAP FOR MANKIND.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THAT%27S%20ONE%20SMALL%20STEP%20FOR%20%28A%29%20MAN%2C%20ONE%20GIANT"
+          }
+        ],
+        "query": "Find in the transcript of Apollo 11 the words about one small step for a man., Apollo 11, small step, man",
+        "mode": "fts+embeddinggemma",
+        "quote": "THAT'S ONE SMALL STEP FOR (A) MAN, ONE GIANT LEAP FOR MANKIND."
+      },
+      "id": "document-step",
+      "case": "untimed",
+      "question": "Найди в стенограмме Apollo 11 слова про один маленький шаг для человека.",
+      "passed": true,
+      "seconds": 4.88
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "purple pineapple orchestra",
+        "mode": "no_match",
+        "quote": ""
+      },
+      "id": "document-absent",
+      "case": "splice",
+      "question": "Найди в стенограмме NASA «purple pineapple orchestra».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 624. Время от старта миссии 195:18:18, SWIM 1. «SPLASHDOWN!»",
+      "sources": [
+        "AP11-624"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8435,
+            "page": 624,
+            "get": "195:18:18",
+            "speaker": "SWIM 1",
+            "role": "",
+            "text": "SPLASHDOWN!",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=SPLASHDOWN%21"
+          },
+          {
+            "id": 8419,
+            "page": 624,
+            "get": "195:16:00",
+            "speaker": "HORNET",
+            "role": "",
+            "text": "11, this is Hornet. Copy. 11, Hornet. What's your splashdown error? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=11%2C%20this%20is%20Hornet.%20Copy.%2011%2C%20Hornet.%20What%27s%20your"
+          },
+          {
+            "id": 8420,
+            "page": 624,
+            "get": "195:16:06",
+            "speaker": "SC",
+            "role": "",
+            "text": "Okay. Our splashdown error is by latitude, longitude, 1330 16 *** 15. That's ***",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20Our%20splashdown%20error%20is%20by%20latitude%2C%20longitude%2C%201330"
+          }
+        ],
+        "query": "splashdown",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "document-last",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA «splashdown».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В этой стороне опубликованной стенограммы больше нет размеченных реплик.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "mode": "",
+        "quote": ""
+      },
+      "id": "document-edge",
+      "case": "signal",
+      "question": "Какая следующая реплика?",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

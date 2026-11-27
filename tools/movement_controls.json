@@ -1,0 +1,110 @@
+[
+  {
+    "id": "drawer-out",
+    "request": "Take the book out of the drawer.",
+    "passage": "I put the book into the drawer.",
+    "opposite": true
+  },
+  {
+    "id": "cabinet-in",
+    "request": "Put the key in the cabinet.",
+    "passage": "She removed the key from the cabinet.",
+    "opposite": true
+  },
+  {
+    "id": "shelf-box",
+    "request": "Remove the lens from the box.",
+    "passage": "They had placed the lens in the box earlier.",
+    "opposite": true
+  },
+  {
+    "id": "inside-case",
+    "request": "Take the recorder out of its case.",
+    "passage": "I tucked the recorder inside the case.",
+    "opposite": true
+  },
+  {
+    "id": "satchel",
+    "request": "Put the letter into the satchel.",
+    "passage": "She pulled the letter out of the satchel.",
+    "opposite": true
+  },
+  {
+    "id": "contrary-goal",
+    "request": "Remove the map from the top drawer.",
+    "passage": "I stored the map in the top drawer.",
+    "opposite": true
+  },
+  {
+    "id": "same-in",
+    "request": "Put the book into the drawer.",
+    "passage": "I placed the book in the drawer.",
+    "opposite": false
+  },
+  {
+    "id": "same-out",
+    "request": "Remove the key from the cabinet.",
+    "passage": "I took the key out of the cabinet.",
+    "opposite": false
+  },
+  {
+    "id": "different-target",
+    "request": "Remove the lens from the box.",
+    "passage": "I put the lens into a drawer.",
+    "opposite": false
+  },
+  {
+    "id": "different-item",
+    "request": "Remove the book from the box.",
+    "passage": "I put my glasses into the box.",
+    "opposite": false
+  },
+  {
+    "id": "different-drawer",
+    "request": "Take the map from the lower drawer.",
+    "passage": "I put the map in the upper drawer.",
+    "opposite": false
+  },
+  {
+    "id": "both-directions",
+    "request": "Take the card out of the box.",
+    "passage": "I put the card in the box and later removed the card from the box.",
+    "opposite": false
+  },
+  {
+    "id": "static",
+    "request": "Take the cable out of the bag.",
+    "passage": "The cable is in the bag.",
+    "opposite": false
+  },
+  {
+    "id": "negative",
+    "request": "Remove the cable from the bag.",
+    "passage": "I did not put the cable into the bag.",
+    "opposite": false
+  },
+  {
+    "id": "negative-request",
+    "request": "Do not put the cable into the bag.",
+    "passage": "I removed the cable from the bag.",
+    "opposite": false
+  },
+  {
+    "id": "no-place",
+    "request": "Pick up the cable.",
+    "passage": "I installed it in the bag.",
+    "opposite": false
+  },
+  {
+    "id": "different-actions",
+    "request": "Take a break from your work.",
+    "passage": "I put my notebook in the bag.",
+    "opposite": false
+  },
+  {
+    "id": "two-items",
+    "request": "Remove the card from the case.",
+    "passage": "I took the card out of the case and put the pen into the case.",
+    "opposite": false
+  }
+]

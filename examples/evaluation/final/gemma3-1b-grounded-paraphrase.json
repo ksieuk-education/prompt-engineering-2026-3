@@ -1,0 +1,189 @@
+{
+  "variant": "fts-dense-and-citation-check",
+  "model": "gemma3:1b",
+  "suite": "paraphrase",
+  "passed": 2,
+  "total": 7,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Dust, clinging to boots, with a **metallic** surface., boots, dust, metallic",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": false,
+      "seconds": 2.58
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "A large crater, approximately the size of a football field, was discovered on the surface of the Moon., crater",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": false,
+      "seconds": 1.96
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Oldrin's demise, decline, collapse, devastation, end",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": false,
+      "seconds": 2.36
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "NASA Houston recordings after landing stated that they are breathing again., breathing",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": false,
+      "seconds": 2.6
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "The text describes a relentless curiosity of humanity., curiosity",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 1.84
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "NASA transcripts state that the Moon is made of cheese., cheese",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": true,
+      "seconds": 2.43
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Lunar module, landing, atmosphere, pressure, descent, trajectory, orbit, control, system, instruments, data, telemetry, signal, confirmation, mission, success,, violet, banana, orchestra",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": true,
+      "seconds": 2.08
+    }
+  ],
+  "action_token_limit": 2048
+}

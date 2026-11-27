@@ -1,0 +1,90 @@
+{
+  "tool": "axe-core",
+  "version": "4.14.1",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa",
+    "best-practice"
+  ],
+  "views": [
+    {
+      "view": "desktop-initial",
+      "violations": [],
+      "passes": 39,
+      "manual_review": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "saved-dialogue",
+      "violations": [],
+      "passes": 36,
+      "manual_review": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "cross-reel",
+      "violations": [],
+      "passes": 39,
+      "manual_review": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "document",
+      "violations": [],
+      "passes": 18,
+      "manual_review": [
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "field-compare",
+      "violations": [],
+      "passes": 24,
+      "manual_review": [
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "field-search",
+      "violations": [],
+      "passes": 25,
+      "manual_review": [
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "nested-transcript",
+      "violations": [],
+      "passes": 19,
+      "manual_review": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "mobile-case",
+      "violations": [],
+      "passes": 39,
+      "manual_review": [
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "view": "mobile-field",
+      "violations": [],
+      "passes": 25,
+      "manual_review": [
+        "label-content-name-mismatch"
+      ]
+    }
+  ]
+}

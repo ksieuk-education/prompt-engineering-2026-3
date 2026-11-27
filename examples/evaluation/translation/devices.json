@@ -1,0 +1,239 @@
+{
+  "translator": "Argos ru→en 1.9 via CTranslate2",
+  "method": "Twelve Russian questions, one per batch after a separate warmup, beam 3 at most 160 output tokens. CPU and Metal tested in separate processes with identical SentencePiece/model files; timing covers tokenization, decoding and translation.",
+  "runs": {
+    "cpu": {
+      "device": "cpu",
+      "supported_types": [
+        "float32",
+        "int8",
+        "int8_float32"
+      ],
+      "compute_type_requested": "int8",
+      "device_reported": "cpu",
+      "median_seconds": 0.142,
+      "cases": [
+        {
+          "key": "album",
+          "seconds": 0.1055,
+          "translation": "Where in the NASA transcript does the commander say that his favorite album was recorded about twenty years ago?"
+        },
+        {
+          "key": "sandwiches",
+          "seconds": 0.1229,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by the crew eating sandwiches."
+        },
+        {
+          "key": "headlines",
+          "seconds": 0.1476,
+          "translation": "Where in the NASA transcript does Houston report the news that the New York Times printed the biggest headlines in the history of the newspaper after landing?"
+        },
+        {
+          "key": "album-new",
+          "seconds": 0.0903,
+          "translation": "Where in the NASA transcript does the commander say his favorite album was recorded yesterday?"
+        },
+        {
+          "key": "waiting-sandwiches",
+          "seconds": 0.1481,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by the fact that they are still waiting for sandwiches to be delivered."
+        },
+        {
+          "key": "smallest",
+          "seconds": 0.1641,
+          "translation": "Where in the NASA transcript does Houston relay the news that, after landing, the New York Times printed the tiniest headlines in the newspaper's history?"
+        },
+        {
+          "key": "helmet",
+          "seconds": 0.1474,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the left armchair?"
+        },
+        {
+          "key": "bavaria",
+          "seconds": 0.1328,
+          "translation": "Where in the NASA transcript does Houston say that Bavarian schoolchildren were given a day off on the occasion of Apollo Day?"
+        },
+        {
+          "key": "pocket",
+          "seconds": 0.1407,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to put an object in his pocket before he climbs the stairs."
+        },
+        {
+          "key": "right-couch",
+          "seconds": 0.1433,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the right armchair?"
+        },
+        {
+          "key": "bavaria-school",
+          "seconds": 0.1246,
+          "translation": "Where in the NASA transcript does Houston say that on Apollo Day, Bavarian schoolchildren were ordered to go to school?"
+        },
+        {
+          "key": "from-pocket",
+          "seconds": 0.1477,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to take the item out of his pocket before he climbs the stairs."
+        }
+      ]
+    },
+    "mps": {
+      "device": "mps",
+      "supported_types": [
+        "bfloat16",
+        "float16",
+        "float32",
+        "int8",
+        "int8_bfloat16",
+        "int8_float16",
+        "int8_float32"
+      ],
+      "compute_type_requested": "float16",
+      "device_reported": "mps",
+      "median_seconds": 0.083,
+      "cases": [
+        {
+          "key": "album",
+          "seconds": 0.5412,
+          "translation": "Where in the NASA transcript does the commander say that his favorite album was recorded about twenty years ago?"
+        },
+        {
+          "key": "sandwiches",
+          "seconds": 0.4065,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by the crew eating sandwiches."
+        },
+        {
+          "key": "headlines",
+          "seconds": 0.0832,
+          "translation": "Where in the NASA transcript does Houston report the news that the New York Times printed the biggest headlines in the history of the newspaper after landing?"
+        },
+        {
+          "key": "album-new",
+          "seconds": 0.0524,
+          "translation": "Where in the NASA transcript does the commander say his favorite album was recorded yesterday?"
+        },
+        {
+          "key": "waiting-sandwiches",
+          "seconds": 0.0789,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by saying they're still waiting to deliver sandwiches."
+        },
+        {
+          "key": "smallest",
+          "seconds": 0.5228,
+          "translation": "Where in the NASA transcript does Houston relay the news that after landing, the New York Times printed the tiniest headlines in the newspaper's history?"
+        },
+        {
+          "key": "helmet",
+          "seconds": 0.0856,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the left armchair?"
+        },
+        {
+          "key": "bavaria",
+          "seconds": 0.0773,
+          "translation": "Where in the NASA transcript does Houston say that Bavarian schoolchildren were given a day off on the occasion of Apollo Day?"
+        },
+        {
+          "key": "pocket",
+          "seconds": 0.0829,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to put an object in his pocket before he climbs the stairs."
+        },
+        {
+          "key": "right-couch",
+          "seconds": 0.0828,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the right armchair?"
+        },
+        {
+          "key": "bavaria-school",
+          "seconds": 0.0726,
+          "translation": "Where in the NASA transcript does Houston say that on Apollo Day, Bavarian schoolchildren were ordered to go to school?"
+        },
+        {
+          "key": "from-pocket",
+          "seconds": 0.0847,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to take the item out of his pocket before he climbs the stairs."
+        }
+      ]
+    },
+    "mps_requested_int8": {
+      "device": "mps",
+      "supported_types": [
+        "bfloat16",
+        "float16",
+        "float32",
+        "int8",
+        "int8_bfloat16",
+        "int8_float16",
+        "int8_float32"
+      ],
+      "compute_type_requested": "int8",
+      "device_reported": "mps",
+      "median_seconds": 0.0801,
+      "cases": [
+        {
+          "key": "album",
+          "seconds": 0.064,
+          "translation": "Where in the NASA transcript does the commander say that his favorite album was recorded about twenty years ago?"
+        },
+        {
+          "key": "sandwiches",
+          "seconds": 0.0667,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by the crew eating sandwiches."
+        },
+        {
+          "key": "headlines",
+          "seconds": 0.0826,
+          "translation": "Where in the NASA transcript does Houston report the news that the New York Times printed the biggest headlines in the history of the newspaper after landing?"
+        },
+        {
+          "key": "album-new",
+          "seconds": 0.0517,
+          "translation": "Where in the NASA transcript does the commander say his favorite album was recorded yesterday?"
+        },
+        {
+          "key": "waiting-sandwiches",
+          "seconds": 0.0796,
+          "translation": "Find in the Apollo 11 transcript how Collins explains the delay in response by saying they're still waiting to deliver sandwiches."
+        },
+        {
+          "key": "smallest",
+          "seconds": 0.0924,
+          "translation": "Where in the NASA transcript does Houston relay the news that after landing, the New York Times printed the tiniest headlines in the newspaper's history?"
+        },
+        {
+          "key": "helmet",
+          "seconds": 0.0817,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the left armchair?"
+        },
+        {
+          "key": "bavaria",
+          "seconds": 0.0751,
+          "translation": "Where in the NASA transcript does Houston say that Bavarian schoolchildren were given a day off on the occasion of Apollo Day?"
+        },
+        {
+          "key": "pocket",
+          "seconds": 0.0805,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to put an object in his pocket before he climbs the stairs."
+        },
+        {
+          "key": "right-couch",
+          "seconds": 0.0814,
+          "translation": "Where in the Apollo 11 transcript does Collins explain that the helmet and gloves lie in a large bag under the right armchair?"
+        },
+        {
+          "key": "bavaria-school",
+          "seconds": 0.0712,
+          "translation": "Where in the NASA transcript does Houston say that on Apollo Day, Bavarian schoolchildren were ordered to go to school?"
+        },
+        {
+          "key": "from-pocket",
+          "seconds": 0.084,
+          "translation": "Find Aldrin's request in the NASA transcript for Neil to take the item out of his pocket before he climbs the stairs."
+        }
+      ],
+      "effective_compute_type": "float16",
+      "runtime_notice": "CTranslate2 reported that a request for int8 on this MPS backend resolves to float16."
+    }
+  },
+  "identical_outputs": 10,
+  "total": 12,
+  "same_as_cpu_when_requesting_int8": 10,
+  "same_as_mps_float16_when_requesting_int8": 12
+}

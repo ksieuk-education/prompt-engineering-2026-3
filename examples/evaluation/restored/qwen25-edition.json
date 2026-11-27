@@ -1,0 +1,213 @@
+{
+  "variant": "supplemented-edition",
+  "model": "qwen2.5:7b",
+  "suite": "edition",
+  "passed": 7,
+  "total": 7,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "На странице 491 размечено реплик: 17. Текст сверен с отдельным полным сканом. На этой странице в основном OCR стоит помета о поврежденном файле.",
+      "sources": [
+        "AP11-491"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "page": 491
+      },
+      "id": "folio-open",
+      "case": "signal",
+      "question": "Открой страницу 491 стенограммы NASA.",
+      "passed": true,
+      "seconds": 0.02
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В этом издании страницы пронумерованы от 1 до 624.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "page": null
+      },
+      "id": "folio-missing",
+      "case": "signal",
+      "question": "Открой страницу 625 стенограммы NASA.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 491. Время от старта миссии 130:04:57, оператор связи в Хьюстоне. «Columbia, Houston. If that's not satisfactory, let us know. Over.»",
+      "sources": [
+        "AP11-491"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8437,
+            "page": 491,
+            "get": "130:04:57",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Columbia, Houston. If that's not satisfactory, let us know. Over.",
+            "source_url": "https://apollojournals.org/alsj/a11/a11TEC84-2p491.pdf"
+          }
+        ],
+        "query": "if that's not satisfactory",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "folio-citation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA «if that's not satisfactory».",
+      "passed": true,
+      "seconds": 0.02
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "eagle-extended",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 3.4501,
+            "score": 0.1444,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.41,
+            "score": 0.7729,
+            "passes": true
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "field-positive",
+      "case": "signal",
+      "question": "Сравни образец NASA с 2,50 с с расширенной версией.",
+      "passed": true,
+      "seconds": 0.58
+    },
+    {
+      "status": "answered",
+      "answer": "Секунды WAV отсчитываются от начала конкретного файла. Стенограмма ведет часы от старта миссии. Для перевода нужна общая точка синхронизации на непрерывном участке. В приложенных оцифровках такая привязка не установлена.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "clock_reference"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "alignment": "unavailable"
+      },
+      "id": "folio-from-audio",
+      "case": "signal",
+      "question": "Какое время от старта миссии соответствует отметке 00:03,41 в этом WAV?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "the Eagle has landed",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "document-landing",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA «the Eagle has landed».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Секунды WAV отсчитываются от начала конкретного файла. Стенограмма ведет часы от старта миссии. Для перевода нужна общая точка синхронизации на непрерывном участке. В приложенных оцифровках такая привязка не установлена. У найденной ранее фразы в стенограмме стоит 102:46:04 (стр. 317).",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "clock_reference",
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "alignment": "unavailable"
+      },
+      "id": "folio-from-text",
+      "case": "signal",
+      "question": "Если в стенограмме 102:46:04, какую секунду короткого WAV нужно открыть?",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

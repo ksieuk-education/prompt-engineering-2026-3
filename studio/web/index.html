@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0"><title>Вторая дорожка — архивная монтажная</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="mast"><div class="identity"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span><b>Вторая дорожка</b></div>
+    <span class="app-kind">Архивная монтажная</span><span class="spacer"></span>
+    <span id="online" class="connection" role="status">Проверяем подключение</span><button class="info-btn" id="info" aria-label="О монтажной">?</button>
+  </header>
+  <div class="workspace">
+    <aside class="shelf"><div class="shelf-title"><span>Картотека</span><span id="case-count"></span></div>
+      <nav id="catalog" aria-label="Архивные дела"></nav>
+      <button id="field-open" class="field-open" type="button">Сверка записей NASA</button>
+      <div class="shelf-foot"><span class="mini-wave" aria-hidden="true">▂▅▃▇▂</span><span>Учебный фоноархив</span></div>
+    </aside>
+    <main id="main">
+      <div class="case-header"><div class="case-meta"><span id="case-code" class="case-code"></span><span id="case-date"></span></div>
+        <h1 id="case-title">Открываем архив…</h1><p id="brief"></p></div>
+      <div class="columns">
+        <section class="evidence" aria-label="Материалы дела">
+          <div class="tape">
+            <div class="tape-head"><div><span class="record-icon" aria-hidden="true"></span><span>Контрольная лента</span></div><small>МОНО · 16 кГц</small></div>
+            <div class="timeline" id="scrub" role="slider" tabindex="0" aria-label="Позиция на ленте в секундах" aria-valuemin="0" aria-valuenow="0"><canvas id="wave"></canvas></div>
+            <div class="tape-ctrl"><button id="play" aria-label="Воспроизвести" class="play"><span aria-hidden="true">▶</span></button><span id="now">00:00</span><span id="duration"></span><span class="spacer"></span><span class="tape-count">СЧЕТЧИК ЛЕНТЫ</span></div>
+            <audio id="audio" preload="metadata"></audio>
+          </div>
+          <div class="markers" id="markers" role="group" aria-label="Метки для прослушивания"></div>
+          <details id="sound-search" class="sound-search">
+            <summary>Найти похожий звук</summary>
+            <p>Поставьте курсор на начало звука. Поиск сравнит следующие 1,6 секунды с фонограммами.</p>
+            <form id="sound-form">
+              <label for="sound-scope">Искать</label>
+              <select id="sound-scope"><option value="archive">Во всем архиве</option><option value="case">На этой катушке</option></select>
+              <button id="sound-start" type="submit">Найти с 00:00</button>
+            </form>
+            <div id="sound-results" aria-live="polite"></div>
+          </details>
+          <div class="section-line"><h2>Документы дела</h2><span id="doc-count"></span></div>
+          <div id="documents" class="documents"></div>
+        </section>
+        <section class="desk" aria-labelledby="desk-title">
+          <div class="desk-head"><span class="agent-glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><div><h2 id="desk-title">Спросить архивиста</h2><p id="model"></p></div></div>
+          <div class="modes" role="group" aria-label="Режим диалога"><button id="live" aria-pressed="true">Диалог</button><button id="sample" aria-pressed="false">Записанный разбор</button></div>
+          <div id="conversation" class="conversation" aria-live="polite"></div>
+          <form id="ask"><label class="sr" for="question">Вопрос по текущему делу</label><textarea id="question" rows="2" maxlength="1400" placeholder="Спросите о записи…"></textarea><button id="send" class="send" type="submit" aria-label="Отправить вопрос">Отправить</button></form>
+        </section>
+      </div>
+    </main>
+  </div>
+  <dialog id="reader" aria-labelledby="reader-title"><div class="dialog-top"><span id="reader-kind"></span><button id="close" aria-label="Закрыть">×</button></div>
+    <h2 id="reader-title"></h2><div id="reader-text"></div></dialog>
+  <dialog id="field-dialog" aria-labelledby="field-title">
+    <div class="dialog-top"><span>Открытый архив · Apollo 11</span><button id="field-close" type="button" aria-label="Закрыть">×</button></div>
+    <h2 id="field-title">Сверка записей NASA</h2>
+    <p>Выберите 1,6 секунды короткой записи о посадке. Сравните фрагмент с расширенной версией или с другой передачей той же миссии.</p>
+    <audio id="field-reference" controls preload="metadata" src="/field-audio/eagle-short.wav" aria-label="Короткая запись NASA"></audio>
+    <form id="field-form">
+      <label>Начало образца, с <input id="field-at" type="number" min="0" step="0.01" value="2.50" required></label>
+      <label>Сравнить с <select id="field-candidate"><option value="eagle-extended">Расширенной версией</option><option value="small-step">Репликой о первом шаге</option><option value="calibration">Учебной копией с другой скоростью</option></select></label>
+      <label class="speed-option"><input id="field-speed" type="checkbox"> Проверить изменение скорости до ±4 %</label>
+      <button type="submit" id="field-run">Сравнить</button>
+    </form>
+    <div id="field-result" aria-live="polite"></div>
+    <a href="https://www.nasa.gov/historical-sounds/" target="_blank" rel="noopener noreferrer">Исходные записи NASA</a>
+    <details id="transcript-search" class="transcript-search">
+      <summary>Найти фразу в стенограмме</summary>
+      <form id="transcript-form">
+        <label for="transcript-words">Английская фраза, номер страницы или время миссии</label>
+        <small id="mission-format">Интервал — 102:45:59–102:46:06. Для двух отдельных меток поставьте между ними запятую.</small>
+        <div><input id="transcript-words" value="the Eagle has landed" maxlength="180" aria-describedby="mission-format">
+          <label class="folio-filter">На странице <input id="transcript-page" type="number" min="1" max="624" step="1" placeholder="любой"></label>
+          <button type="submit" class="listen">Найти в тексте</button></div>
+      </form>
+      <div id="transcript-results" aria-live="polite"></div>
+    </details>
+  </dialog>
+  <script src="/app.js" defer></script>
+  <script src="/transcript.js" defer></script>
+</body></html>

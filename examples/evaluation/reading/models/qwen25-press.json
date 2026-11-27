@@ -1,0 +1,223 @@
+{
+  "variant": "qwen25-serial",
+  "model": "qwen2.5:7b",
+  "suite": "press",
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 557. Время от старта миссии 158:03:41, командир Нил Армстронг. «That's an old favorite of mine, about - It's an album made about 20 years ago, called \"Music Out of the Moon.\"»",
+      "sources": [
+        "AP11-557"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7698,
+            "page": 557,
+            "get": "158:03:41",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "That's an old favorite of mine, about - It's an album made about 20 years ago, called \"Music Out of the Moon.\"",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=That%27s%20an%20old%20favorite%20of%20mine%2C%20about%20-%20It%27s"
+          }
+        ],
+        "query": "Where in the NASA transcript does the commander say that his favorite album was recorded about twenty years ago?, NASA transcript commander album years ago",
+        "mode": "fts+embeddinggemma",
+        "quote": "That's an old favorite of mine, about - It's an album made about 20 years ago, called \"Music Out of the Moon.\", "
+      },
+      "id": "press/album",
+      "case": "signal",
+      "question": "Где в стенограмме NASA командир говорит, что его любимый альбом записали примерно двадцать лет назад?",
+      "passed": true,
+      "seconds": 4.87
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 30. Время от старта миссии 005:20:31, пилот командного модуля Майкл Коллинз. «If we're late in answering you, it's because we're munching sandwiches.»",
+      "sources": [
+        "AP11-30"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 461,
+            "page": 30,
+            "get": "005:20:31",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "If we're late in answering you, it's because we're munching sandwiches.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=If%20we%27re%20late%20in%20answering%20you%2C%20it%27s%20because%20we%27re"
+          }
+        ],
+        "query": "In the transcript of Apollo 11, find how Collins explains the delay in response by saying that the crew is eating sandwiches., Apollo 11, Collins, delay, response, eating, sandwiches",
+        "mode": "fts+embeddinggemma",
+        "quote": "it's because we're munching sandwiches."
+      },
+      "id": "press/sandwiches",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11, как Коллинз объясняет задержку с ответом тем, что экипаж ест сэндвичи.",
+      "passed": true,
+      "seconds": 5.08
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 496. Время от старта миссии 130:49:22, оператор связи в Хьюстоне. «Roger. Well, they were with you in spirit anyway, at least that many. We heard on the news today, 11, that last night - yesterday after you made your landing, New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper.»",
+      "sources": [
+        "AP11-496"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7020,
+            "page": 496,
+            "get": "130:49:22",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Well, they were with you in spirit anyway, at least that many. We heard on the news today, 11, that last night - yesterday after you made your landing, New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Well%2C%20they%20were%20with%20you%20in%20spirit%20anyway%2C"
+          }
+        ],
+        "query": "Where in the NASA transcript does Houston report that after landing, The New York Times printed the largest headlines in the newspaper’s entire history?, NASA transcript, Houston, New York Times, largest headlines",
+        "mode": "fts+embeddinggemma",
+        "quote": "New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper."
+      },
+      "id": "press/headlines",
+      "case": "signal",
+      "question": "Где в стенограмме NASA Хьюстон передает новость, что после посадки Нью-Йорк таймс напечатала крупнейшие заголовки за всю историю газеты?",
+      "passed": true,
+      "seconds": 5.41
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript does the commander say that his favorite album was recorded yesterday?, NASA transcript commander album recorded",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "press/album-new",
+      "case": "signal",
+      "question": "Где в стенограмме NASA командир говорит, что его любимый альбом записали вчера?",
+      "passed": true,
+      "seconds": 5.04
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "In the transcript of Apollo 11, find how Collins explains the delay in response by saying they are still waiting for the delivery of sandwiches., Apollo 11, Collins, delay, sandwiches",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "press/waiting-sandwiches",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11, как Коллинз объясняет задержку с ответом тем, что они еще ждут доставки сэндвичей.",
+      "passed": true,
+      "seconds": 4.73
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript does Houston transmit the news that after the landing, The New York Times printed the smallest headlines in the history of the报纸?, NASA transcript, New York Times, smallest headlines",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 7020,
+            "page": 496,
+            "get": "130:49:22",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Well, they were with you in spirit anyway, at least that many. We heard on the news today, 11, that last night - yesterday after you made your landing, New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Well%2C%20they%20were%20with%20you%20in%20spirit%20anyway%2C"
+          },
+          {
+            "id": 7040,
+            "page": 498,
+            "get": "132:16:11",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Neil. Starting off: Congratulatory messages on the Apollo 11 mission have been pouring into the White House from world leaders in a steady stream all day. Among the latest are telegrams from Prime Minister Harold Wilson of Great Britain and the King of Belgium. The world's press has been dominated by news of Apollo 11. Some newsmen estimate that more than 60 percent of the news used in papers across the country today concerned your mission. The New York Times which, as we mentioned before, has had such a demand for its edition of the paper today (even though it ran 950 000 copies) said it will reprint the whole thing on Thursday as a souvenir edition. And Premier Alexei Kosygin has sent congratulations to you and President Nixon through former Vice President Humphrey who is visiting Russia. The cosmonauts have also issued a statement of congratulations. Humphrey quoted Kosygin as saying \"I want you to tell the President and the American people that the Soviet Union desires to work with the United States in the cause of peace.\"",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Neil.%20Starting%20off%3A%20Congratulatory%20messages%20on%20the%20Apollo"
+          }
+        ]
+      },
+      "id": "press/smallest",
+      "case": "signal",
+      "question": "Где в стенограмме NASA Хьюстон передает новость, что после посадки Нью-Йорк таймс напечатала самые мелкие заголовки в истории газеты?",
+      "passed": true,
+      "seconds": 5.77
+    }
+  ],
+  "action_token_limit": 2048
+}

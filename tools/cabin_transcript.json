@@ -1,0 +1,49 @@
+[
+  {
+    "key": "helmet",
+    "question": "Где в стенограмме Apollo 11 Коллинз объясняет, что шлем и перчатки лежат в большой сумке под левым креслом?",
+    "id": 8132,
+    "page": 600,
+    "quote": "underneath the left hand couch"
+  },
+  {
+    "key": "bavaria",
+    "question": "Где в стенограмме NASA Хьюстон передает, что баварским школьникам дали выходной по случаю дня Аполлона?",
+    "id": 2752,
+    "page": 205,
+    "quote": "school children in bavaria have been given the day off"
+  },
+  {
+    "key": "pocket",
+    "question": "Найди в стенограмме NASA просьбу Олдрина к Нилу положить предмет ему в карман, прежде чем он поднимется по лестнице.",
+    "id": 5729,
+    "page": 406,
+    "quote": "stick this in my pocket"
+  },
+  {
+    "key": "right-couch",
+    "question": "Где в стенограмме Apollo 11 Коллинз объясняет, что шлем и перчатки лежат в большой сумке под правым креслом?",
+    "id": null,
+    "page": null,
+    "quote": ""
+  },
+  {
+    "key": "bavaria-school",
+    "question": "Где в стенограмме NASA Хьюстон передает, что в день Аполлона баварских школьников обязали идти в школу?",
+    "id": null,
+    "page": null,
+    "quote": ""
+  },
+  {
+    "key": "from-pocket",
+    "question": "Найди в стенограмме NASA просьбу Олдрина к Нилу вынуть предмет у него из кармана, прежде чем он поднимется по лестнице.",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 5729,
+      "requested": "from",
+      "observed": "into"
+    }
+  }
+]

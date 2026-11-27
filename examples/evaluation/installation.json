@@ -1,0 +1,70 @@
+{
+  "poetry": "2.3.1",
+  "new_virtualenv_per_interpreter": true,
+  "results": [
+    {
+      "python": "Python 3.11.8",
+      "platform": "macOS arm64",
+      "poetry_install": true,
+      "pytest_passed": 56,
+      "tape_position": true,
+      "edition_crosscheck": true,
+      "mission_time": true,
+      "precise_citation": true,
+      "cold_start": true,
+      "without_ollama": true,
+      "mcp_tools": 10,
+      "cross_reel": true,
+      "scoped_quote": true,
+      "passed": true
+    },
+    {
+      "python": "Python 3.12.9",
+      "platform": "macOS arm64",
+      "poetry_install": true,
+      "pytest_passed": 56,
+      "tape_position": true,
+      "edition_crosscheck": true,
+      "mission_time": true,
+      "precise_citation": true,
+      "cold_start": true,
+      "without_ollama": true,
+      "mcp_tools": 10,
+      "cross_reel": true,
+      "scoped_quote": true,
+      "passed": true
+    },
+    {
+      "python": "Python 3.13.15",
+      "platform": "macOS arm64",
+      "poetry_install": true,
+      "pytest_passed": 56,
+      "tape_position": true,
+      "edition_crosscheck": true,
+      "mission_time": true,
+      "precise_citation": true,
+      "cold_start": true,
+      "without_ollama": true,
+      "mcp_tools": 10,
+      "cross_reel": true,
+      "scoped_quote": true,
+      "passed": true
+    },
+    {
+      "python": "Python 3.14.8",
+      "platform": "macOS arm64",
+      "poetry_install": true,
+      "pytest_passed": 56,
+      "tape_position": true,
+      "edition_crosscheck": true,
+      "mission_time": true,
+      "precise_citation": true,
+      "cold_start": true,
+      "without_ollama": true,
+      "mcp_tools": 10,
+      "cross_reel": true,
+      "scoped_quote": true,
+      "passed": true
+    }
+  ]
+}

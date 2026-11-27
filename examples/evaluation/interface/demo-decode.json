@@ -1,0 +1,13 @@
+{
+  "video": "images/demo.mp4",
+  "sha256": "17d676e583f0e06a51838bc057129332ffa61c523346d0d6c3482e014f59a7b6",
+  "duration_seconds": 180,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "full_decode_errors": 0,
+  "subtitles": "images/demo.vtt",
+  "subtitle_cues": 48,
+  "first_start": 0.0,
+  "last_end": 178.511,
+  "ordered_within_video": true
+}

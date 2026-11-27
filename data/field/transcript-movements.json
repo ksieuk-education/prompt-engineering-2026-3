@@ -1,0 +1,1748 @@
+{
+  "model": "en_core_web_sm",
+  "model_version": "3.8.0",
+  "spacy": "3.8.18",
+  "source": "https://spacy.io/models/en/#en_core_web_sm",
+  "corpus_sha256": "b1afccc39d16301b7a3969ba71e1448edd376c6d5fd33c37433ddce951f3ee01",
+  "lines_scanned": 8452,
+  "lines_with_actions": 151,
+  "actions": {
+    "223": [
+      {
+        "direction": "into",
+        "place": "background",
+        "modifiers": [],
+        "items": [
+          "static"
+        ],
+        "words": "got a little static in the background"
+      }
+    ],
+    "332": [
+      {
+        "direction": "into",
+        "place": "position",
+        "modifiers": [
+          "different"
+        ],
+        "items": [],
+        "words": "moved into a different position"
+      }
+    ],
+    "420": [
+      {
+        "direction": "into",
+        "place": "ptc",
+        "modifiers": [],
+        "items": [],
+        "words": "get you into the PTC"
+      }
+    ],
+    "521": [
+      {
+        "direction": "into",
+        "place": "sextant",
+        "modifiers": [],
+        "items": [],
+        "words": "got it in the sextant"
+      }
+    ],
+    "644": [
+      {
+        "direction": "into",
+        "place": "order",
+        "modifiers": [],
+        "items": [
+          "hit"
+        ],
+        "words": "move off quite a hit in order"
+      }
+    ],
+    "719": [
+      {
+        "direction": "into",
+        "place": "work",
+        "modifiers": [],
+        "items": [],
+        "words": "got that in work"
+      }
+    ],
+    "891": [
+      {
+        "direction": "into",
+        "place": "procedure",
+        "modifiers": [],
+        "items": [],
+        "words": "picking this up in the procedure"
+      }
+    ],
+    "908": [
+      {
+        "direction": "into",
+        "place": "alfa",
+        "modifiers": [],
+        "items": [
+          "percent"
+        ],
+        "words": "got 86 percent in Alfa"
+      },
+      {
+        "direction": "into",
+        "place": "charlie",
+        "modifiers": [],
+        "items": [
+          "percent"
+        ],
+        "words": "got 86 percent in Alfa, 87 in Bravo, 88 in Charlie"
+      }
+    ],
+    "927": [
+      {
+        "direction": "into",
+        "place": "judgment",
+        "modifiers": [],
+        "items": [
+          "man"
+        ],
+        "words": "judgment, put"
+      }
+    ],
+    "980": [
+      {
+        "direction": "into",
+        "place": "p23",
+        "modifiers": [],
+        "items": [],
+        "words": "move into P23"
+      }
+    ],
+    "983": [
+      {
+        "direction": "into",
+        "place": "row",
+        "modifiers": [],
+        "items": [
+          "noun"
+        ],
+        "words": "get a NOUN 87 twice in a row"
+      }
+    ],
+    "1041": [
+      {
+        "direction": "from",
+        "place": "manual",
+        "modifiers": [],
+        "items": [
+          "switch"
+        ],
+        "words": "put the mode switch from MANUAL"
+      }
+    ],
+    "1100": [
+      {
+        "direction": "into",
+        "place": "minute",
+        "modifiers": [
+          "few"
+        ],
+        "items": [],
+        "words": "get back in a few minutes"
+      }
+    ],
+    "1105": [
+      {
+        "direction": "from",
+        "place": "burn",
+        "modifiers": [],
+        "items": [
+          "reading"
+        ],
+        "words": "get your DELTA-V counter reading, please, from this burn"
+      }
+    ],
+    "1116": [
+      {
+        "direction": "from",
+        "place": "mila",
+        "modifiers": [],
+        "items": [
+          "picture"
+        ],
+        "words": "get any usable pictures out of MILA"
+      }
+    ],
+    "1142": [
+      {
+        "direction": "from",
+        "place": "eec0mm",
+        "modifiers": [],
+        "items": [
+          "procedure"
+        ],
+        "words": "got a little procedure from EEC0MM"
+      }
+    ],
+    "1159": [
+      {
+        "direction": "from",
+        "place": "window",
+        "modifiers": [],
+        "items": [
+          "head"
+        ],
+        "words": "got his head out the window"
+      }
+    ],
+    "1177": [
+      {
+        "direction": "into",
+        "place": "blue",
+        "modifiers": [],
+        "items": [
+          "spot"
+        ],
+        "words": "get this bright spot in the blue"
+      }
+    ],
+    "1221": [
+      {
+        "direction": "from",
+        "place": "way",
+        "modifiers": [],
+        "items": [],
+        "words": "get some more of our cabin enrichment out of the way"
+      }
+    ],
+    "1226": [
+      {
+        "direction": "into",
+        "place": "position",
+        "modifiers": [
+          "dump"
+        ],
+        "items": [
+          "management",
+          "valve"
+        ],
+        "words": "put the waste management overboard drain valve into the DUMP position"
+      }
+    ],
+    "1238": [
+      {
+        "direction": "into",
+        "place": "window",
+        "modifiers": [],
+        "items": [
+          "world"
+        ],
+        "words": "got the world in my window"
+      }
+    ],
+    "1241": [
+      {
+        "direction": "into",
+        "place": "sextant",
+        "modifiers": [],
+        "items": [],
+        "words": "pick it up in the sextant"
+      }
+    ],
+    "1276": [
+      {
+        "direction": "into",
+        "place": "attitude",
+        "modifiers": [],
+        "items": [],
+        "words": "bring you into an attitude"
+      }
+    ],
+    "1285": [
+      {
+        "direction": "into",
+        "place": "vehicle",
+        "modifiers": [],
+        "items": [
+          "concentration"
+        ],
+        "words": "get the O2 concentration in the vehicles"
+      },
+      {
+        "direction": "into",
+        "place": "vehicle",
+        "modifiers": [],
+        "items": [
+          "concentration"
+        ],
+        "words": "get the O2 concentration in the vehicles up to - in the vehicles"
+      }
+    ],
+    "1358": [
+      {
+        "direction": "into",
+        "place": "direction",
+        "modifiers": [
+          "horizontal"
+        ],
+        "items": [
+          "distortion"
+        ],
+        "words": "got a tittle distortion in the horizontal direction"
+      }
+    ],
+    "1419": [
+      {
+        "direction": "into",
+        "place": "thing",
+        "modifiers": [],
+        "items": [
+          "perspective"
+        ],
+        "words": "get a different perspective in this thing"
+      },
+      {
+        "direction": "into",
+        "place": "g.",
+        "modifiers": [
+          "zero"
+        ],
+        "items": [
+          "perspective"
+        ],
+        "words": "get a different perspective in this thing in zero g."
+      }
+    ],
+    "1483": [
+      {
+        "direction": "into",
+        "place": "sextant",
+        "modifiers": [],
+        "items": [
+          "edwards"
+        ],
+        "words": "pick out Edwards in the sextant"
+      }
+    ],
+    "1502": [
+      {
+        "direction": "into",
+        "place": "orbit",
+        "modifiers": [],
+        "items": [
+          "spacecraft"
+        ],
+        "words": "placed in orbit"
+      }
+    ],
+    "1522": [
+      {
+        "direction": "into",
+        "place": "landform",
+        "modifiers": [],
+        "items": [
+          "brown"
+        ],
+        "words": "pick out the browns in the landforms"
+      }
+    ],
+    "1600": [
+      {
+        "direction": "from",
+        "place": "spigot",
+        "modifiers": [],
+        "items": [
+          "water"
+        ],
+        "words": "get our hot water out of a little spigot"
+      }
+    ],
+    "1614": [
+      {
+        "direction": "into",
+        "place": "lm",
+        "modifiers": [],
+        "items": [
+          "tv"
+        ],
+        "words": "take the TV into the LM"
+      }
+    ],
+    "1688": [
+      {
+        "direction": "into",
+        "place": "axis",
+        "modifiers": [
+          "other"
+        ],
+        "items": [
+          "rate"
+        ],
+        "words": "picked up the rates in the other axes"
+      }
+    ],
+    "1704": [
+      {
+        "direction": "into",
+        "place": "dap",
+        "modifiers": [],
+        "items": [],
+        "words": "loaded into the DAP"
+      }
+    ],
+    "1713": [
+      {
+        "direction": "into",
+        "place": "dap",
+        "modifiers": [],
+        "items": [],
+        "words": "loaded into the DAP"
+      }
+    ],
+    "1724": [
+      {
+        "direction": "into",
+        "place": "telescope",
+        "modifiers": [],
+        "items": [],
+        "words": "got you in the telescope"
+      }
+    ],
+    "1826": [
+      {
+        "direction": "into",
+        "place": "way",
+        "modifiers": [],
+        "items": [
+          "couple"
+        ],
+        "words": "got a couple of small items in the way"
+      }
+    ],
+    "1990": [
+      {
+        "direction": "into",
+        "place": "window",
+        "modifiers": [
+          "csm"
+        ],
+        "items": [
+          "antenna"
+        ],
+        "words": "places the high gain antenna in the CSM window"
+      }
+    ],
+    "2053": [
+      {
+        "direction": "from",
+        "place": "file",
+        "modifiers": [
+          "datum"
+        ],
+        "items": [
+          "checklist",
+          "out"
+        ],
+        "words": "pick up the - out of the flight data file"
+      }
+    ],
+    "2078": [
+      {
+        "direction": "into",
+        "place": "lm",
+        "modifiers": [],
+        "items": [
+          "camera"
+        ],
+        "words": "get the camera into the LM"
+      }
+    ],
+    "2087": [
+      {
+        "direction": "into",
+        "place": "way",
+        "modifiers": [],
+        "items": [],
+        "words": "getting in the way"
+      }
+    ],
+    "2169": [
+      {
+        "direction": "into",
+        "place": "view",
+        "modifiers": [],
+        "items": [
+          "valve"
+        ],
+        "words": "got the dump valves in view"
+      }
+    ],
+    "2191": [
+      {
+        "direction": "from",
+        "place": "aot",
+        "modifiers": [],
+        "items": [
+          "view"
+        ],
+        "words": "got a beautiful view of the side of the command module out of the AOT"
+      }
+    ],
+    "2243": [
+      {
+        "direction": "into",
+        "place": "csm",
+        "modifiers": [],
+        "items": [],
+        "words": "take both of the 16mm cameras back in the CSM"
+      }
+    ],
+    "2300": [
+      {
+        "direction": "into",
+        "place": "place",
+        "modifiers": [],
+        "items": [
+          "guard"
+        ],
+        "words": "putting your window guard in place"
+      }
+    ],
+    "2324": [
+      {
+        "direction": "into",
+        "place": "view",
+        "modifiers": [],
+        "items": [
+          "panel"
+        ],
+        "words": "got Panel 3 in view"
+      }
+    ],
+    "2429": [
+      {
+        "direction": "from",
+        "place": "work",
+        "modifiers": [],
+        "items": [
+          "respite"
+        ],
+        "words": "taken a momentary brief respite from out work"
+      }
+    ],
+    "2474": [
+      {
+        "direction": "into",
+        "place": "place",
+        "modifiers": [
+          "wrong"
+        ],
+        "items": [],
+        "words": "stowed in the wrong place"
+      }
+    ],
+    "2489": [
+      {
+        "direction": "into",
+        "place": "minute",
+        "modifiers": [
+          "few"
+        ],
+        "items": [],
+        "words": "get back with you on these other changes in a few minutes"
+      }
+    ],
+    "2502": [
+      {
+        "direction": "into",
+        "place": "book",
+        "modifiers": [
+          "csm",
+          "landmark",
+          "lunar"
+        ],
+        "items": [
+          "oblique"
+        ],
+        "words": "stowed in the CSM lunar landmark book"
+      },
+      {
+        "direction": "into",
+        "place": "back",
+        "modifiers": [],
+        "items": [
+          "oblique"
+        ],
+        "words": "stowed in the back"
+      }
+    ],
+    "2665": [
+      {
+        "direction": "into",
+        "place": "chamber",
+        "modifiers": [],
+        "items": [],
+        "words": "got in the chamber"
+      }
+    ],
+    "2691": [
+      {
+        "direction": "into",
+        "place": "minute",
+        "modifiers": [],
+        "items": [],
+        "words": "get them in a minute"
+      }
+    ],
+    "2718": [
+      {
+        "direction": "from",
+        "place": "percent",
+        "modifiers": [
+          "40"
+        ],
+        "items": [],
+        "words": "dropped from 40 percent"
+      },
+      {
+        "direction": "into",
+        "place": "second",
+        "modifiers": [
+          "10",
+          "first"
+        ],
+        "items": [],
+        "words": "dropped from 40 percent down to 36 in the first 10 seconds"
+      }
+    ],
+    "2736": [
+      {
+        "direction": "into",
+        "place": "spacecraft",
+        "modifiers": [],
+        "items": [
+          "command"
+        ],
+        "words": "getting commands into the spacecraft"
+      }
+    ],
+    "2757": [
+      {
+        "direction": "into",
+        "place": "news",
+        "modifiers": [],
+        "items": [],
+        "words": "got into the news"
+      }
+    ],
+    "2764": [
+      {
+        "direction": "into",
+        "place": "world",
+        "modifiers": [
+          "golf"
+        ],
+        "items": [
+          "lead"
+        ],
+        "words": "world, Tommy Jacobs, an infrequent competitor in recent years, took"
+      },
+      {
+        "direction": "into",
+        "place": "classic",
+        "modifiers": [
+          "golf",
+          "philadelphia"
+        ],
+        "items": [
+          "lead"
+        ],
+        "words": "took the lead in the Philadelphia Golf Classic"
+      }
+    ],
+    "2773": [
+      {
+        "direction": "into",
+        "place": "antenna",
+        "modifiers": [],
+        "items": [],
+        "words": "got into antenna"
+      }
+    ],
+    "2793": [
+      {
+        "direction": "from",
+        "place": "degree",
+        "modifiers": [
+          "90"
+        ],
+        "items": [],
+        "words": "move from 90 degrees"
+      }
+    ],
+    "2884": [
+      {
+        "direction": "into",
+        "place": "-",
+        "modifiers": [],
+        "items": [
+          "sign"
+        ],
+        "words": "put the wrong sign in - -"
+      }
+    ],
+    "2887": [
+      {
+        "direction": "into",
+        "place": "attitude",
+        "modifiers": [
+          "antenna",
+          "gain"
+        ],
+        "items": [],
+        "words": "get around further into the high gain antenna attitude"
+      }
+    ],
+    "3065": [
+      {
+        "direction": "into",
+        "place": "question",
+        "modifiers": [],
+        "items": [],
+        "words": "getting into the question"
+      }
+    ],
+    "3077": [
+      {
+        "direction": "from",
+        "place": "window",
+        "modifiers": [
+          "side"
+        ],
+        "items": [],
+        "words": "moving shortly from the side window"
+      }
+    ],
+    "3131": [
+      {
+        "direction": "into",
+        "place": "pitchdown",
+        "modifiers": [],
+        "items": [
+          "impulse"
+        ],
+        "words": "put in a dozen mininum impulses in pitchdown"
+      }
+    ],
+    "3133": [
+      {
+        "direction": "into",
+        "place": "screen",
+        "modifiers": [],
+        "items": [
+          "langrenus"
+        ],
+        "words": "got Langrenus in our screen"
+      }
+    ],
+    "3142": [
+      {
+        "direction": "into",
+        "place": "focus",
+        "modifiers": [],
+        "items": [
+          "structure"
+        ],
+        "words": "put the LM structure about in focus"
+      }
+    ],
+    "3233": [
+      {
+        "direction": "into",
+        "place": "loi",
+        "modifiers": [
+          "2"
+        ],
+        "items": [
+          "star"
+        ],
+        "words": "get the sextant star in LOI"
+      }
+    ],
+    "3337": [
+      {
+        "direction": "into",
+        "place": "shadow",
+        "modifiers": [],
+        "items": [],
+        "words": "got you in the shadows"
+      }
+    ],
+    "3339": [
+      {
+        "direction": "into",
+        "place": "plan",
+        "modifiers": [
+          "flight"
+        ],
+        "items": [],
+        "words": "got in the flight plan"
+      }
+    ],
+    "3473": [
+      {
+        "direction": "into",
+        "place": "lm",
+        "modifiers": [],
+        "items": [],
+        "words": "taking the monocular with us on into the LM"
+      }
+    ],
+    "3545": [
+      {
+        "direction": "into",
+        "place": "lm",
+        "modifiers": [],
+        "items": [],
+        "words": "take the monocular into the LM"
+      }
+    ],
+    "3597": [
+      {
+        "direction": "into",
+        "place": "morning",
+        "modifiers": [],
+        "items": [],
+        "words": "pick you up in the morning"
+      }
+    ],
+    "3617": [
+      {
+        "direction": "into",
+        "place": "background",
+        "modifiers": [],
+        "items": [
+          "lot"
+        ],
+        "words": "got a lot of noise in the background"
+      }
+    ],
+    "3827": [
+      {
+        "direction": "into",
+        "place": "p22",
+        "modifiers": [],
+        "items": [],
+        "words": "loaded in P22"
+      }
+    ],
+    "3829": [
+      {
+        "direction": "into",
+        "place": "p22",
+        "modifiers": [],
+        "items": [],
+        "words": "loaded in P22"
+      }
+    ],
+    "4086": [
+      {
+        "direction": "into",
+        "place": "eagle",
+        "modifiers": [],
+        "items": [
+          "load"
+        ],
+        "words": "got the load in, Eagle"
+      }
+    ],
+    "4240": [
+      {
+        "direction": "into",
+        "place": "slew",
+        "modifiers": [],
+        "items": [
+          "strength"
+        ],
+        "words": "got good signal strength in SLEW"
+      }
+    ],
+    "4252": [
+      {
+        "direction": "into",
+        "place": "voltage",
+        "modifiers": [
+          "ac"
+        ],
+        "items": [
+          "fluctuation"
+        ],
+        "words": "getting a little fluctuation in the AC voltage"
+      }
+    ],
+    "4412": [
+      {
+        "direction": "into",
+        "place": "field",
+        "modifiers": [
+          "field",
+          "football"
+        ],
+        "items": [],
+        "words": "taking us right into a football field size - football field"
+      }
+    ],
+    "4439": [
+      {
+        "direction": "into",
+        "place": "environment",
+        "modifiers": [],
+        "items": [],
+        "words": "move in this environment"
+      }
+    ],
+    "4470": [
+      {
+        "direction": "into",
+        "place": "reset",
+        "modifiers": [],
+        "items": [],
+        "words": "put it in RESET"
+      }
+    ],
+    "4687": [
+      {
+        "direction": "into",
+        "place": "area",
+        "modifiers": [],
+        "items": [
+          "crater"
+        ],
+        "words": "picked a tiny crater in that area"
+      }
+    ],
+    "4690": [
+      {
+        "direction": "into",
+        "place": "p00",
+        "modifiers": [],
+        "items": [
+          "mode",
+          "track"
+        ],
+        "words": "put the track modes in P00"
+      }
+    ],
+    "4760": [
+      {
+        "direction": "into",
+        "place": "control",
+        "modifiers": [
+          "manual"
+        ],
+        "items": [],
+        "words": "shift into manual control"
+      }
+    ],
+    "4820": [
+      {
+        "direction": "into",
+        "place": "mcc",
+        "modifiers": [],
+        "items": [
+          "crowd"
+        ],
+        "words": "got a crowd there in MCC"
+      }
+    ],
+    "4975": [
+      {
+        "direction": "from",
+        "place": "horizon",
+        "modifiers": [
+          "lighted"
+        ],
+        "items": [
+          "picture"
+        ],
+        "words": "get a picture from the lighted horizon"
+      }
+    ],
+    "5061": [
+      {
+        "direction": "from",
+        "place": "cover",
+        "modifiers": [
+          "engine"
+        ],
+        "items": [
+          "leva"
+        ],
+        "words": "remove LEVA from the engine cover"
+      }
+    ],
+    "5065": [
+      {
+        "direction": "into",
+        "place": "back",
+        "modifiers": [],
+        "items": [
+          "material"
+        ],
+        "words": "Got all the material up in the back"
+      }
+    ],
+    "5126": [
+      {
+        "direction": "into",
+        "place": "machine",
+        "modifiers": [],
+        "items": [],
+        "words": "putting that in your machine"
+      }
+    ],
+    "5186": [
+      {
+        "direction": "into",
+        "place": "background",
+        "modifiers": [],
+        "items": [
+          "tone"
+        ],
+        "words": "Get a steady tone in the background"
+      }
+    ],
+    "5415": [
+      {
+        "direction": "into",
+        "place": "focus",
+        "modifiers": [],
+        "items": [],
+        "words": "get things in focus"
+      }
+    ],
+    "5465": [
+      {
+        "direction": "from",
+        "place": "sand",
+        "modifiers": [],
+        "items": [
+          "foot"
+        ],
+        "words": "sticking out of the sand"
+      }
+    ],
+    "5522": [
+      {
+        "direction": "into",
+        "place": "field",
+        "modifiers": [],
+        "items": [],
+        "words": "get both of you in the field"
+      }
+    ],
+    "5582": [
+      {
+        "direction": "into",
+        "place": "part",
+        "modifiers": [
+          "aft"
+        ],
+        "items": [
+          "picture"
+        ],
+        "words": "get some pictures in the aft part"
+      }
+    ],
+    "5589": [
+      {
+        "direction": "from",
+        "place": "mesa",
+        "modifiers": [],
+        "items": [
+          "camera"
+        ],
+        "words": "removed the closeup camera from the MESA"
+      }
+    ],
+    "5604": [
+      {
+        "direction": "into",
+        "place": "rear",
+        "modifiers": [
+          "right"
+        ],
+        "items": [],
+        "words": "taken in the right rear"
+      }
+    ],
+    "5647": [
+      {
+        "direction": "into",
+        "place": "center",
+        "modifiers": [],
+        "items": [
+          "b"
+        ],
+        "words": "getting the B B in the center"
+      }
+    ],
+    "5666": [
+      {
+        "direction": "into",
+        "place": "way",
+        "modifiers": [],
+        "items": [],
+        "words": "getting in the way"
+      }
+    ],
+    "5729": [
+      {
+        "direction": "into",
+        "place": "pocket",
+        "modifiers": [],
+        "items": [],
+        "words": "stick this in my pocket"
+      }
+    ],
+    "6044": [
+      {
+        "direction": "into",
+        "place": "sample",
+        "modifiers": [
+          "bulk"
+        ],
+        "items": [
+          "bit"
+        ],
+        "words": "got a good bit of the ground mass in the bulk sample"
+      }
+    ],
+    "6046": [
+      {
+        "direction": "from",
+        "place": "inch",
+        "modifiers": [
+          "3"
+        ],
+        "items": [],
+        "words": "got some down from as much as 3 inches"
+      }
+    ],
+    "6052": [
+      {
+        "direction": "into",
+        "place": "direction",
+        "modifiers": [
+          "outward"
+        ],
+        "items": [
+          "place"
+        ],
+        "words": "taken place in a radially outward direction"
+      }
+    ],
+    "6058": [
+      {
+        "direction": "into",
+        "place": "top",
+        "modifiers": [],
+        "items": [
+          "dent"
+        ],
+        "words": "putting pretty good dents in the top"
+      }
+    ],
+    "6059": [
+      {
+        "direction": "into",
+        "place": "case",
+        "modifiers": [],
+        "items": [
+          "inch"
+        ],
+        "words": "case you got"
+      }
+    ],
+    "6061": [
+      {
+        "direction": "into",
+        "place": "tube",
+        "modifiers": [
+          "core"
+        ],
+        "items": [],
+        "words": "packed in the core tube"
+      }
+    ],
+    "6068": [
+      {
+        "direction": "into",
+        "place": "way",
+        "modifiers": [],
+        "items": [],
+        "words": "get in the way"
+      }
+    ],
+    "6139": [
+      {
+        "direction": "into",
+        "place": "time",
+        "modifiers": [],
+        "items": [],
+        "words": "stick in a time"
+      }
+    ],
+    "6157": [
+      {
+        "direction": "into",
+        "place": "ags",
+        "modifiers": [],
+        "items": [],
+        "words": "put it in AGS"
+      }
+    ],
+    "6161": [
+      {
+        "direction": "into",
+        "place": "noun",
+        "modifiers": [
+          "06"
+        ],
+        "items": [
+          "option"
+        ],
+        "words": "Take option 1 in NOUN"
+      },
+      {
+        "direction": "into",
+        "place": "rate",
+        "modifiers": [
+          "altitude"
+        ],
+        "items": [
+          "switch"
+        ],
+        "words": "place the range altitude monitor switch in altitude/altitude rate"
+      }
+    ],
+    "6212": [
+      {
+        "direction": "into",
+        "place": "lock",
+        "modifiers": [],
+        "items": [],
+        "words": "get in lock"
+      }
+    ],
+    "6507": [
+      {
+        "direction": "into",
+        "place": "vhf",
+        "modifiers": [],
+        "items": [
+          "lock"
+        ],
+        "words": "got a solid lock on in VHF"
+      }
+    ],
+    "6615": [
+      {
+        "direction": "into",
+        "place": "period",
+        "modifiers": [],
+        "items": [
+          "mark",
+          "vhf"
+        ],
+        "words": "get as many VHF and sextant marks as you can here in this period"
+      }
+    ],
+    "6794": [
+      {
+        "direction": "into",
+        "place": "position",
+        "modifiers": [],
+        "items": [],
+        "words": "get in position"
+      }
+    ],
+    "6808": [
+      {
+        "direction": "into",
+        "place": "attitude",
+        "modifiers": [],
+        "items": [],
+        "words": "got off in attitude"
+      }
+    ],
+    "6855": [
+      {
+        "direction": "into",
+        "place": "account",
+        "modifiers": [],
+        "items": [],
+        "words": "take into account"
+      }
+    ],
+    "6873": [
+      {
+        "direction": "into",
+        "place": "attitude",
+        "modifiers": [
+          "burn"
+        ],
+        "items": [],
+        "words": "get in burn attitude"
+      }
+    ],
+    "6955": [
+      {
+        "direction": "from",
+        "place": "jettison",
+        "modifiers": [],
+        "items": [],
+        "words": "picked up about 2 feet per second from that jettison"
+      }
+    ],
+    "7132": [
+      {
+        "direction": "into",
+        "place": "couple",
+        "modifiers": [
+          "next"
+        ],
+        "items": [
+          "guide"
+        ],
+        "words": "get the camera guide sometime in the next couple"
+      }
+    ],
+    "7293": [
+      {
+        "direction": "into",
+        "place": "stead",
+        "modifiers": [],
+        "items": [
+          "team"
+        ],
+        "words": "got a highly qualified team on in his stead"
+      }
+    ],
+    "7360": [
+      {
+        "direction": "into",
+        "place": "module",
+        "modifiers": [
+          "command"
+        ],
+        "items": [],
+        "words": "got into the command module"
+      }
+    ],
+    "7402": [
+      {
+        "direction": "into",
+        "place": "roll",
+        "modifiers": [],
+        "items": [],
+        "words": "took off in roll"
+      }
+    ],
+    "7420": [
+      {
+        "direction": "into",
+        "place": "side",
+        "modifiers": [
+          "light"
+        ],
+        "items": [],
+        "words": "puts it in the light side"
+      }
+    ],
+    "7426": [
+      {
+        "direction": "into",
+        "place": "time",
+        "modifiers": [
+          "short"
+        ],
+        "items": [
+          "type"
+        ],
+        "words": "take as many different types - of rock types as I could see by eye - as I could in the short time"
+      },
+      {
+        "direction": "into",
+        "place": "sample",
+        "modifiers": [
+          "document"
+        ],
+        "items": [],
+        "words": "put in the documented sample"
+      },
+      {
+        "direction": "into",
+        "place": "session",
+        "modifiers": [
+          "debriefing"
+        ],
+        "items": [],
+        "words": "get in the debriefing session"
+      }
+    ],
+    "7468": [
+      {
+        "direction": "into",
+        "place": "pitch",
+        "modifiers": [],
+        "items": [
+          "degree"
+        ],
+        "words": "got 0.03 degrees per second in pitch"
+      }
+    ],
+    "7501": [
+      {
+        "direction": "into",
+        "place": "reacq",
+        "modifiers": [],
+        "items": [],
+        "words": "put it in REACQ"
+      }
+    ],
+    "7512": [
+      {
+        "direction": "from",
+        "place": "window",
+        "modifiers": [],
+        "items": [
+          "earth"
+        ],
+        "words": "get the Earth out of a window"
+      }
+    ],
+    "7515": [
+      {
+        "direction": "into",
+        "place": "leb",
+        "modifiers": [],
+        "items": [
+          "sun"
+        ],
+        "words": "puts the Sun down in the LEB"
+      }
+    ],
+    "7542": [
+      {
+        "direction": "into",
+        "place": "receptacle",
+        "modifiers": [],
+        "items": [],
+        "words": "placed in these receptacles"
+      },
+      {
+        "direction": "into",
+        "place": "side",
+        "modifiers": [],
+        "items": [],
+        "words": "placed in these receptacles in the side"
+      }
+    ],
+    "7554": [
+      {
+        "direction": "into",
+        "place": "department",
+        "modifiers": [
+          "food"
+        ],
+        "items": [
+          "place"
+        ],
+        "words": "taken place in the food department"
+      },
+      {
+        "direction": "into",
+        "place": "end",
+        "modifiers": [],
+        "items": [
+          "gun"
+        ],
+        "words": "put in this end"
+      }
+    ],
+    "7600": [
+      {
+        "direction": "into",
+        "place": "couple",
+        "modifiers": [
+          "last"
+        ],
+        "items": [],
+        "words": "moving through the area in the last couple"
+      }
+    ],
+    "7624": [
+      {
+        "direction": "into",
+        "place": "module",
+        "modifiers": [
+          "command"
+        ],
+        "items": [
+          "visor"
+        ],
+        "words": "brought back into the command module"
+      }
+    ],
+    "7631": [
+      {
+        "direction": "from",
+        "place": "doc",
+        "modifiers": [],
+        "items": [
+          "nomenclature"
+        ],
+        "words": "get the right nomenclature from the Doc"
+      }
+    ],
+    "7665": [
+      {
+        "direction": "from",
+        "place": "chair",
+        "modifiers": [],
+        "items": [
+          "surgeon"
+        ],
+        "words": "brought the surgeon right out of his chair"
+      }
+    ],
+    "7681": [
+      {
+        "direction": "into",
+        "place": "room",
+        "modifiers": [
+          "view"
+        ],
+        "items": [],
+        "words": "got eight in the viewing room"
+      }
+    ],
+    "7738": [
+      {
+        "direction": "into",
+        "place": "bag",
+        "modifiers": [
+          "helmet"
+        ],
+        "items": [],
+        "words": "got them in our helmet bags"
+      }
+    ],
+    "7793": [
+      {
+        "direction": "from",
+        "place": "position",
+        "modifiers": [],
+        "items": [],
+        "words": "get out of the NO position"
+      }
+    ],
+    "7862": [
+      {
+        "direction": "from",
+        "place": "quarantine",
+        "modifiers": [],
+        "items": [],
+        "words": "get out of quarantine"
+      }
+    ],
+    "7997": [
+      {
+        "direction": "from",
+        "place": "florida",
+        "modifiers": [],
+        "items": [],
+        "words": "took off from Florida"
+      }
+    ],
+    "8004": [
+      {
+        "direction": "into",
+        "place": "orbit",
+        "modifiers": [],
+        "items": [],
+        "words": "put us into orbit"
+      }
+    ],
+    "8007": [
+      {
+        "direction": "into",
+        "place": "day",
+        "modifiers": [
+          "2",
+          "past"
+        ],
+        "items": [
+          "place"
+        ],
+        "words": "taken place in the past 2 or 3 days"
+      }
+    ],
+    "8008": [
+      {
+        "direction": "into",
+        "place": "craft",
+        "modifiers": [],
+        "items": [
+          "ability",
+          "heart"
+        ],
+        "words": "put their - their hearts and all their abilities into those crafts"
+      }
+    ],
+    "8009": [
+      {
+        "direction": "from",
+        "place": "window",
+        "modifiers": [],
+        "items": [
+          "view"
+        ],
+        "words": "getting a zoom view out the window"
+      }
+    ],
+    "8023": [
+      {
+        "direction": "from",
+        "place": "g",
+        "modifiers": [
+          "0.5"
+        ],
+        "items": [],
+        "words": "get everything from 0.5 - 0.5g"
+      }
+    ],
+    "8027": [
+      {
+        "direction": "into",
+        "place": "bag",
+        "modifiers": [
+          "hatch"
+        ],
+        "items": [
+          "helmet",
+          "levva"
+        ],
+        "words": "put the LEVVA's and helmets in the hatch bag"
+      }
+    ],
+    "8068": [
+      {
+        "direction": "into",
+        "place": "sensor",
+        "modifiers": [],
+        "items": [
+          "paste"
+        ],
+        "words": "putting some fresh paste in the sensors"
+      }
+    ],
+    "8072": [
+      {
+        "direction": "into",
+        "place": "electrode",
+        "modifiers": [
+          "two"
+        ],
+        "items": [
+          "paste"
+        ],
+        "words": "putting some fresh paste in the two electrodes"
+      }
+    ],
+    "8142": [
+      {
+        "direction": "into",
+        "place": "b2",
+        "modifiers": [],
+        "items": [
+          "ppk"
+        ],
+        "words": "B2 we took"
+      }
+    ],
+    "8145": [
+      {
+        "direction": "into",
+        "place": "bag",
+        "modifiers": [
+          "hatch"
+        ],
+        "items": [],
+        "words": "got in the hatch bag"
+      }
+    ],
+    "8147": [
+      {
+        "direction": "into",
+        "place": "correction",
+        "modifiers": [
+          "bag",
+          "helmet"
+        ],
+        "items": [],
+        "words": "got in the helmet bag - correction"
+      },
+      {
+        "direction": "into",
+        "place": "restraint",
+        "modifiers": [
+          "sleep"
+        ],
+        "items": [],
+        "words": "put it in the sleep restraint"
+      }
+    ],
+    "8160": [
+      {
+        "direction": "from",
+        "place": "lrl",
+        "modifiers": [],
+        "items": [],
+        "words": "get out of the LRL"
+      }
+    ],
+    "8168": [
+      {
+        "direction": "into",
+        "place": "telescope",
+        "modifiers": [],
+        "items": [
+          "spacecraft"
+        ],
+        "words": "picked up the spacecraft in their telescope"
+      }
+    ],
+    "8180": [
+      {
+        "direction": "into",
+        "place": "meantime",
+        "modifiers": [],
+        "items": [
+          "bugle"
+        ],
+        "words": "meantime, while you're eating your breakfast there, I've got"
+      }
+    ],
+    "8392": [
+      {
+        "direction": "into",
+        "place": "rate",
+        "modifiers": [
+          "bit"
+        ],
+        "items": [],
+        "words": "put us in low bit rate"
+      }
+    ]
+  }
+}

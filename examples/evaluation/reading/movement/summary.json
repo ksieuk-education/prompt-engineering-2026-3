@@ -1,0 +1,147 @@
+{
+  "qwen25-index": {
+    "cabin": {
+      "passed": 6,
+      "total": 6,
+      "median_seconds": 4.88,
+      "failed": [],
+      "cited_direction": [
+        "cabin/from-pocket"
+      ]
+    },
+    "cargo": {
+      "passed": 5,
+      "total": 6,
+      "median_seconds": 5.51,
+      "failed": [
+        "cargo/restraint-out"
+      ],
+      "cited_direction": [
+        "cargo/camera-in"
+      ]
+    },
+    "paraphrase": {
+      "passed": 7,
+      "total": 7,
+      "median_seconds": 6.0,
+      "failed": [],
+      "cited_direction": []
+    },
+    "holdout": {
+      "passed": 5,
+      "total": 6,
+      "median_seconds": 7.64,
+      "failed": [
+        "paraphrase/oatmeal"
+      ],
+      "cited_direction": []
+    },
+    "original": {
+      "passed": 5,
+      "total": 6,
+      "median_seconds": 5.15,
+      "failed": [
+        "original/splice/1"
+      ],
+      "cited_direction": []
+    },
+    "all": {
+      "passed": 9,
+      "total": 9,
+      "median_seconds": 3.32,
+      "failed": [],
+      "cited_direction": []
+    },
+    "independent": {
+      "passed": 5,
+      "total": 8,
+      "median_seconds": 11.0,
+      "failed": [
+        "independent/legend",
+        "independent/unnamed",
+        "independent/tomato"
+      ],
+      "cited_direction": []
+    },
+    "press": {
+      "passed": 6,
+      "total": 6,
+      "median_seconds": 21.05,
+      "failed": [],
+      "cited_direction": []
+    }
+  },
+  "qwen3-30b-index": {
+    "cabin": {
+      "passed": 5,
+      "total": 6,
+      "median_seconds": 12.88,
+      "failed": [
+        "cabin/from-pocket"
+      ],
+      "cited_direction": []
+    },
+    "cargo": {
+      "passed": 5,
+      "total": 6,
+      "median_seconds": 18.02,
+      "failed": [
+        "cargo/restraint-out"
+      ],
+      "cited_direction": [
+        "cargo/helmets-out",
+        "cargo/camera-in"
+      ]
+    }
+  },
+  "phi4-mini-index": {
+    "cabin": {
+      "passed": 4,
+      "total": 6,
+      "median_seconds": 4.33,
+      "failed": [
+        "cabin/helmet",
+        "cabin/bavaria"
+      ],
+      "cited_direction": [
+        "cabin/from-pocket"
+      ]
+    },
+    "cargo": {
+      "passed": 3,
+      "total": 6,
+      "median_seconds": 3.58,
+      "failed": [
+        "cargo/helmets-in",
+        "cargo/camera-out",
+        "cargo/restraint-out"
+      ],
+      "cited_direction": [
+        "cargo/camera-in"
+      ]
+    }
+  },
+  "qwen25-live-parser-old-acronym": {
+    "cabin": {
+      "passed": 6,
+      "total": 6,
+      "median_seconds": 5.42,
+      "failed": [],
+      "cited_direction": [
+        "cabin/from-pocket"
+      ]
+    },
+    "cargo": {
+      "passed": 4,
+      "total": 6,
+      "median_seconds": 4.3,
+      "failed": [
+        "cargo/camera-in",
+        "cargo/restraint-out"
+      ],
+      "cited_direction": [
+        "cargo/helmets-out"
+      ]
+    }
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "variant": "gemma-reel-clocks",
+  "model": "gemma3:1b",
+  "suite": "repeats",
+  "passed": 9,
+  "total": 9,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-031 на 00:12. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 18.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "untimed",
+              "code": "ФН-031",
+              "second": 12.0,
+              "score": 0.9996
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-031 на 00:12. Позиции указаны от начала файлов.",
+          "marker": "ident"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "motif",
+      "case": "signal",
+      "question": "Найди по звуку, где еще в архиве встречаются эти три ноты позывного.",
+      "passed": true,
+      "seconds": 1.7
+    },
+    {
+      "status": "answered",
+      "answer": "Найденный повтор — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем. Исходный образец — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам.",
+      "sources": [
+        "A2",
+        "A3",
+        "A1",
+        "C2",
+        "C3",
+        "C1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "repeat_clocks",
+          "label": "Эфирные часы двух фрагментов",
+          "sources": [
+            "A2",
+            "A3",
+            "A1",
+            "C2",
+            "C3",
+            "C1"
+          ],
+          "case_id": "signal",
+          "reference_second": 18.0,
+          "scope": "archive",
+          "window_seconds": 1.6,
+          "status": "compared",
+          "value": "Сверены две позиции",
+          "detail": "Найденный повтор — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем. Исходный образец — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам.",
+          "source": {
+            "case_id": "signal",
+            "code": "ФН-014",
+            "second": 18.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Три ноты позывного",
+              "tape": "00:18",
+              "sources": [
+                "A2",
+                "A3",
+                "A1"
+              ],
+              "planned": "21:17:20",
+              "status": "verified",
+              "value": "21:17:24",
+              "anchor": "21:17:10",
+              "anchor_tape": "00:04",
+              "travel_seconds": 14,
+              "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+              "shift_seconds": 4
+            }
+          },
+          "target": {
+            "case_id": "untimed",
+            "code": "ФН-031",
+            "second": 12.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Начало заставки",
+              "tape": "00:12",
+              "sources": [
+                "C2",
+                "C3",
+                "C1"
+              ],
+              "planned": "09:40:00",
+              "status": "insufficient",
+              "value": "Нет привязки к эфиру",
+              "detail": "На ленте 00:12. Нужна общая метка с известным эфирным временем."
+            }
+          },
+          "score": 0.9996,
+          "provenance": "Сходства звука недостаточно для вывода об одном и том же эфире. Для этого нужна документальная связь между записями."
+        }
+      ],
+      "tools": [
+        "compare_repeat_clocks"
+      ],
+      "id": "reel/unknown",
+      "case": "signal",
+      "question": "Можно ли установить эфирное время у найденного повтора на другой катушке?",
+      "passed": true,
+      "seconds": 0.03
+    },
+    {
+      "status": "answered",
+      "answer": "Сходства звука недостаточно для вывода об одном и том же эфире. Для этого нужна документальная связь между записями. Найденный повтор — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем. Исходный образец — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам.",
+      "sources": [
+        "A2",
+        "A3",
+        "A1",
+        "C2",
+        "C3",
+        "C1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "repeat_clocks",
+          "label": "Эфирные часы двух фрагментов",
+          "sources": [
+            "A2",
+            "A3",
+            "A1",
+            "C2",
+            "C3",
+            "C1"
+          ],
+          "case_id": "signal",
+          "reference_second": 18.0,
+          "scope": "archive",
+          "window_seconds": 1.6,
+          "status": "compared",
+          "value": "Сверены две позиции",
+          "detail": "Найденный повтор — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем. Исходный образец — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам.",
+          "source": {
+            "case_id": "signal",
+            "code": "ФН-014",
+            "second": 18.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Три ноты позывного",
+              "tape": "00:18",
+              "sources": [
+                "A2",
+                "A3",
+                "A1"
+              ],
+              "planned": "21:17:20",
+              "status": "verified",
+              "value": "21:17:24",
+              "anchor": "21:17:10",
+              "anchor_tape": "00:04",
+              "travel_seconds": 14,
+              "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+              "shift_seconds": 4
+            }
+          },
+          "target": {
+            "case_id": "untimed",
+            "code": "ФН-031",
+            "second": 12.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Начало заставки",
+              "tape": "00:12",
+              "sources": [
+                "C2",
+                "C3",
+                "C1"
+              ],
+              "planned": "09:40:00",
+              "status": "insufficient",
+              "value": "Нет привязки к эфиру",
+              "detail": "На ленте 00:12. Нужна общая метка с известным эфирным временем."
+            }
+          },
+          "score": 0.9996,
+          "provenance": "Сходства звука недостаточно для вывода об одном и том же эфире. Для этого нужна документальная связь между записями."
+        }
+      ],
+      "tools": [
+        "compare_repeat_clocks"
+      ],
+      "id": "reel/identity",
+      "case": "signal",
+      "question": "Значит ли звуковое совпадение, что это был один и тот же эфир?",
+      "passed": true,
+      "seconds": 0.03
+    },
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-014 на 00:18. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "untimed",
+          "reference_second": 12.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "signal",
+              "code": "ФН-014",
+              "second": 18.0,
+              "score": 0.9996
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-014 на 00:18. Позиции указаны от начала файлов.",
+          "marker": "ident"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "reel/return-search",
+      "case": "untimed",
+      "question": "Найди по звуку повтор начала заставки в архиве.",
+      "passed": true,
+      "seconds": 0.33
+    },
+    {
+      "status": "answered",
+      "answer": "Найденный повтор — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам. Исходный образец — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем.",
+      "sources": [
+        "C2",
+        "C3",
+        "C1",
+        "A2",
+        "A3",
+        "A1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "repeat_clocks",
+          "label": "Эфирные часы двух фрагментов",
+          "sources": [
+            "C2",
+            "C3",
+            "C1",
+            "A2",
+            "A3",
+            "A1"
+          ],
+          "case_id": "untimed",
+          "reference_second": 12.0,
+          "scope": "archive",
+          "window_seconds": 1.6,
+          "status": "compared",
+          "value": "Сверены две позиции",
+          "detail": "Найденный повтор — ФН-014 на 00:18 от начала файла соответствует 21:17:24 по эфирным часам. Исходный образец — ФН-031 на 00:12 от начала файла. Эфирное время не установлено. Нужна общая метка с известным эфирным временем.",
+          "source": {
+            "case_id": "untimed",
+            "code": "ФН-031",
+            "second": 12.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Начало заставки",
+              "tape": "00:12",
+              "sources": [
+                "C2",
+                "C3",
+                "C1"
+              ],
+              "planned": "09:40:00",
+              "status": "insufficient",
+              "value": "Нет привязки к эфиру",
+              "detail": "На ленте 00:12. Нужна общая метка с известным эфирным временем."
+            }
+          },
+          "target": {
+            "case_id": "signal",
+            "code": "ФН-014",
+            "second": 18.0,
+            "clock": {
+              "marker": "ident",
+              "label": "Три ноты позывного",
+              "tape": "00:18",
+              "sources": [
+                "A2",
+                "A3",
+                "A1"
+              ],
+              "planned": "21:17:20",
+              "status": "verified",
+              "value": "21:17:24",
+              "anchor": "21:17:10",
+              "anchor_tape": "00:04",
+              "travel_seconds": 14,
+              "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+              "shift_seconds": 4
+            }
+          },
+          "score": 0.9996,
+          "provenance": "Сходства звука недостаточно для вывода об одном и том же эфире. Для этого нужна документальная связь между записями."
+        }
+      ],
+      "tools": [
+        "compare_repeat_clocks"
+      ],
+      "id": "reel/known",
+      "case": "untimed",
+      "question": "А какое эфирное время у найденного повтора на другой катушке?",
+      "passed": true,
+      "seconds": 0.03
+    },
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-027 на 00:25. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "splice",
+          "reference_second": 5.0,
+          "window_seconds": 1.6,
+          "scope": "case",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "splice",
+              "code": "ФН-027",
+              "second": 25.0,
+              "score": 0.9983
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-027 на 00:25. Позиции указаны от начала файлов.",
+          "marker": "first"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "bell",
+      "case": "splice",
+      "question": "Найди по фонограмме повтор первого удара на этой катушке.",
+      "passed": true,
+      "seconds": 0.33
+    },
+    {
+      "status": "answered",
+      "answer": "Найденный повтор — ФН-027 на 00:25 от начала файла соответствует 19:05:37 по эфирным часам. Исходный образец — ФН-027 на 00:05 от начала файла соответствует 19:05:12 по эфирным часам.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "repeat_clocks",
+          "label": "Эфирные часы двух фрагментов",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "case_id": "splice",
+          "reference_second": 5.0,
+          "scope": "case",
+          "window_seconds": 1.6,
+          "status": "compared",
+          "value": "Сверены две позиции",
+          "detail": "Найденный повтор — ФН-027 на 00:25 от начала файла соответствует 19:05:37 по эфирным часам. Исходный образец — ФН-027 на 00:05 от начала файла соответствует 19:05:12 по эфирным часам.",
+          "source": {
+            "case_id": "splice",
+            "code": "ФН-027",
+            "second": 5.0,
+            "clock": {
+              "marker": "first",
+              "label": "Первый удар",
+              "tape": "00:05",
+              "sources": [
+                "B2",
+                "B1"
+              ],
+              "status": "verified",
+              "value": "19:05:12",
+              "anchor": "19:05:12",
+              "anchor_tape": "00:05",
+              "travel_seconds": 0,
+              "detail": "Опора 19:05:12 и сдвиг по ленте +0 с."
+            }
+          },
+          "target": {
+            "case_id": "splice",
+            "code": "ФН-027",
+            "second": 25.0,
+            "clock": {
+              "marker": "last",
+              "label": "Второй удар",
+              "tape": "00:25",
+              "sources": [
+                "B2",
+                "B1"
+              ],
+              "status": "verified",
+              "value": "19:05:37",
+              "anchor": "19:05:37",
+              "anchor_tape": "00:25",
+              "travel_seconds": 0,
+              "detail": "Опора 19:05:37 и сдвиг по ленте +0 с."
+            }
+          },
+          "score": 0.9983,
+          "provenance": "Сходства звука недостаточно для вывода об одном и том же эфире. Для этого нужна документальная связь между записями."
+        }
+      ],
+      "tools": [
+        "compare_repeat_clocks"
+      ],
+      "id": "reel/bell-clock",
+      "case": "splice",
+      "question": "Сравни эфирное время исходного удара и найденного повтора.",
+      "passed": true,
+      "seconds": 0.01
+    },
+    {
+      "status": "answered",
+      "answer": "Похожих фрагментов не найдено. Проверено катушек: 3. При пороге 0.87 других совпадений нет.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 4.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [],
+          "status": "no_match",
+          "value": "Похожих фрагментов не найдено",
+          "detail": "Проверено катушек: 3. При пороге 0.87 других совпадений нет.",
+          "marker": "sync"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound",
+        "match_sound",
+        "read",
+        "read",
+        "read",
+        "match_sound"
+      ],
+      "id": "unique",
+      "case": "signal",
+      "question": "Поищи по звуку повтор контрольного тона в архиве.",
+      "passed": true,
+      "seconds": 1.39
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Повтор звука не найден. Проверено катушек: 3. При пороге 0.87 других совпадений нет.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "repeat_clocks",
+          "label": "Эфирные часы двух фрагментов",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 4.0,
+          "scope": "archive",
+          "window_seconds": 1.6,
+          "status": "no_match",
+          "value": "Нет найденного повтора",
+          "detail": "Проверено катушек: 3. При пороге 0.87 других совпадений нет."
+        }
+      ],
+      "tools": [
+        "compare_repeat_clocks"
+      ],
+      "id": "reel/none",
+      "case": "signal",
+      "question": "А во сколько был эфир у найденного повтора?",
+      "passed": true,
+      "seconds": 0.03
+    }
+  ],
+  "action_token_limit": 2048
+}

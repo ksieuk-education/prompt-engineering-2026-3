@@ -1,0 +1,179 @@
+{
+  "passed": 1,
+  "total": 9,
+  "cases": [
+    {
+      "key": "points",
+      "question": "Что в стенограмме NASA сказано ровно на отметках 102:45:59 и 102:46:06?",
+      "expected_ids": [
+        4369,
+        4371
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 3
+      },
+      "answer": "Запрошенное время от старта миссии 102:45:59–102:46:06. Число подходящих строк в стенограмме — 3.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": false
+    },
+    {
+      "key": "reverse",
+      "question": "В стенограмме NASA найди две отдельные отметки GET 102:46:06 и 102:45:59.",
+      "expected_ids": [
+        4371,
+        4369
+      ],
+      "expected_seconds": null,
+      "source_ids": [],
+      "clock": {},
+      "answer": "Конец интервала предшествует началу. Укажите сначала более раннюю метку миссии.",
+      "status": "needs_input",
+      "passed": false
+    },
+    {
+      "key": "range",
+      "question": "Покажи в стенограмме NASA все реплики между 102:45:59 и 102:46:06.",
+      "expected_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 3
+      },
+      "answer": "Запрошенное время от старта миссии 102:45:59–102:46:06. Число подходящих строк в стенограмме — 3.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "elapsed",
+      "question": "Сколько секунд прошло по часам миссии NASA с 102:45:59 до 102:46:06?",
+      "expected_ids": [
+        4369,
+        4371
+      ],
+      "expected_seconds": 7,
+      "source_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 3
+      },
+      "answer": "Запрошенное время от старта миссии 102:45:59–102:46:06. Число подходящих строк в стенограмме — 3.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": false
+    },
+    {
+      "key": "elapsed-empty",
+      "question": "Какая разница по часам миссии NASA между 102:46:05 и 102:46:08?",
+      "expected_ids": [],
+      "expected_seconds": 3,
+      "source_ids": [
+        4371
+      ],
+      "clock": {
+        "start": "102:46:05",
+        "end": "102:46:08",
+        "total": 1
+      },
+      "answer": "Запрошенное время от старта миссии 102:46:05–102:46:08. Число подходящих строк в стенограмме — 1.\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": false
+    },
+    {
+      "key": "elapsed-reverse",
+      "question": "Какая разница по часам миссии NASA между 102:46:06 и 102:45:59?",
+      "expected_ids": [
+        4371,
+        4369
+      ],
+      "expected_seconds": 7,
+      "source_ids": [],
+      "clock": {},
+      "answer": "Конец интервала предшествует началу. Укажите сначала более раннюю метку миссии.",
+      "status": "needs_input",
+      "passed": false
+    },
+    {
+      "key": "same",
+      "question": "Сколько секунд прошло по часам миссии NASA с 102:46:04 до 102:46:04?",
+      "expected_ids": [
+        4370
+      ],
+      "expected_seconds": 0,
+      "source_ids": [
+        4370
+      ],
+      "clock": {
+        "start": "102:46:04",
+        "end": "102:46:04",
+        "total": 1
+      },
+      "answer": "Запрошенное время от старта миссии 102:46:04. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "status": "answered",
+      "passed": false
+    },
+    {
+      "key": "mixed",
+      "question": "Что сказано в стенограмме NASA в 102:46:04 и в 102:46:05?",
+      "expected_ids": [
+        4370
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4370
+      ],
+      "clock": {
+        "start": "102:46:04",
+        "end": "102:46:05",
+        "total": 1
+      },
+      "answer": "Запрошенное время от старта миссии 102:46:04–102:46:05. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "status": "answered",
+      "passed": false
+    },
+    {
+      "key": "both-editions",
+      "question": "Покажи две отметки стенограммы NASA на странице 234: 078:46:31 и 126:46:31.",
+      "expected_ids": [
+        3145
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        3145,
+        3146,
+        3147,
+        3148,
+        3149
+      ],
+      "clock": {
+        "start": "078:46:31",
+        "end": "126:46:31",
+        "total": 5
+      },
+      "answer": "Запрошенное время от старта миссии 078:46:31–126:46:31. Число подходящих строк на странице 234 — 5.\n078:46:31 · стр. 234 · пилот лунного модуля Эдвин Олдрин. «Roger.»\nВ HTML стоит 05 06 46 31 (126:46:31). На скане напечатано 03 06 46 31 (078:46:31 от старта миссии).\n078:46:33 · стр. 234 · оператор связи в Хьюстоне. «And we're getting a good view of the track leading into the landing site now and -»\n078:46:58 · стр. 234 · оператор связи в Хьюстоне. «Okay, And it looks like we got Secchi K, went by about 10 seconds ago; coming up on Apollo Ridge.»\n078:47:36 · стр. 234 · оператор связи в Хьюстоне. «And in the right hand portion of our screen right now, we can see Messier Alfa and Bravo with the light colored rays streaming off in one direction.»\n078:48:00 · стр. 234 · пилот лунного модуля Эдвин Олдрин. «I don't know if you can make out, but in the Sea of Fertility there are a number of craters that are just barely discernible, old, old craters whose outlines are just barely able to be seen.»",
+      "status": "answered",
+      "passed": false
+    }
+  ]
+}

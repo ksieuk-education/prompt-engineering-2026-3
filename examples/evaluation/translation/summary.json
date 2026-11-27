@@ -1,0 +1,73 @@
+{
+  "machine_translator": "Argos Translate ru-en 1.9",
+  "package_sha256": "e9ba8bf722d10a4a4c39f74289d5938fd47eac08dbe4ed0afd22d89445a5c3ac",
+  "compute": "CTranslate2 int8 on CPU, two threads, beam size 3",
+  "suites": {
+    "phi4-mini": {
+      "paraphrase": {
+        "passed": 5,
+        "total": 7,
+        "median_seconds": 2.62,
+        "failed": [
+          "paraphrase/desolation",
+          "paraphrase/curiosity"
+        ]
+      },
+      "holdout": {
+        "passed": 3,
+        "total": 6,
+        "median_seconds": 2.42,
+        "failed": [
+          "paraphrase/oatmeal",
+          "paraphrase/breakfast",
+          "paraphrase/california"
+        ]
+      },
+      "paraphrase-new": {
+        "passed": 3,
+        "total": 5,
+        "median_seconds": 2.6,
+        "failed": [
+          "paraphrase/earthling",
+          "paraphrase/lounge"
+        ]
+      },
+      "scoped": {
+        "passed": 5,
+        "total": 6,
+        "median_seconds": 0.0,
+        "failed": [
+          "scoped/boxes"
+        ]
+      }
+    },
+    "qwen25": {
+      "paraphrase": {
+        "passed": 7,
+        "total": 7,
+        "median_seconds": 3.16,
+        "failed": []
+      },
+      "holdout": {
+        "passed": 5,
+        "total": 6,
+        "median_seconds": 2.49,
+        "failed": [
+          "paraphrase/california"
+        ]
+      },
+      "paraphrase-new": {
+        "passed": 5,
+        "total": 5,
+        "median_seconds": 3.18,
+        "failed": []
+      },
+      "scoped": {
+        "passed": 6,
+        "total": 6,
+        "median_seconds": 0.0,
+        "failed": []
+      }
+    }
+  }
+}

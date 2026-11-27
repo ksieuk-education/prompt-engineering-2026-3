@@ -1,0 +1,78 @@
+{
+  "source": "NASA Apollo 11 Technical Air-to-Ground Voice Transmission, edition included in this project",
+  "model": "en_core_web_sm 3.8.0",
+  "corpus_sha256": "b1afccc39d16301b7a3969ba71e1448edd376c6d5fd33c37433ddce951f3ee01",
+  "reviewed_candidate_lines": 151,
+  "reviewed_candidate_spans": 163,
+  "method": "Проверены все строки-кандидаты по тексту издания. Оставлены явно описанные перемещения предмета или вещества в определенное физическое место либо из него, включая вопросы и предложения. Результат относится только к месту и направлению внутри реплики. Переключения режимов, величины, время, поле зрения, положение тела и статическое хранение исключены.",
+  "accepted": [
+    {
+      "id": 1600,
+      "words": "get our hot water out of a little spigot"
+    },
+    {
+      "id": 1614,
+      "words": "take the TV into the LM"
+    },
+    {
+      "id": 2053,
+      "words": "pick up the - out of the flight data file"
+    },
+    {
+      "id": 2078,
+      "words": "get the camera into the LM"
+    },
+    {
+      "id": 2243,
+      "words": "take both of the 16mm cameras back in the CSM"
+    },
+    {
+      "id": 2502,
+      "words": "stowed in the CSM lunar landmark book"
+    },
+    {
+      "id": 3473,
+      "words": "taking the monocular with us on into the LM"
+    },
+    {
+      "id": 3545,
+      "words": "take the monocular into the LM"
+    },
+    {
+      "id": 5061,
+      "words": "remove LEVA from the engine cover"
+    },
+    {
+      "id": 5589,
+      "words": "removed the closeup camera from the MESA"
+    },
+    {
+      "id": 5729,
+      "words": "stick this in my pocket"
+    },
+    {
+      "id": 7542,
+      "words": "placed in these receptacles"
+    },
+    {
+      "id": 7624,
+      "words": "brought back into the command module"
+    },
+    {
+      "id": 8027,
+      "words": "put the LEVVA's and helmets in the hatch bag"
+    },
+    {
+      "id": 8068,
+      "words": "putting some fresh paste in the sensors"
+    },
+    {
+      "id": 8072,
+      "words": "putting some fresh paste in the two electrodes"
+    },
+    {
+      "id": 8147,
+      "words": "put it in the sleep restraint"
+    }
+  ]
+}

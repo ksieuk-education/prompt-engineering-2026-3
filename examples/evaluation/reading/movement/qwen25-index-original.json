@@ -1,0 +1,175 @@
+{
+  "variant": "qwen25-index",
+  "model": "qwen2.5:7b",
+  "suite": "original",
+  "passed": 5,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Метка «Три ноты позывного» прозвучала в 21:17:24 по эфирным часам. Это на 4 с позже планового времени 21:17:20.",
+      "sources": [
+        "A2",
+        "A3",
+        "A1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Три ноты позывного",
+          "tape": "00:18",
+          "sources": [
+            "A2",
+            "A3",
+            "A1"
+          ],
+          "planned": "21:17:20",
+          "status": "verified",
+          "value": "21:17:24",
+          "anchor": "21:17:10",
+          "anchor_tape": "00:04",
+          "travel_seconds": 14,
+          "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+          "shift_seconds": 4
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker",
+        "read",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker"
+      ],
+      "id": "original/signal/0",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и насколько он разошелся с планом?",
+      "passed": true,
+      "seconds": 28.18
+    },
+    {
+      "status": "answered",
+      "answer": "Объяснение задержки остается предположением.",
+      "sources": [
+        "A4"
+      ],
+      "passages": [
+        "A4.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "original/signal/1",
+      "case": "signal",
+      "question": "Почему он опоздал? Можно ли назвать причину?",
+      "passed": true,
+      "seconds": 5.56
+    },
+    {
+      "status": "answered",
+      "answer": "Между опорами в эфире прошло 25 с, на копии — 20 с. Копия короче на 5 с.",
+      "sources": [
+        "B1",
+        "B2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "status": "verified",
+          "value": "5 с",
+          "air_seconds": 25,
+          "tape_seconds": 20,
+          "missing_seconds": 5,
+          "sources": [
+            "B1",
+            "B2"
+          ],
+          "detail": "В эфире 25 с, на копии 20 с. Разность +5 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "tape_span",
+        "compare_span"
+      ],
+      "id": "original/splice/0",
+      "case": "splice",
+      "question": "Сколько секунд не хватает между двумя ударами?",
+      "passed": true,
+      "seconds": 8.13
+    },
+    {
+      "status": "error",
+      "answer": "Сессия закончилась. Откройте дело заново.",
+      "id": "original/splice/1",
+      "case": "splice",
+      "question": "Можно ли установить, что именно исчезло?",
+      "passed": false,
+      "seconds": 1.64
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Начало заставки» стоит на 00:12 от начала копии. По сетке планировалось 09:40:00. Эфирное время установить нельзя. Нужна общая метка с известным эфирным временем.",
+      "sources": [
+        "C2",
+        "C3",
+        "C1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Начало заставки",
+          "tape": "00:12",
+          "sources": [
+            "C2",
+            "C3",
+            "C1"
+          ],
+          "planned": "09:40:00",
+          "status": "insufficient",
+          "value": "Нет привязки к эфиру",
+          "detail": "На ленте 00:12. Нужна общая метка с известным эфирным временем."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "original/untimed/0",
+      "case": "untimed",
+      "question": "Можно ли установить точное эфирное время заставки?",
+      "passed": true,
+      "seconds": 3.22
+    },
+    {
+      "status": "answered",
+      "answer": "Журнал синхронизации и привязка счетчика к эфирным часам отсутствуют. Неизвестно, в каком часу запущен магнитофон. Для восстановления времени нужна хотя бы одна подтвержденная пара: метка этой ленты и время того же события по эфирным часам.",
+      "sources": [
+        "C3"
+      ],
+      "passages": [
+        "C3.1",
+        "C3.2",
+        "C3.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "original/untimed/1",
+      "case": "untimed",
+      "question": "Какой документ помог бы восстановить время?",
+      "passed": true,
+      "seconds": 4.74
+    }
+  ],
+  "action_token_limit": 2048
+}

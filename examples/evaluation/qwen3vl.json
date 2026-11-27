@@ -1,0 +1,96 @@
+{
+  "variant": "audio-and-evidence",
+  "model": "qwen3-vl:8b",
+  "suite": "all",
+  "passed": 1,
+  "total": 9,
+  "cases": [
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "compound",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и доказано ли, что задержка была из-за смены пластинки?",
+      "passed": false,
+      "seconds": 16.8
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "wall",
+      "case": "splice",
+      "question": "Во сколько по эфирным часам был второй удар?",
+      "passed": false,
+      "seconds": 9.99
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "followup",
+      "case": "splice",
+      "question": "А первый?",
+      "passed": false,
+      "seconds": 9.57
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "plan",
+      "case": "untimed",
+      "question": "Верно ли, что заставка вышла в эфир ровно в 09:40:00?",
+      "passed": false,
+      "seconds": 10.38
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "tape",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": false,
+      "seconds": 9.91
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "outside",
+      "case": "signal",
+      "question": "Какое расстояние от Земли до Луны?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "motif",
+      "case": "signal",
+      "question": "Найди по звуку, где еще в архиве встречаются эти три ноты позывного.",
+      "passed": false,
+      "seconds": 10.4
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "bell",
+      "case": "splice",
+      "question": "Найди по фонограмме повтор первого удара на этой катушке.",
+      "passed": false,
+      "seconds": 10.6
+    },
+    {
+      "status": "error",
+      "answer": "Server error '503 Service Unavailable' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "id": "unique",
+      "case": "signal",
+      "question": "Поищи по звуку повтор контрольного тона в архиве.",
+      "passed": false,
+      "seconds": 10.08
+    }
+  ]
+}

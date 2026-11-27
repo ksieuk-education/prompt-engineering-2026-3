@@ -1,0 +1,34 @@
+[
+  {
+    "browser": "chrome",
+    "version": "158.0.8127.38",
+    "width": 1440,
+    "ollama_online": false,
+    "sample_available": true,
+    "suggestions": [
+      {
+        "question": "Во сколько прозвучал позывной и насколько он разошелся с планом?",
+        "http": 503,
+        "status": null,
+        "sources": [],
+        "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели qwen2.5:7b."
+      },
+      {
+        "question": "Почему он опоздал? Можно ли назвать причину?",
+        "http": 503,
+        "status": null,
+        "sources": [],
+        "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели qwen2.5:7b."
+      }
+    ],
+    "two_case_drafts": [
+      false,
+      false
+    ],
+    "question_needing_llm": {
+      "http": 503,
+      "restored_after_error": true,
+      "restored_after_switch": false
+    }
+  }
+]

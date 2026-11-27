@@ -1,0 +1,41 @@
+[
+  {
+    "browser": "chrome",
+    "version": "158.0.8127.38",
+    "width": 1440,
+    "source": 5729,
+    "page": 406,
+    "copied_words": "stick this in my pocket",
+    "evidence_status": "no_evidence",
+    "focus_restored": true,
+    "following_case_question_source": "A2",
+    "audio_started_at_seconds": 25,
+    "audio_stopped_after_excerpt": true
+  },
+  {
+    "browser": "webkit",
+    "version": "27.2",
+    "width": 390,
+    "source": 5729,
+    "page": 406,
+    "copied_words": "stick this in my pocket",
+    "evidence_status": "no_evidence",
+    "focus_restored": true,
+    "following_case_question_source": "A2",
+    "audio_started_at_seconds": 25,
+    "audio_stopped_after_excerpt": true
+  },
+  {
+    "browser": "firefox",
+    "version": "159.0",
+    "width": 1280,
+    "source": 5729,
+    "page": 406,
+    "copied_words": "stick this in my pocket",
+    "evidence_status": "no_evidence",
+    "focus_restored": true,
+    "following_case_question_source": "A2",
+    "audio_started_at_seconds": 25,
+    "audio_stopped_after_excerpt": true
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "criterion": "Поиск по переводным словам или документированный отбор по вектору, затем проверка ответа по эталону.",
+  "changes": [
+    {
+      "file": "strict-lexical/holdout.json",
+      "id": "paraphrase/winner",
+      "old_score": false,
+      "new_score": true,
+      "status": "no_evidence",
+      "tools": [
+        "transcript_terms",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ]
+    },
+    {
+      "file": "strict-lexical/paraphrase.json",
+      "id": "paraphrase/trio",
+      "old_score": false,
+      "new_score": true,
+      "status": "no_evidence",
+      "tools": [
+        "transcript_terms",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ]
+    }
+  ]
+}

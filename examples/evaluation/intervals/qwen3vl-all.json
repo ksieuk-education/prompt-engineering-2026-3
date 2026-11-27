@@ -1,0 +1,107 @@
+{
+  "variant": "intervals-and-compact-actions",
+  "model": "qwen3-vl:8b",
+  "suite": "all",
+  "passed": 2,
+  "total": 9,
+  "cases": [
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "compound",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и доказано ли, что задержка была из-за смены пластинки?",
+      "passed": false,
+      "seconds": 51.1
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "wall",
+      "case": "splice",
+      "question": "Во сколько по эфирным часам был второй удар?",
+      "passed": false,
+      "seconds": 44.7
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "followup",
+      "case": "splice",
+      "question": "А первый?",
+      "passed": false,
+      "seconds": 45.16
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "plan",
+      "case": "untimed",
+      "question": "Верно ли, что заставка вышла в эфир ровно в 09:40:00?",
+      "passed": false,
+      "seconds": 46.28
+    },
+    {
+      "status": "answered",
+      "answer": "Музыкальная отбивка вступает на 00:25.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "tape",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 19.9
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "outside",
+      "case": "signal",
+      "question": "Какое расстояние от Земли до Луны?",
+      "passed": true,
+      "seconds": 0.01
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "motif",
+      "case": "signal",
+      "question": "Найди по звуку, где еще в архиве встречаются эти три ноты позывного.",
+      "passed": false,
+      "seconds": 63.83
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "bell",
+      "case": "splice",
+      "question": "Найди по фонограмме повтор первого удара на этой катушке.",
+      "passed": false,
+      "seconds": 47.19
+    },
+    {
+      "status": "error",
+      "answer": "Модель исчерпала лимит 2048 токенов до выдачи действия.",
+      "id": "unique",
+      "case": "signal",
+      "question": "Поищи по звуку повтор контрольного тона в архиве.",
+      "passed": false,
+      "seconds": 45.33
+    }
+  ],
+  "action_token_limit": 2048
+}

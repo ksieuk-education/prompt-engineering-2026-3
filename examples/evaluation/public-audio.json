@@ -1,0 +1,169 @@
+{
+  "reference": "eagle-short.wav",
+  "thresholds": {
+    "waveform": 0.87,
+    "spectrum": 0.7
+  },
+  "candidates": [
+    {
+      "file": "eagle-extended.wav",
+      "observations": [
+        {
+          "reference_second": 0.4,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 1.9564,
+            "score": 0.1281,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 1.94,
+            "score": 0.422,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 0.75,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 0.1237,
+            "score": 0.1505,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 0.19,
+            "score": 0.7546,
+            "passes": true
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 1.5,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 2.4501,
+            "score": 0.1355,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 4.05,
+            "score": 0.5058,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 2.5,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 3.4501,
+            "score": 0.1444,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.41,
+            "score": 0.7729,
+            "passes": true
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 3.4,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 0.4961,
+            "score": 0.1594,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 4.38,
+            "score": 0.729,
+            "passes": true
+          },
+          "status": "compared"
+        }
+      ]
+    },
+    {
+      "file": "small-step.wav",
+      "observations": [
+        {
+          "reference_second": 0.4,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 10.3024,
+            "score": 0.1013,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 10.09,
+            "score": 0.4197,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 0.75,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 0.1978,
+            "score": 0.1198,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 8.64,
+            "score": 0.3634,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 1.5,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 4.0219,
+            "score": 0.1304,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 9.76,
+            "score": 0.3706,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 2.5,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 5.0282,
+            "score": 0.1528,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 1.08,
+            "score": 0.418,
+            "passes": false
+          },
+          "status": "compared"
+        },
+        {
+          "reference_second": 3.4,
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 9.5586,
+            "score": 0.1049,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 11.03,
+            "score": 0.3963,
+            "passes": false
+          },
+          "status": "compared"
+        }
+      ]
+    }
+  ]
+}

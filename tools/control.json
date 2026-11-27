@@ -1,0 +1,5 @@
+{
+  "signal": {"measurement": {"marker": "ident", "value": "21:17:24", "shift_seconds": 4}, "facts": ["A4.2", "A4.3"]},
+  "splice": {"measurement": {"air_seconds": 25, "tape_seconds": 20, "missing_seconds": 5}, "facts": ["B3.3"]},
+  "untimed": {"measurement": {"marker": "ident", "tape": "00:12", "planned": "09:40:00", "status": "insufficient"}, "facts": ["C3.3"]}
+}

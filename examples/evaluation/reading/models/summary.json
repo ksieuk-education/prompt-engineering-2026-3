@@ -1,0 +1,180 @@
+{
+  "platform": "macOS Apple Silicon",
+  "method": "Sequential HTTP requests, same retrieval/settings and 26 cases in fixed order. A short Ollama chat preceded each model run. Latency is end-to-end per question including search and verification; excludes that warmup. Local machine was also running ordinary services.",
+  "models": [
+    {
+      "model": "hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M",
+      "quantization": "Q4_K_M",
+      "model_bytes": 18556688865,
+      "digest": "83ce46aac8250b71c9b5363b3e8d27f8abbdd1d12e90defd37be989dbb384319",
+      "started_utc": "2026-11-25T14:58:03+00:00",
+      "ended_utc": "2026-11-25T15:04:44+00:00",
+      "warmup_seconds": 5.73,
+      "ollama_warmup_load_seconds": 5.627,
+      "suites": {
+        "independent": {
+          "passed": 8,
+          "total": 8,
+          "positive": 4,
+          "negative": 4,
+          "median_seconds": 15.21,
+          "failed": []
+        },
+        "press": {
+          "passed": 5,
+          "total": 6,
+          "positive": 3,
+          "negative": 2,
+          "median_seconds": 14.62,
+          "failed": [
+            "press/waiting-sandwiches"
+          ]
+        },
+        "cabin": {
+          "passed": 5,
+          "total": 6,
+          "positive": 3,
+          "negative": 2,
+          "median_seconds": 15.43,
+          "failed": [
+            "cabin/from-pocket"
+          ]
+        },
+        "cargo": {
+          "passed": 3,
+          "total": 6,
+          "positive": 3,
+          "negative": 0,
+          "median_seconds": 15.43,
+          "failed": [
+            "cargo/helmets-out",
+            "cargo/camera-in",
+            "cargo/restraint-out"
+          ]
+        }
+      },
+      "total_passed": 21,
+      "total": 26,
+      "median_seconds": 15.05,
+      "gpu_resident_bytes_at_end": 18864070982
+    },
+    {
+      "model": "qwen2.5:7b",
+      "quantization": "Q4_K_M",
+      "model_bytes": 4683087332,
+      "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "started_utc": "2026-11-25T15:04:44+00:00",
+      "ended_utc": "2026-11-25T15:06:45+00:00",
+      "warmup_seconds": 1.91,
+      "ollama_warmup_load_seconds": 1.781,
+      "suites": {
+        "independent": {
+          "passed": 5,
+          "total": 8,
+          "positive": 2,
+          "negative": 3,
+          "median_seconds": 4.89,
+          "failed": [
+            "independent/legend",
+            "independent/unnamed",
+            "independent/tomato"
+          ]
+        },
+        "press": {
+          "passed": 6,
+          "total": 6,
+          "positive": 3,
+          "negative": 3,
+          "median_seconds": 5.06,
+          "failed": []
+        },
+        "cabin": {
+          "passed": 5,
+          "total": 6,
+          "positive": 3,
+          "negative": 2,
+          "median_seconds": 5.06,
+          "failed": [
+            "cabin/from-pocket"
+          ]
+        },
+        "cargo": {
+          "passed": 4,
+          "total": 6,
+          "positive": 3,
+          "negative": 1,
+          "median_seconds": 4.38,
+          "failed": [
+            "cargo/camera-in",
+            "cargo/restraint-out"
+          ]
+        }
+      },
+      "total_passed": 20,
+      "total": 26,
+      "median_seconds": 4.88,
+      "gpu_resident_bytes_at_end": 4740716952
+    },
+    {
+      "model": "phi4-mini:3.8b",
+      "quantization": "Q4_K_M",
+      "model_bytes": 2491876774,
+      "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+      "started_utc": "2026-11-25T15:06:45+00:00",
+      "ended_utc": "2026-11-25T15:08:03+00:00",
+      "warmup_seconds": 1.15,
+      "ollama_warmup_load_seconds": 1.027,
+      "suites": {
+        "independent": {
+          "passed": 6,
+          "total": 8,
+          "positive": 2,
+          "negative": 4,
+          "median_seconds": 3.2,
+          "failed": [
+            "independent/soup",
+            "independent/legend"
+          ]
+        },
+        "press": {
+          "passed": 5,
+          "total": 6,
+          "positive": 2,
+          "negative": 3,
+          "median_seconds": 3.42,
+          "failed": [
+            "press/album"
+          ]
+        },
+        "cabin": {
+          "passed": 3,
+          "total": 6,
+          "positive": 1,
+          "negative": 2,
+          "median_seconds": 3.31,
+          "failed": [
+            "cabin/helmet",
+            "cabin/bavaria",
+            "cabin/from-pocket"
+          ]
+        },
+        "cargo": {
+          "passed": 3,
+          "total": 6,
+          "positive": 2,
+          "negative": 1,
+          "median_seconds": 2.38,
+          "failed": [
+            "cargo/helmets-in",
+            "cargo/camera-in",
+            "cargo/restraint-out"
+          ]
+        }
+      },
+      "total_passed": 17,
+      "total": 26,
+      "median_seconds": 3.17,
+      "gpu_resident_bytes_at_end": 3087615917
+    }
+  ]
+}

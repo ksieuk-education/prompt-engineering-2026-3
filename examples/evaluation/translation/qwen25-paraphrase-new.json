@@ -1,0 +1,174 @@
+{
+  "variant": "Argos ru-en 1.9 + qwen25",
+  "model": "qwen2.5:7b",
+  "suite": "paraphrase-new",
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 170. Время от старта миссии 056:34:46, пилот командного модуля Майкл Коллинз. «Hello there, earthling.»",
+      "sources": [
+        "AP11-170"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 2338,
+            "page": 170,
+            "get": "056:34:46",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Hello there, earthling.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Hello%20there%2C%20earthling."
+          }
+        ],
+        "query": "Where in the NASA transcript is the interlocutor greeted with the greeting “hello, earthling”?, interlocutor greeted greeting hello earthling",
+        "mode": "fts+embeddinggemma",
+        "quote": "Hello there, earthling."
+      },
+      "id": "paraphrase/earthling",
+      "case": "signal",
+      "question": "Где в стенограмме NASA встречают собеседника приветствием «привет, землянин»?",
+      "passed": true,
+      "seconds": 3.18
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 2. Время от старта миссии 000:05:35, командир Нил Армстронг. «You sure sound clear down there, Bruce. Sounds like you're sitting in your living room.»",
+      "sources": [
+        "AP11-2"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 37,
+            "page": 2,
+            "get": "000:05:35",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "You sure sound clear down there, Bruce. Sounds like you're sitting in your living room.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=You%20sure%20sound%20clear%20down%20there%2C%20Bruce.%20Sounds%20like"
+          }
+        ],
+        "query": "Find in the Apollo 11 transcript a comparison of hearing quality with a conversation in your own living room., comparison hearing quality conversation your own living room",
+        "mode": "fts+embeddinggemma",
+        "quote": "You sure sound clear down there, Bruce. Sounds like you're sitting in your living room."
+      },
+      "id": "paraphrase/lounge",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 сравнение качества слышимости с беседой в собственной гостиной.",
+      "passed": true,
+      "seconds": 3.53
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 123. Время от старта миссии 035:28:08, оператор связи в Хьюстоне. «We've got a laser that we're going to - It's a blue-green laser that we're going to flash on and off at a frequency of on for a second, off for a second.»",
+      "sources": [
+        "AP11-123"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 1725,
+            "page": 123,
+            "get": "035:28:08",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Apollo 11. We've got a laser that we're going to - It's a blue-green laser that we're going to flash on and off at a frequency of on for a second, off for a second. It's coming out of McDonald Observatory near El Paso, which is - should be right on the terminator - or right inside the terminator. We are going to activate that momentarily. Would you please take a look through the telescope and see if you can see it. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Apollo%2011.%20We%27ve%20got%20a%20laser%20that%20we%27re"
+          }
+        ],
+        "query": "Where in the NASA transcript from Earth suggest flashing a blue-green laser?, earth suggest flashing blue-green laser",
+        "mode": "fts+embeddinggemma",
+        "quote": "It's a blue-green laser that we're going to flash on and off at a frequency of on for a second, off for a second."
+      },
+      "id": "paraphrase/laser",
+      "case": "signal",
+      "question": "Где в стенограмме NASA с Земли предлагают мигать сине-зеленым лазером?",
+      "passed": true,
+      "seconds": 3.94
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find a poem about a green hippopotamus in the NASA transcript., poem green hippopotamus",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/hippo",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA стихотворение о зеленом бегемоте.",
+      "passed": true,
+      "seconds": 1.79
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the transcript of Apollo 11 describes the connection of astronauts to the Wi-Fi network on the moon?, describes connection astronauts wi-fi network moon",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/wifi",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 описано подключение космонавтов к сети Wi-Fi на Луне?",
+      "passed": true,
+      "seconds": 1.62
+    }
+  ],
+  "action_token_limit": 2048
+}

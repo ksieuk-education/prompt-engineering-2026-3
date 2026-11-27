@@ -1,0 +1,207 @@
+{
+  "variant": "Argos ru-en 1.9 fallback + qwen25",
+  "model": "qwen2.5:7b",
+  "suite": "scoped",
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 87. Время от старта миссии 027:31:17, пилот командного модуля Майкл Коллинз. «We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.»",
+      "sources": [
+        "AP11-87"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 1212,
+            "page": 87,
+            "get": "027:31:17",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20made%20three%20cups%20of%20coffee%20today.%20The%20last"
+          }
+        ],
+        "query": "three cups of coffee",
+        "mode": "phrase",
+        "quote": "",
+        "scope_page": 87
+      },
+      "id": "scoped/coffee-made",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA на странице 87 фразу «three cups of coffee».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 578. Время от старта миссии 173:49:18, пилот командного модуля Майкл Коллинз. «Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.»",
+      "sources": [
+        "AP11-578"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7869,
+            "page": 578,
+            "get": "173:49:18",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Breakfast%20was%20magnificent%20as%20usual.%20I%20had%20sliced%20peaches%2C"
+          }
+        ],
+        "query": "two cups of coffee",
+        "mode": "phrase",
+        "quote": "",
+        "scope_page": 578
+      },
+      "id": "scoped/coffee-drunk",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA на странице 578 фразу «two cups of coffee».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 578 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "three cups of coffee",
+        "mode": "no_match",
+        "quote": "",
+        "scope_page": 578
+      },
+      "id": "scoped/wrong-page",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA на странице 578 фразу «three cups of coffee».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 578 подтвердить запрошенную фразу не удалось. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+      "sources": [
+        "AP11-578"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "On page 578 of the NASA transcript, it is said that after eating peaches for breakfast, they drank three cups of coffee., NASA transcript coffee",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 578,
+        "counterexample": {
+          "id": 7869,
+          "page": 578,
+          "get": "173:49:18",
+          "speaker": "CMP",
+          "role": "пилот командного модуля Майкл Коллинз",
+          "text": "Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.",
+          "quantity_difference": {
+            "requested": 3,
+            "printed": 2,
+            "words": "two cups of coffee"
+          },
+          "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Breakfast%20was%20magnificent%20as%20usual.%20I%20had%20sliced%20peaches%2C"
+        }
+      },
+      "id": "scoped/quantity",
+      "case": "signal",
+      "question": "Где в стенограмме NASA на странице 578 сказано, что за завтраком с персиками выпили три чашки кофе?",
+      "passed": true,
+      "seconds": 3.62
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 544. Время от старта миссии 155:40:32, командир Нил Армстронг. «These two boxes are the sample return containers.»",
+      "sources": [
+        "AP11-544"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7542,
+            "page": 544,
+            "get": "155:40:32",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "We know there's a lot of scientists from a number of countries standing by to see the lunar samples, and we thought you'd be interested to see them as they really are here. These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then brought inside the LM and put inside these fiber glass bags, zippered, and resealed around the outside, and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship,",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20know%20there%27s%20a%20lot%20of%20scientists%20from%20a"
+          }
+        ],
+        "query": "Find on page 544 in the NASA transcript a phrase about two boxes with lunar samples sealed in a vacuum., NASA, transcript, lunar samples, vacuum, boxes",
+        "mode": "page",
+        "quote": "These two boxes are the sample return containers.",
+        "scope_page": 544
+      },
+      "id": "scoped/boxes",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA на странице 544 фразу о двух ящиках с лунными образцами, запечатанных в вакууме.",
+      "passed": true,
+      "seconds": 4.16
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В этом издании страницы пронумерованы от 1 до 624.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "page": null
+      },
+      "id": "scoped/missing",
+      "case": "signal",
+      "question": "Найди на странице 625 стенограммы NASA фразу «splashdown».",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

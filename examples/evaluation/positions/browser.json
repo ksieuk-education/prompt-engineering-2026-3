@@ -1,0 +1,26 @@
+[
+  {
+    "browser": "chrome",
+    "version": "158.0.8127.38",
+    "width": 1440,
+    "file": "signal.wav",
+    "played_from_seconds": 25,
+    "closed_automatically": true,
+    "document": "A2",
+    "next_marker_seconds": 4,
+    "ambiguous_marker": "Второй удар",
+    "separate_air_time": "19:05:37"
+  },
+  {
+    "browser": "webkit",
+    "version": "27.2",
+    "width": 390,
+    "file": "signal.wav",
+    "played_from_seconds": 25,
+    "closed_automatically": true,
+    "document": "A2",
+    "next_marker_seconds": 4,
+    "ambiguous_marker": "Второй удар",
+    "separate_air_time": "19:05:37"
+  }
+]

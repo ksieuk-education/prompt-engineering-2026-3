@@ -1,0 +1,1167 @@
+{
+  "method": "The original Russian question is first evaluated against the full source and named speaker using Qwen2.5, without a marked excerpt. Only if this reading supports the question does the English verifier check the translated question with marked words. On disagreement in English it retries using the full source without preselection. Separate calls can use the same model.",
+  "results": {
+    "phi4-mini-old-cabin": {
+      "model": "phi4-mini:3.8b",
+      "passed": 3,
+      "total": 6,
+      "cases": [
+        {
+          "id": "cabin/helmet",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.83
+        },
+        {
+          "id": "cabin/bavaria",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.47
+        },
+        {
+          "id": "cabin/pocket",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 4.04
+        },
+        {
+          "id": "cabin/right-couch",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.35
+        },
+        {
+          "id": "cabin/bavaria-school",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.67
+        },
+        {
+          "id": "cabin/from-pocket",
+          "passed": false,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 4.08
+        }
+      ]
+    },
+    "phi4-mini-two-cabin": {
+      "model": "phi4-mini:3.8b",
+      "passed": 3,
+      "total": 6,
+      "cases": [
+        {
+          "id": "cabin/helmet",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.76
+        },
+        {
+          "id": "cabin/bavaria",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.09
+        },
+        {
+          "id": "cabin/pocket",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 3.94
+        },
+        {
+          "id": "cabin/right-couch",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.99
+        },
+        {
+          "id": "cabin/bavaria-school",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.54
+        },
+        {
+          "id": "cabin/from-pocket",
+          "passed": false,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 4.0
+        }
+      ]
+    },
+    "phi4-mini-two-holdout": {
+      "model": "phi4-mini:3.8b",
+      "passed": 3,
+      "total": 6,
+      "cases": [
+        {
+          "id": "paraphrase/oatmeal",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.34
+        },
+        {
+          "id": "paraphrase/breakfast",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.71
+        },
+        {
+          "id": "paraphrase/california",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.18
+        },
+        {
+          "id": "paraphrase/winner",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.39
+        },
+        {
+          "id": "paraphrase/three-cups",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+          "seconds": 3.01
+        },
+        {
+          "id": "paraphrase/moon-maple",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.92
+        }
+      ]
+    },
+    "phi4-mini-two-independent": {
+      "model": "phi4-mini:3.8b",
+      "passed": 6,
+      "total": 8,
+      "cases": [
+        {
+          "id": "independent/soup",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.65
+        },
+        {
+          "id": "independent/orange",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-610"
+          ],
+          "answer": "Ближайшее совпадение на странице 610. Время от старта миссии 190:51:01, пилот командного модуля Майкл Коллинз. «I'm right in the middle of my orange juice. Be with you in about 5 minutes.»",
+          "seconds": 4.22
+        },
+        {
+          "id": "independent/legend",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.87
+        },
+        {
+          "id": "independent/unnamed",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-270"
+          ],
+          "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit.»",
+          "seconds": 4.19
+        },
+        {
+          "id": "independent/tomato",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.47
+        },
+        {
+          "id": "independent/apple",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.38
+        },
+        {
+          "id": "independent/sighting",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.7
+        },
+        {
+          "id": "independent/jade",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.23
+        }
+      ]
+    },
+    "phi4-mini-two-paraphrase-new": {
+      "model": "phi4-mini:3.8b",
+      "passed": 2,
+      "total": 5,
+      "cases": [
+        {
+          "id": "paraphrase/earthling",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.31
+        },
+        {
+          "id": "paraphrase/lounge",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.55
+        },
+        {
+          "id": "paraphrase/laser",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.46
+        },
+        {
+          "id": "paraphrase/hippo",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.96
+        },
+        {
+          "id": "paraphrase/wifi",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.3
+        }
+      ]
+    },
+    "phi4-mini-two-paraphrase": {
+      "model": "phi4-mini:3.8b",
+      "passed": 4,
+      "total": 7,
+      "cases": [
+        {
+          "id": "paraphrase/dust",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.79
+        },
+        {
+          "id": "paraphrase/crater",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-319"
+          ],
+          "answer": "Ближайшее совпадение на странице 319. Время от старта миссии 102:55:16, командир Нил Армстронг. «The AUTO targeting was taking us right into a football field size - football field sized crater, with a large number of big boulders and rocks for about ...»",
+          "seconds": 3.92
+        },
+        {
+          "id": "paraphrase/desolation",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.25
+        },
+        {
+          "id": "paraphrase/breath",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+          "seconds": 4.14
+        },
+        {
+          "id": "paraphrase/curiosity",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.22
+        },
+        {
+          "id": "paraphrase/cheese",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.38
+        },
+        {
+          "id": "paraphrase/trio",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.19
+        }
+      ]
+    },
+    "phi4-mini-two-press": {
+      "model": "phi4-mini:3.8b",
+      "passed": 5,
+      "total": 6,
+      "cases": [
+        {
+          "id": "press/album",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.89
+        },
+        {
+          "id": "press/sandwiches",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-30"
+          ],
+          "answer": "Ближайшее совпадение на странице 30. Время от старта миссии 005:20:31, пилот командного модуля Майкл Коллинз. «If we're late in answering you, it's because we're munching sandwiches.»",
+          "seconds": 3.81
+        },
+        {
+          "id": "press/headlines",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-496"
+          ],
+          "answer": "Ближайшее совпадение на странице 496. Время от старта миссии 130:49:22, оператор связи в Хьюстоне. «Roger. Well, they were with you in spirit anyway, at least that many. We heard on the news today, 11, that last night - yesterday after you made your landing, New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper.»",
+          "seconds": 4.68
+        },
+        {
+          "id": "press/album-new",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.44
+        },
+        {
+          "id": "press/waiting-sandwiches",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.18
+        },
+        {
+          "id": "press/smallest",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.03
+        }
+      ]
+    },
+    "phi4-mini-two-scoped": {
+      "model": "phi4-mini:3.8b",
+      "passed": 5,
+      "total": 6,
+      "cases": [
+        {
+          "id": "scoped/coffee-made",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-87"
+          ],
+          "answer": "Ближайшее совпадение на странице 87. Время от старта миссии 027:31:17, пилот командного модуля Майкл Коллинз. «We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/coffee-drunk",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "Ближайшее совпадение на странице 578. Время от старта миссии 173:49:18, пилот командного модуля Майкл Коллинз. «Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/wrong-page",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "На странице 578 подтвердить запрошенную фразу не удалось.",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/quantity",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "На странице 578 подтвердить запрошенную фразу не удалось. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+          "seconds": 2.8
+        },
+        {
+          "id": "scoped/boxes",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "На странице 544 подтвердить запрошенную фразу не удалось.",
+          "seconds": 4.22
+        },
+        {
+          "id": "scoped/missing",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "В этом издании страницы пронумерованы от 1 до 624.",
+          "seconds": 0.0
+        }
+      ]
+    },
+    "phi4-mini-two-witnesses": {
+      "model": "phi4-mini:3.8b",
+      "passed": 7,
+      "total": 8,
+      "cases": [
+        {
+          "id": "witness/right-speaker",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/who",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "На странице 317 эта строка обозначена CDR (TRANQ). Это командир Нил Армстронг.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/time",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "В стенограмме рядом с этой фразой стоит 102:46:04 от старта миссии.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/wrong-speaker",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "В строках с обозначением CMP (пилот командного модуля Майкл Коллинз) такой дословной цитаты не нашлось. На стр. 317 ее произносит командир Нил Армстронг. Время от старта миссии 102:46:04. «THE EAGLE HAS LANDED.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/houston",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/ground-who",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "На странице 317 эта строка обозначена CC. Это оператор связи в Хьюстоне. Личное имя в этой строке не указано.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/wrong-connection",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.66
+        },
+        {
+          "id": "witness/window",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 2.97
+        }
+      ]
+    },
+    "qwen25-old-cabin": {
+      "model": "qwen2.5:7b",
+      "passed": 5,
+      "total": 6,
+      "cases": [
+        {
+          "id": "cabin/helmet",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-600"
+          ],
+          "answer": "Ближайшее совпадение на странице 600. Время от старта миссии 181:37:21, пилот командного модуля Майкл Коллинз. «The helmet and gloves are in the hatch bag, the great big bag that's underneath the left hand couch that you put the hatch in.»",
+          "seconds": 5.74
+        },
+        {
+          "id": "cabin/bavaria",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-205"
+          ],
+          "answer": "Ближайшее совпадение на странице 205. Время от старта миссии 072:30:06, оператор связи в Хьюстоне. «West Germany has declared Monday to be \"Apollo Day.\" School children in Bavaria have been given the day off. Post Office clerks have been encouraged to bring radios to work and Frankfurt is installing TV sets in public places.»",
+          "seconds": 5.44
+        },
+        {
+          "id": "cabin/pocket",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 5.18
+        },
+        {
+          "id": "cabin/right-couch",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.54
+        },
+        {
+          "id": "cabin/bavaria-school",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.57
+        },
+        {
+          "id": "cabin/from-pocket",
+          "passed": false,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 5.31
+        }
+      ]
+    },
+    "qwen25-two-cabin": {
+      "model": "qwen2.5:7b",
+      "passed": 4,
+      "total": 6,
+      "cases": [
+        {
+          "id": "cabin/helmet",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-600"
+          ],
+          "answer": "Ближайшее совпадение на странице 600. Время от старта миссии 181:37:21, пилот командного модуля Майкл Коллинз. «The helmet and gloves are in the hatch bag, the great big bag that's underneath the left hand couch that you put the hatch in.»",
+          "seconds": 5.88
+        },
+        {
+          "id": "cabin/bavaria",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.59
+        },
+        {
+          "id": "cabin/pocket",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 5.55
+        },
+        {
+          "id": "cabin/right-couch",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.72
+        },
+        {
+          "id": "cabin/bavaria-school",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.68
+        },
+        {
+          "id": "cabin/from-pocket",
+          "passed": false,
+          "status": "answered",
+          "sources": [
+            "AP11-406"
+          ],
+          "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+          "seconds": 5.06
+        }
+      ]
+    },
+    "qwen25-two-holdout": {
+      "model": "qwen2.5:7b",
+      "passed": 5,
+      "total": 6,
+      "cases": [
+        {
+          "id": "paraphrase/oatmeal",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.04
+        },
+        {
+          "id": "paraphrase/breakfast",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "Ближайшее совпадение на странице 578. Время от старта миссии 173:49:18, пилот командного модуля Майкл Коллинз. «Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.»",
+          "seconds": 5.56
+        },
+        {
+          "id": "paraphrase/california",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-30"
+          ],
+          "answer": "Ближайшее совпадение на странице 30. Время от старта миссии 005:24:05, командир Нил Армстронг. «I think today is also the birthday of California, and I believe they are 200 years old, and we send them a happy birthday. And I think it's Dr. Mueller's birthday, also, and I don't think he is that old.»",
+          "seconds": 5.81
+        },
+        {
+          "id": "paraphrase/winner",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.3
+        },
+        {
+          "id": "paraphrase/three-cups",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+          "seconds": 3.54
+        },
+        {
+          "id": "paraphrase/moon-maple",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.31
+        }
+      ]
+    },
+    "qwen25-two-independent": {
+      "model": "qwen2.5:7b",
+      "passed": 8,
+      "total": 8,
+      "cases": [
+        {
+          "id": "independent/soup",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-535"
+          ],
+          "answer": "Ближайшее совпадение на странице 535. Время от старта миссии 151:43:50, командир Нил Армстронг. «My compliments to the chef. The food is outstanding. This cream of chicken soup I give at least three spoons.»",
+          "seconds": 5.65
+        },
+        {
+          "id": "independent/orange",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-610"
+          ],
+          "answer": "Ближайшее совпадение на странице 610. Время от старта миссии 190:51:01, пилот командного модуля Майкл Коллинз. «I'm right in the middle of my orange juice. Be with you in about 5 minutes.»",
+          "seconds": 5.65
+        },
+        {
+          "id": "independent/legend",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-270"
+          ],
+          "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.»",
+          "seconds": 6.26
+        },
+        {
+          "id": "independent/unnamed",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-270"
+          ],
+          "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.»",
+          "seconds": 6.03
+        },
+        {
+          "id": "independent/tomato",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.37
+        },
+        {
+          "id": "independent/apple",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.12
+        },
+        {
+          "id": "independent/sighting",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 4.42
+        },
+        {
+          "id": "independent/jade",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.69
+        }
+      ]
+    },
+    "qwen25-two-paraphrase-new": {
+      "model": "qwen2.5:7b",
+      "passed": 5,
+      "total": 5,
+      "cases": [
+        {
+          "id": "paraphrase/earthling",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-170"
+          ],
+          "answer": "Ближайшее совпадение на странице 170. Время от старта миссии 056:34:46, пилот командного модуля Майкл Коллинз. «Hello there, earthling.»",
+          "seconds": 4.7
+        },
+        {
+          "id": "paraphrase/lounge",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-2"
+          ],
+          "answer": "Ближайшее совпадение на странице 2. Время от старта миссии 000:05:35, командир Нил Армстронг. «You sure sound clear down there, Bruce. Sounds like you're sitting in your living room.»",
+          "seconds": 4.76
+        },
+        {
+          "id": "paraphrase/laser",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-123"
+          ],
+          "answer": "Ближайшее совпадение на странице 123. Время от старта миссии 035:28:08, оператор связи в Хьюстоне. «We've got a laser that we're going to - It's a blue-green laser that we're going to flash on and off at a frequency of on for a second, off for a second.»",
+          "seconds": 4.7
+        },
+        {
+          "id": "paraphrase/hippo",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.78
+        },
+        {
+          "id": "paraphrase/wifi",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.78
+        }
+      ]
+    },
+    "qwen25-two-paraphrase": {
+      "model": "qwen2.5:7b",
+      "passed": 5,
+      "total": 7,
+      "cases": [
+        {
+          "id": "paraphrase/dust",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.11
+        },
+        {
+          "id": "paraphrase/crater",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-429"
+          ],
+          "answer": "Ближайшее совпадение на странице 429. Время от старта миссии 114:45:50, оператор связи в Хьюстоне. «You commented, Neil, that on your approach to the landing spot, you had passed over a football field sized crater containing rather large blocks of solid rock perhaps 10 to 15 feet in size.»",
+          "seconds": 4.88
+        },
+        {
+          "id": "paraphrase/desolation",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-382"
+          ],
+          "answer": "Ближайшее совпадение на странице 382. Время от старта миссии 109:43:24, пилот лунного модуля Эдвин Олдрин. «Magnificent desolation.»",
+          "seconds": 4.78
+        },
+        {
+          "id": "paraphrase/breath",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+          "seconds": 5.02
+        },
+        {
+          "id": "paraphrase/curiosity",
+          "passed": false,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.65
+        },
+        {
+          "id": "paraphrase/cheese",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.49
+        },
+        {
+          "id": "paraphrase/trio",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.29
+        }
+      ]
+    },
+    "qwen25-two-press": {
+      "model": "qwen2.5:7b",
+      "passed": 6,
+      "total": 6,
+      "cases": [
+        {
+          "id": "press/album",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-557"
+          ],
+          "answer": "Ближайшее совпадение на странице 557. Время от старта миссии 158:03:41, командир Нил Армстронг. «That's an old favorite of mine, about - It's an album made about 20 years ago, called \"Music Out of the Moon.\"»",
+          "seconds": 5.81
+        },
+        {
+          "id": "press/sandwiches",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-30"
+          ],
+          "answer": "Ближайшее совпадение на странице 30. Время от старта миссии 005:20:31, пилот командного модуля Майкл Коллинз. «If we're late in answering you, it's because we're munching sandwiches.»",
+          "seconds": 5.46
+        },
+        {
+          "id": "press/headlines",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-496"
+          ],
+          "answer": "Ближайшее совпадение на странице 496. Время от старта миссии 130:49:22, оператор связи в Хьюстоне. «Roger. Well, they were with you in spirit anyway, at least that many. We heard on the news today, 11, that last night - yesterday after you made your landing, New York Times came out with a - headlines, the largest headlines they've ever used in the history of the newspaper.»",
+          "seconds": 6.22
+        },
+        {
+          "id": "press/album-new",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.5
+        },
+        {
+          "id": "press/waiting-sandwiches",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 5.46
+        },
+        {
+          "id": "press/smallest",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 7.15
+        }
+      ]
+    },
+    "qwen25-two-scoped": {
+      "model": "qwen2.5:7b",
+      "passed": 6,
+      "total": 6,
+      "cases": [
+        {
+          "id": "scoped/coffee-made",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-87"
+          ],
+          "answer": "Ближайшее совпадение на странице 87. Время от старта миссии 027:31:17, пилот командного модуля Майкл Коллинз. «We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/coffee-drunk",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "Ближайшее совпадение на странице 578. Время от старта миссии 173:49:18, пилот командного модуля Майкл Коллинз. «Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/wrong-page",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "На странице 578 подтвердить запрошенную фразу не удалось.",
+          "seconds": 0.0
+        },
+        {
+          "id": "scoped/quantity",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [
+            "AP11-578"
+          ],
+          "answer": "На странице 578 подтвердить запрошенную фразу не удалось. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+          "seconds": 3.8
+        },
+        {
+          "id": "scoped/boxes",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-544"
+          ],
+          "answer": "Ближайшее совпадение на странице 544. Время от старта миссии 155:40:32, командир Нил Армстронг. «These two boxes are the sample return containers.»",
+          "seconds": 4.95
+        },
+        {
+          "id": "scoped/missing",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "В этом издании страницы пронумерованы от 1 до 624.",
+          "seconds": 0.01
+        }
+      ]
+    },
+    "qwen25-two-witnesses": {
+      "model": "qwen2.5:7b",
+      "passed": 8,
+      "total": 8,
+      "cases": [
+        {
+          "id": "witness/right-speaker",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/who",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "На странице 317 эта строка обозначена CDR (TRANQ). Это командир Нил Армстронг.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/time",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "В стенограмме рядом с этой фразой стоит 102:46:04 от старта миссии.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/wrong-speaker",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "В строках с обозначением CMP (пилот командного модуля Майкл Коллинз) такой дословной цитаты не нашлось. На стр. 317 ее произносит командир Нил Армстронг. Время от старта миссии 102:46:04. «THE EAGLE HAS LANDED.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/houston",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/ground-who",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-317"
+          ],
+          "answer": "На странице 317 эта строка обозначена CC. Это оператор связи в Хьюстоне. Личное имя в этой строке не указано.",
+          "seconds": 0.0
+        },
+        {
+          "id": "witness/wrong-connection",
+          "passed": true,
+          "status": "no_evidence",
+          "sources": [],
+          "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+          "seconds": 3.31
+        },
+        {
+          "id": "witness/window",
+          "passed": true,
+          "status": "answered",
+          "sources": [
+            "AP11-2"
+          ],
+          "answer": "Ближайшее совпадение на странице 2. Время от старта миссии 000:03:36, командир Нил Армстронг. «Yes. They finally gave me a window to look out.»",
+          "seconds": 4.82
+        }
+      ]
+    }
+  }
+}

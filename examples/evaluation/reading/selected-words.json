@@ -1,0 +1,854 @@
+[
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "full line",
+    "suite": "holdout",
+    "passed": 3,
+    "total": 6,
+    "cases": [
+      {
+        "id": "paraphrase/oatmeal",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.05
+      },
+      {
+        "id": "paraphrase/breakfast",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.3
+      },
+      {
+        "id": "paraphrase/california",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 3.76
+      },
+      {
+        "id": "paraphrase/winner",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.98
+      },
+      {
+        "id": "paraphrase/three-cups",
+        "status": "no_evidence",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.43
+      },
+      {
+        "id": "paraphrase/moon-maple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 2.94
+      }
+    ]
+  },
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "full line",
+    "suite": "independent",
+    "passed": 6,
+    "total": 8,
+    "cases": [
+      {
+        "id": "independent/soup",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 3.87
+      },
+      {
+        "id": "independent/orange",
+        "status": "answered",
+        "sources": [
+          "AP11-610"
+        ],
+        "line_ids": [
+          8207
+        ],
+        "passed": true,
+        "seconds": 4.01
+      },
+      {
+        "id": "independent/legend",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.05
+      },
+      {
+        "id": "independent/unnamed",
+        "status": "answered",
+        "sources": [
+          "AP11-270"
+        ],
+        "line_ids": [
+          3592
+        ],
+        "passed": true,
+        "seconds": 4.21
+      },
+      {
+        "id": "independent/tomato",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 2.76
+      },
+      {
+        "id": "independent/apple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.14
+      },
+      {
+        "id": "independent/sighting",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.18
+      },
+      {
+        "id": "independent/jade",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.99
+      }
+    ]
+  },
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "full line",
+    "suite": "press",
+    "passed": 4,
+    "total": 6,
+    "cases": [
+      {
+        "id": "press/album",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.48
+      },
+      {
+        "id": "press/sandwiches",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 3.85
+      },
+      {
+        "id": "press/headlines",
+        "status": "answered",
+        "sources": [
+          "AP11-496"
+        ],
+        "line_ids": [
+          7020
+        ],
+        "passed": true,
+        "seconds": 4.53
+      },
+      {
+        "id": "press/album-new",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.27
+      },
+      {
+        "id": "press/waiting-sandwiches",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.03
+      },
+      {
+        "id": "press/smallest",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.46
+      }
+    ]
+  },
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "selected words and full line",
+    "suite": "holdout",
+    "passed": 3,
+    "total": 6,
+    "cases": [
+      {
+        "id": "paraphrase/oatmeal",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 3.64
+      },
+      {
+        "id": "paraphrase/breakfast",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.43
+      },
+      {
+        "id": "paraphrase/california",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.12
+      },
+      {
+        "id": "paraphrase/winner",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.32
+      },
+      {
+        "id": "paraphrase/three-cups",
+        "status": "no_evidence",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.76
+      },
+      {
+        "id": "paraphrase/moon-maple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.03
+      }
+    ]
+  },
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "selected words and full line",
+    "suite": "independent",
+    "passed": 6,
+    "total": 8,
+    "cases": [
+      {
+        "id": "independent/soup",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.14
+      },
+      {
+        "id": "independent/orange",
+        "status": "answered",
+        "sources": [
+          "AP11-610"
+        ],
+        "line_ids": [
+          8207
+        ],
+        "passed": true,
+        "seconds": 3.66
+      },
+      {
+        "id": "independent/legend",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.36
+      },
+      {
+        "id": "independent/unnamed",
+        "status": "answered",
+        "sources": [
+          "AP11-270"
+        ],
+        "line_ids": [
+          3592
+        ],
+        "passed": true,
+        "seconds": 4.15
+      },
+      {
+        "id": "independent/tomato",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 2.71
+      },
+      {
+        "id": "independent/apple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.76
+      },
+      {
+        "id": "independent/sighting",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.62
+      },
+      {
+        "id": "independent/jade",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.73
+      }
+    ]
+  },
+  {
+    "model": "phi4-mini:3.8b",
+    "mode": "selected words and full line",
+    "suite": "press",
+    "passed": 5,
+    "total": 6,
+    "cases": [
+      {
+        "id": "press/album",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.14
+      },
+      {
+        "id": "press/sandwiches",
+        "status": "answered",
+        "sources": [
+          "AP11-30"
+        ],
+        "line_ids": [
+          461
+        ],
+        "passed": true,
+        "seconds": 3.52
+      },
+      {
+        "id": "press/headlines",
+        "status": "answered",
+        "sources": [
+          "AP11-496"
+        ],
+        "line_ids": [
+          7020
+        ],
+        "passed": true,
+        "seconds": 4.37
+      },
+      {
+        "id": "press/album-new",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.94
+      },
+      {
+        "id": "press/waiting-sandwiches",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.95
+      },
+      {
+        "id": "press/smallest",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.38
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "full line",
+    "suite": "holdout",
+    "passed": 4,
+    "total": 6,
+    "cases": [
+      {
+        "id": "paraphrase/oatmeal",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.33
+      },
+      {
+        "id": "paraphrase/breakfast",
+        "status": "answered",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [
+          7869
+        ],
+        "passed": true,
+        "seconds": 4.97
+      },
+      {
+        "id": "paraphrase/california",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 5.34
+      },
+      {
+        "id": "paraphrase/winner",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 5.42
+      },
+      {
+        "id": "paraphrase/three-cups",
+        "status": "no_evidence",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.59
+      },
+      {
+        "id": "paraphrase/moon-maple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.63
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "full line",
+    "suite": "independent",
+    "passed": 7,
+    "total": 8,
+    "cases": [
+      {
+        "id": "independent/soup",
+        "status": "answered",
+        "sources": [
+          "AP11-535"
+        ],
+        "line_ids": [
+          7432
+        ],
+        "passed": true,
+        "seconds": 5.37
+      },
+      {
+        "id": "independent/orange",
+        "status": "answered",
+        "sources": [
+          "AP11-610"
+        ],
+        "line_ids": [
+          8207
+        ],
+        "passed": true,
+        "seconds": 4.51
+      },
+      {
+        "id": "independent/legend",
+        "status": "answered",
+        "sources": [
+          "AP11-270"
+        ],
+        "line_ids": [
+          3592
+        ],
+        "passed": true,
+        "seconds": 4.73
+      },
+      {
+        "id": "independent/unnamed",
+        "status": "answered",
+        "sources": [
+          "AP11-270"
+        ],
+        "line_ids": [
+          3592
+        ],
+        "passed": true,
+        "seconds": 4.51
+      },
+      {
+        "id": "independent/tomato",
+        "status": "answered",
+        "sources": [
+          "AP11-535"
+        ],
+        "line_ids": [
+          7432
+        ],
+        "passed": false,
+        "seconds": 4.21
+      },
+      {
+        "id": "independent/apple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.57
+      },
+      {
+        "id": "independent/sighting",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.25
+      },
+      {
+        "id": "independent/jade",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 5.34
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "full line",
+    "suite": "press",
+    "passed": 6,
+    "total": 6,
+    "cases": [
+      {
+        "id": "press/album",
+        "status": "answered",
+        "sources": [
+          "AP11-557"
+        ],
+        "line_ids": [
+          7698
+        ],
+        "passed": true,
+        "seconds": 4.95
+      },
+      {
+        "id": "press/sandwiches",
+        "status": "answered",
+        "sources": [
+          "AP11-30"
+        ],
+        "line_ids": [
+          461
+        ],
+        "passed": true,
+        "seconds": 5.05
+      },
+      {
+        "id": "press/headlines",
+        "status": "answered",
+        "sources": [
+          "AP11-496"
+        ],
+        "line_ids": [
+          7020
+        ],
+        "passed": true,
+        "seconds": 6.78
+      },
+      {
+        "id": "press/album-new",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 6.28
+      },
+      {
+        "id": "press/waiting-sandwiches",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 6.82
+      },
+      {
+        "id": "press/smallest",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 6.86
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "selected words and full line",
+    "suite": "holdout",
+    "passed": 5,
+    "total": 6,
+    "cases": [
+      {
+        "id": "paraphrase/oatmeal",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 3.63
+      },
+      {
+        "id": "paraphrase/breakfast",
+        "status": "answered",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [
+          7869
+        ],
+        "passed": true,
+        "seconds": 4.75
+      },
+      {
+        "id": "paraphrase/california",
+        "status": "answered",
+        "sources": [
+          "AP11-30"
+        ],
+        "line_ids": [
+          472
+        ],
+        "passed": true,
+        "seconds": 5.01
+      },
+      {
+        "id": "paraphrase/winner",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 5.4
+      },
+      {
+        "id": "paraphrase/three-cups",
+        "status": "no_evidence",
+        "sources": [
+          "AP11-578"
+        ],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.45
+      },
+      {
+        "id": "paraphrase/moon-maple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 3.1
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "selected words and full line",
+    "suite": "independent",
+    "passed": 5,
+    "total": 8,
+    "cases": [
+      {
+        "id": "independent/soup",
+        "status": "answered",
+        "sources": [
+          "AP11-535"
+        ],
+        "line_ids": [
+          7432
+        ],
+        "passed": true,
+        "seconds": 4.94
+      },
+      {
+        "id": "independent/orange",
+        "status": "answered",
+        "sources": [
+          "AP11-610"
+        ],
+        "line_ids": [
+          8207
+        ],
+        "passed": true,
+        "seconds": 4.83
+      },
+      {
+        "id": "independent/legend",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 4.86
+      },
+      {
+        "id": "independent/unnamed",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": false,
+        "seconds": 5.15
+      },
+      {
+        "id": "independent/tomato",
+        "status": "answered",
+        "sources": [
+          "AP11-535"
+        ],
+        "line_ids": [
+          7432
+        ],
+        "passed": false,
+        "seconds": 4.29
+      },
+      {
+        "id": "independent/apple",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.92
+      },
+      {
+        "id": "independent/sighting",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.43
+      },
+      {
+        "id": "independent/jade",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 5.08
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "mode": "selected words and full line",
+    "suite": "press",
+    "passed": 6,
+    "total": 6,
+    "cases": [
+      {
+        "id": "press/album",
+        "status": "answered",
+        "sources": [
+          "AP11-557"
+        ],
+        "line_ids": [
+          7698
+        ],
+        "passed": true,
+        "seconds": 5.73
+      },
+      {
+        "id": "press/sandwiches",
+        "status": "answered",
+        "sources": [
+          "AP11-30"
+        ],
+        "line_ids": [
+          461
+        ],
+        "passed": true,
+        "seconds": 4.62
+      },
+      {
+        "id": "press/headlines",
+        "status": "answered",
+        "sources": [
+          "AP11-496"
+        ],
+        "line_ids": [
+          7020
+        ],
+        "passed": true,
+        "seconds": 5.37
+      },
+      {
+        "id": "press/album-new",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.59
+      },
+      {
+        "id": "press/waiting-sandwiches",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 4.84
+      },
+      {
+        "id": "press/smallest",
+        "status": "no_evidence",
+        "sources": [],
+        "line_ids": [],
+        "passed": true,
+        "seconds": 5.91
+      }
+    ]
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "variant": "qwen25-speed",
+  "model": "qwen2.5:7b",
+  "suite": "speed",
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02. При поправке скорости +1,70 % форма волны совпадает на 00:03,03, r = 0,977.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "calibration",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7,
+            "speed_scan": 0.87
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 2.9991,
+            "score": 0.2458,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.02,
+            "score": 0.9443,
+            "passes": true
+          },
+          "speed_scan": {
+            "second": 3.0282,
+            "score": 0.977,
+            "passes": true,
+            "rate_ratio": 1.017,
+            "window_seconds": 1.5733
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02. При поправке скорости +1,70 % форма волны совпадает на 00:03,03, r = 0,977."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "speed/calibration",
+      "case": "signal",
+      "question": "Сравни образец NASA с 2,50 с с учебной копией с учетом скорости.",
+      "passed": true,
+      "seconds": 2.37
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "calibration",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 2.9991,
+            "score": 0.2458,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.02,
+            "score": 0.9443,
+            "passes": true
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "speed/no-scan",
+      "case": "signal",
+      "question": "Повтори без учета скорости.",
+      "passed": true,
+      "seconds": 0.78
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02. При поправке скорости +1,70 % форма волны совпадает на 00:03,03, r = 0,977.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "calibration",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7,
+            "speed_scan": 0.87
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 2.9991,
+            "score": 0.2458,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.02,
+            "score": 0.9443,
+            "passes": true
+          },
+          "speed_scan": {
+            "second": 3.0282,
+            "score": 0.977,
+            "passes": true,
+            "rate_ratio": 1.017,
+            "window_seconds": 1.5733
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,246, ниже порога. По спектру r = 0,944, кандидат на 00:03,02. При поправке скорости +1,70 % форма волны совпадает на 00:03,03, r = 0,977."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "speed/again",
+      "case": "signal",
+      "question": "А теперь учти изменение скорости.",
+      "passed": true,
+      "seconds": 0.83
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,153, ниже порога. По спектру r = 0,418, ниже порога. Перебор скорости от −4 до +4 % совпадения по волне не подтвердил.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "small-step",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7,
+            "speed_scan": 0.87
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 5.0282,
+            "score": 0.1528,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 1.08,
+            "score": 0.418,
+            "passes": false
+          },
+          "speed_scan": {
+            "second": 4.9945,
+            "score": 0.1968,
+            "passes": false,
+            "rate_ratio": null,
+            "window_seconds": null
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,153, ниже порога. По спектру r = 0,418, ниже порога. Перебор скорости от −4 до +4 % совпадения по волне не подтвердил."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "speed/control",
+      "case": "signal",
+      "question": "А теперь сравни с другой репликой о первом шаге.",
+      "passed": true,
+      "seconds": 0.9
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41. Перебор скорости от −4 до +4 % совпадения по волне не подтвердил.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "eagle-extended",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7,
+            "speed_scan": 0.87
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 3.4501,
+            "score": 0.1444,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.41,
+            "score": 0.7729,
+            "passes": true
+          },
+          "speed_scan": {
+            "second": 3.3845,
+            "score": 0.3185,
+            "passes": false,
+            "rate_ratio": null,
+            "window_seconds": null
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41. Перебор скорости от −4 до +4 % совпадения по волне не подтвердил."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "speed/published",
+      "case": "signal",
+      "question": "Сверь образец NASA с 2,50 с с расширенной версией с учетом скорости.",
+      "passed": true,
+      "seconds": 0.84
+    }
+  ],
+  "action_token_limit": 2048
+}

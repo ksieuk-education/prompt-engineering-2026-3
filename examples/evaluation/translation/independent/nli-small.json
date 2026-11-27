@@ -1,0 +1,119 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+  "weights": "model_qint8_arm64.onnx",
+  "weights_sha256": "a1da6815c8da542d16381c7d84892d409b4b6604d655bb3054ecb15dd8714e6e",
+  "speaker_included": true,
+  "suite": "independent",
+  "pair_source": "handwritten English hypotheses, gold source line supplied",
+  "passed": 7,
+  "total": 8,
+  "false_confirmations": 0,
+  "false_rejections": 1,
+  "cases": [
+    {
+      "line_id": 7432,
+      "page": 535,
+      "claim": "The speaker praises the chef and gives the cream of chicken soup at least three spoons.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 9e-05,
+        "entailment": 0.99798,
+        "neutral": 0.00193
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7432,
+      "page": 535,
+      "claim": "The speaker praises the chef and gives the cream of tomato soup at least three spoons.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99444,
+        "entailment": 0.00092,
+        "neutral": 0.00464
+      },
+      "correct": true
+    },
+    {
+      "line_id": 8207,
+      "page": 610,
+      "claim": "The speaker is drinking orange juice and asks for about five minutes.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00021,
+        "entailment": 0.99265,
+        "neutral": 0.00714
+      },
+      "correct": true
+    },
+    {
+      "line_id": 8207,
+      "page": 610,
+      "claim": "The speaker is drinking apple juice and asks for about five minutes.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99706,
+        "entailment": 0.00137,
+        "neutral": 0.00156
+      },
+      "correct": true
+    },
+    {
+      "line_id": 3592,
+      "page": 270,
+      "claim": "Houston recounts a legend about a rabbit standing on its hind legs in the shade of a cinnamon tree.",
+      "supported_by_source": true,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99819,
+        "entailment": 0.0006,
+        "neutral": 0.00121
+      },
+      "correct": false
+    },
+    {
+      "line_id": 3592,
+      "page": 270,
+      "claim": "The astronauts report seeing a rabbit on the Moon under a cinnamon tree with their own eyes.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99876,
+        "entailment": 0.00019,
+        "neutral": 0.00105
+      },
+      "correct": true
+    },
+    {
+      "line_id": 3592,
+      "page": 270,
+      "claim": "The name of the rabbit is not reported in the story.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00158,
+        "entailment": 0.96797,
+        "neutral": 0.03045
+      },
+      "correct": true
+    },
+    {
+      "line_id": 3592,
+      "page": 270,
+      "claim": "Houston reports that the rabbit's name is Jade.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99828,
+        "entailment": 8e-05,
+        "neutral": 0.00164
+      },
+      "correct": true
+    }
+  ]
+}

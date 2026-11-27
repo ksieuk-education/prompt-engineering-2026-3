@@ -1,0 +1,202 @@
+{
+  "variant": "sequential-local",
+  "model": "qwen2.5:7b",
+  "suite": "transfer",
+  "passed": 3,
+  "total": 6,
+  "cases": [
+    {
+      "status": "incomplete",
+      "answer": "Не удалось собрать подтвержденное заключение. Выбери ключи только из выдержек текущих наблюдений.",
+      "sources": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "passages": null,
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Три ноты позывного",
+          "tape": "00:18",
+          "sources": [
+            "A2",
+            "A3",
+            "A1"
+          ],
+          "planned": "21:17:20",
+          "status": "verified",
+          "value": "21:17:24",
+          "anchor": "21:17:10",
+          "anchor_tape": "00:04",
+          "travel_seconds": 14,
+          "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+          "shift_seconds": 4
+        },
+        {
+          "marker": "sync",
+          "label": "Контрольный тон",
+          "tape": "00:04",
+          "sources": [
+            "A2",
+            "A3"
+          ],
+          "status": "verified",
+          "value": "21:17:10",
+          "anchor": "21:17:10",
+          "anchor_tape": "00:04",
+          "travel_seconds": 0,
+          "detail": "Опора 21:17:10 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker"
+      ],
+      "id": "foreign_clock",
+      "case": "signal",
+      "question": "Во сколько состоялась посадка на Марс?",
+      "passed": false,
+      "seconds": 6.19
+    },
+    {
+      "status": "answered",
+      "answer": "Для сравнения нужны две метки с известным эфирным временем.",
+      "sources": [
+        "A3",
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "status": "insufficient",
+          "value": "Недостаточно опор",
+          "sources": [
+            "A3",
+            "A2"
+          ],
+          "detail": "Для сравнения нужны две метки с известным эфирным временем."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker",
+        "compare_span",
+        "compare_span",
+        "read",
+        "match_sound"
+      ],
+      "id": "tape_interval",
+      "case": "signal",
+      "question": "Через сколько секунд после контрольного тона начинается позывной?",
+      "passed": false,
+      "seconds": 6.95
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Шум зала» стоит на 00:12 от начала копии. Эфирное время установить нельзя. Время внутренней метки однозначно не восстанавливается.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "room",
+          "label": "Шум зала",
+          "tape": "00:12",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "insufficient",
+          "value": "Неизвестная поправка",
+          "detail": "Опоры дают разные смещения. Время внутренней метки однозначно не восстанавливается."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker",
+        "locate_marker"
+      ],
+      "id": "uncertain_middle",
+      "case": "splice",
+      "question": "Можно ли поставить шум зала ровно на 19:05:19 эфирного времени?",
+      "passed": true,
+      "seconds": 5.97
+    },
+    {
+      "status": "answered",
+      "answer": "Продолжительность паузы и наличие аплодисментов в эфире не зафиксированы.",
+      "sources": [
+        "B4"
+      ],
+      "passages": [
+        "B4.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "applause",
+      "case": "splice",
+      "question": "Есть ли доказательство, что в пропуске были аплодисменты?",
+      "passed": true,
+      "seconds": 1.89
+    },
+    {
+      "status": "answered",
+      "answer": "На обороте написано «смена пластинки?». У записи нет подписи, времени и указания на конкретный фрагмент. Объяснение задержки остается предположением.",
+      "sources": [
+        "A4"
+      ],
+      "passages": [
+        "A4.1",
+        "A4.2",
+        "A4.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "signature",
+      "case": "signal",
+      "question": "Дежурный подписал конверт со сменой пластинки?",
+      "passed": true,
+      "seconds": 2.45
+    },
+    {
+      "status": "answered",
+      "answer": "После выхода исполнителей в программе указана пауза перед вступлением ансамбля.",
+      "sources": [
+        "B4"
+      ],
+      "passages": [
+        "B4.1"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "conductor",
+      "case": "splice",
+      "question": "Кто дирижировал концертом?",
+      "passed": false,
+      "seconds": 1.86
+    }
+  ],
+  "action_token_limit": 2048
+}

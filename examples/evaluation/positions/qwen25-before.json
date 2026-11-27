@@ -1,0 +1,268 @@
+{
+  "variant": "qwen25 before",
+  "model": "qwen2.5:7b",
+  "suite": "positions",
+  "passed": 5,
+  "total": 10,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Музыкальная отбивка вступает на 00:25.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "locate_marker",
+        "read",
+        "read"
+      ],
+      "id": "position/music",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 5.12
+    },
+    {
+      "status": "answered",
+      "answer": "Контрольный тон студии «Северная» принят точно в 21:17:10 по эфирным часам. Дежурный отметил его как опорный для вечерней катушки.",
+      "sources": [
+        "A3"
+      ],
+      "passages": [
+        "A3.1",
+        "A3.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "locate_marker",
+        "locate_marker",
+        "read",
+        "read"
+      ],
+      "id": "position/tone",
+      "case": "signal",
+      "question": "А контрольный тон?",
+      "passed": false,
+      "seconds": 4.71
+    },
+    {
+      "status": "answered",
+      "answer": "На вечерний выпуск три ноты позывного поставлены в сетке на 21:17:20. Это плановое время. Графа фактического выхода осталась пустой.",
+      "sources": [
+        "A1"
+      ],
+      "passages": [
+        "A1.1",
+        "A1.2",
+        "A1.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "locate_marker",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/ident",
+      "case": "signal",
+      "question": "А три ноты позывного?",
+      "passed": false,
+      "seconds": 5.16
+    },
+    {
+      "status": "answered",
+      "answer": "Между ними на 00:12 слышен шум зала.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [
+        "B2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/room",
+      "case": "splice",
+      "question": "На какой отметке ленты слышен шум зала?",
+      "passed": true,
+      "seconds": 4.13
+    },
+    {
+      "status": "answered",
+      "answer": "На 00:03 слышен щелчок пуска, на 00:12 вступает заставка, на 00:20 начинается следующая музыка.",
+      "sources": [
+        "C2"
+      ],
+      "passages": [
+        "C2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "locate_marker",
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/click",
+      "case": "untimed",
+      "question": "Какой таймкод у щелчка пуска на этой ленте?",
+      "passed": true,
+      "seconds": 4.34
+    },
+    {
+      "status": "answered",
+      "answer": "По сетке заставка стояла на 09:40:00. Дежурный не заполнил графу времени выхода в эфир.",
+      "sources": [
+        "C1"
+      ],
+      "passages": [
+        "C1.1",
+        "C1.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/intro",
+      "case": "untimed",
+      "question": "А начало заставки?",
+      "passed": false,
+      "seconds": 3.66
+    },
+    {
+      "status": "answered",
+      "answer": "На копии первый контрольный удар начинается на 00:05, второй на 00:25.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [
+        "B2.1"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/which",
+      "case": "splice",
+      "question": "На какой секунде на копии удар?",
+      "passed": false,
+      "seconds": 4.43
+    },
+    {
+      "status": "answered",
+      "answer": "На копии первый контрольный удар начинается на 00:05, второй на 00:25. Между ними на 00:12 слышен шум зала.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [
+        "B2.1",
+        "B2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "id": "position/second",
+      "case": "splice",
+      "question": "Второй.",
+      "passed": true,
+      "seconds": 3.87
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Второй удар» прозвучала в 19:05:37 по эфирным часам. На ленте это 00:25.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "last",
+          "label": "Второй удар",
+          "tape": "00:25",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:37",
+          "anchor": "19:05:37",
+          "anchor_tape": "00:25",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:37 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/air",
+      "case": "splice",
+      "question": "А в эфире во сколько прозвучал этот же удар?",
+      "passed": true,
+      "seconds": 1.81
+    },
+    {
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read",
+        "locate_marker",
+        "locate_marker",
+        "read",
+        "read"
+      ],
+      "id": "position/unknown",
+      "case": "signal",
+      "question": "На какой секунде копии слышен звонок телефона?",
+      "passed": false,
+      "seconds": 3.86
+    }
+  ],
+  "action_token_limit": 2048
+}

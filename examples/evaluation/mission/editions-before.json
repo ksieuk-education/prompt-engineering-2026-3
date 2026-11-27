@@ -1,0 +1,182 @@
+{
+  "variant": "Проверка до сопоставления скана и HTML",
+  "model": "qwen2.5:7b",
+  "suite": "clock-editions",
+  "passed": 0,
+  "total": 5,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "По времени миссии 078:46:31 на странице 234 нет начала размеченной реплики. По меткам начала нельзя судить о тишине в эфире.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [],
+        "query": "",
+        "clock": {
+          "start": "078:46:31",
+          "end": "078:46:31",
+          "total": 0
+        },
+        "reference_id": 0
+      },
+      "id": "clock-edition/aldrin-scan",
+      "case": "signal",
+      "question": "Что в стенограмме NASA сказано в 078:46:31 на странице 234?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 126:46:31. Число подходящих строк на странице 234 — 1.\n126:46:31 · стр. 234 · пилот лунного модуля Эдвин Олдрин. «Roger.»\nНа этой странице соседние строки имеют метки 078:46:09 и 078:46:33. Порядок расходится с указанным временем.",
+      "sources": [
+        "AP11-234"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 3145,
+            "page": 234,
+            "get": "126:46:31",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Roger.",
+            "clock_neighbors": [
+              "078:46:09",
+              "078:46:33"
+            ],
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "126:46:31",
+          "end": "126:46:31",
+          "total": 1
+        },
+        "reference_id": 3145
+      },
+      "id": "clock-edition/aldrin-html",
+      "case": "signal",
+      "question": "Что в стенограмме NASA на странице 234 в 126:46:31?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "По времени миссии 102:58:12 на странице 320 нет начала размеченной реплики. По меткам начала нельзя судить о тишине в эфире.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [],
+        "query": "",
+        "clock": {
+          "start": "102:58:12",
+          "end": "102:58:12",
+          "total": 0
+        },
+        "reference_id": 0
+      },
+      "id": "clock-edition/collins-scan",
+      "case": "signal",
+      "question": "Открой в стенограмме NASA 102:58:12 на странице 320.",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 054:58:12. Число подходящих строк на странице 320 — 1.\n054:58:12 · стр. 320 · пилот командного модуля Майкл Коллинз. «And thanks for putting me on relay, Houston. I was missing all the action.»\nНа этой странице соседние строки имеют метки 102:58:00 и 102:58:16. Порядок расходится с указанным временем.",
+      "sources": [
+        "AP11-320"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 4426,
+            "page": 320,
+            "get": "054:58:12",
+            "speaker": "CMP (COLUMBIA)",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "And thanks for putting me on relay, Houston. I was missing all the action.",
+            "clock_neighbors": [
+              "102:58:00",
+              "102:58:16"
+            ],
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=And%20thanks%20for%20putting%20me%20on%20relay%2C%20Houston.%20I"
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "054:58:12",
+          "end": "054:58:12",
+          "total": 1
+        },
+        "reference_id": 4426
+      },
+      "id": "clock-edition/collins-html",
+      "case": "signal",
+      "question": "Прочитай в стенограмме NASA реплику на странице 320 в 054:58:12.",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "В стенограмме рядом с этой фразой стоит 054:58:12 от старта миссии. На этой странице соседние строки имеют метки 102:58:00 и 102:58:16. Порядок расходится с указанным временем.",
+      "sources": [
+        "AP11-320"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4426,
+            "page": 320,
+            "get": "054:58:12",
+            "speaker": "CMP (COLUMBIA)",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "And thanks for putting me on relay, Houston. I was missing all the action.",
+            "clock_neighbors": [
+              "102:58:00",
+              "102:58:16"
+            ],
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=And%20thanks%20for%20putting%20me%20on%20relay%2C%20Houston.%20I"
+          }
+        ],
+        "query": "",
+        "metadata": "time"
+      },
+      "id": "clock-edition/follow-time",
+      "case": "signal",
+      "question": "А когда это было?",
+      "passed": false,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

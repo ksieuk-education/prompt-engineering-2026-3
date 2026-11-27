@@ -1,0 +1,146 @@
+{
+  "variant": "Позиции на копии и эфирные часы: gemma3-1b",
+  "model": "gemma3:1b",
+  "suite": "transfer",
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search",
+        "skill"
+      ],
+      "id": "foreign_clock",
+      "case": "signal",
+      "question": "Во сколько состоялась посадка на Марс?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "По счетчику между метками «Контрольный тон» (00:04) и «Три ноты позывного» (00:18) прошло 14 с.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_span",
+          "label": "Интервал по счетчику ленты",
+          "sources": [
+            "A2"
+          ],
+          "status": "verified",
+          "from_marker": "sync",
+          "to_marker": "ident",
+          "tape_seconds": 14,
+          "value": "14 с",
+          "detail": "По счетчику между метками «Контрольный тон» (00:04) и «Три ноты позывного» (00:18) прошло 14 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "tape_span"
+      ],
+      "id": "tape_interval",
+      "case": "signal",
+      "question": "Через сколько секунд после контрольного тона начинается позывной?",
+      "passed": true,
+      "seconds": 0.28
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Шум зала» стоит на 00:12 от начала копии. Эфирное время установить нельзя. Опоры дают разные смещения. Время внутренней метки однозначно не восстанавливается.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "room",
+          "label": "Шум зала",
+          "tape": "00:12",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "insufficient",
+          "value": "Неизвестная поправка",
+          "detail": "Опоры дают разные смещения. Время внутренней метки однозначно не восстанавливается."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "uncertain_middle",
+      "case": "splice",
+      "question": "Можно ли поставить шум зала ровно на 19:05:19 эфирного времени?",
+      "passed": true,
+      "seconds": 0.58
+    },
+    {
+      "status": "answered",
+      "answer": "Продолжительность паузы и наличие аплодисментов в эфире не зафиксированы.",
+      "sources": [
+        "B4"
+      ],
+      "passages": [
+        "B4.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "applause",
+      "case": "splice",
+      "question": "Есть ли доказательство, что в пропуске были аплодисменты?",
+      "passed": true,
+      "seconds": 0.29
+    },
+    {
+      "status": "answered",
+      "answer": "У записи нет подписи, времени и указания на конкретный фрагмент.",
+      "sources": [
+        "A4"
+      ],
+      "passages": [
+        "A4.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "check_excerpt"
+      ],
+      "id": "signature",
+      "case": "signal",
+      "question": "Дежурный подписал конверт со сменой пластинки?",
+      "passed": true,
+      "seconds": 0.35
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "conductor",
+      "case": "splice",
+      "question": "Кто дирижировал концертом?",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

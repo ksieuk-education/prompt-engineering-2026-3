@@ -1,0 +1,189 @@
+{
+  "variant": "phi4-mini-serial",
+  "model": "phi4-mini:3.8b",
+  "suite": "cabin",
+  "passed": 3,
+  "total": 6,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 wall chart does Collins explain that the helmet and gloves are in a large bag under the left seat?, Apollo 11, Collins, explains, helmet, gloves, large bag, left seat",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "cabin/helmet",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз объясняет, что шлем и перчатки лежат в большой сумке под левым креслом?",
+      "passed": false,
+      "seconds": 3.45
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA Houston transmission does it say that Bavarian schoolchildren were given a holiday for Apollo Day?, NASA Houston transmission, Bavarian schoolchildren, holiday, Apollo Day",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "cabin/bavaria",
+      "case": "signal",
+      "question": "Где в стенограмме NASA Хьюстон передает, что баварским школьникам дали выходной по случаю дня Аполлона?",
+      "passed": false,
+      "seconds": 3.01
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+      "sources": [
+        "AP11-406"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5729,
+            "page": 406,
+            "get": "111:24:04",
+            "speaker": "LMP (EVA)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20Can%20you%20quickly%20stick%20this%20in%20my%20pocket%2C"
+          }
+        ],
+        "query": "Oldrin asks Neil to put something in his pocket before he goes up the stairs, Oldrin, Neil, put, pocket, stairs",
+        "mode": "fts+embeddinggemma",
+        "quote": "Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?"
+      },
+      "id": "cabin/pocket",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA просьбу Олдрина к Нилу положить предмет ему в карман, прежде чем он поднимется по лестнице.",
+      "passed": true,
+      "seconds": 3.12
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 wall chart does Collins explain that the helmet and gloves are in a large bag under the right seat?, Apollo 11, Collins, explains, helmet, gloves, large bag, right seat",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "cabin/right-couch",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз объясняет, что шлем и перчатки лежат в большой сумке под правым креслом?",
+      "passed": true,
+      "seconds": 3.45
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA Houston transmission does it say that on Apollo Day Bavarian schoolchildren were required to go to school?, NASA Houston transmission, Apollo Day, Bavarian schoolchildren, required to go to Sch",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "cabin/bavaria-school",
+      "case": "signal",
+      "question": "Где в стенограмме NASA Хьюстон передает, что в день Аполлона баварских школьников обязали идти в школу?",
+      "passed": true,
+      "seconds": 3.71
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 406. Время от старта миссии 111:24:04, пилот лунного модуля Эдвин Олдрин. «Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?»",
+      "sources": [
+        "AP11-406"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5729,
+            "page": 406,
+            "get": "111:24:04",
+            "speaker": "LMP (EVA)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Okay. Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20Can%20you%20quickly%20stick%20this%20in%20my%20pocket%2C"
+          }
+        ],
+        "query": "Oldrin asks Neil to remove an item from his pocket before he ascends the stairs, Oldrin, Neil, remove, item, pocket, ascend, stairs",
+        "mode": "fts+embeddinggemma",
+        "quote": "Can you quickly stick this in my pocket, Neil, and I'll head on up the ladder?"
+      },
+      "id": "cabin/from-pocket",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA просьбу Олдрина к Нилу вынуть предмет у него из кармана, прежде чем он поднимется по лестнице.",
+      "passed": false,
+      "seconds": 3.16
+    }
+  ],
+  "action_token_limit": 2048
+}

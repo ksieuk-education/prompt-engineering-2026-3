@@ -1,0 +1,107 @@
+{
+  "variant": "longer-json-budget",
+  "model": "qwen3-vl:8b",
+  "suite": "all",
+  "passed": 2,
+  "total": 9,
+  "cases": [
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "compound",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и доказано ли, что задержка была из-за смены пластинки?",
+      "passed": false,
+      "seconds": 86.91
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "wall",
+      "case": "splice",
+      "question": "Во сколько по эфирным часам был второй удар?",
+      "passed": false,
+      "seconds": 44.07
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "followup",
+      "case": "splice",
+      "question": "А первый?",
+      "passed": false,
+      "seconds": 44.11
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "plan",
+      "case": "untimed",
+      "question": "Верно ли, что заставка вышла в эфир ровно в 09:40:00?",
+      "passed": false,
+      "seconds": 44.1
+    },
+    {
+      "status": "answered",
+      "answer": "Музыкальная отбивка вступает на 00:25.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "tape",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 10.32
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "outside",
+      "case": "signal",
+      "question": "Какое расстояние от Земли до Луны?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "motif",
+      "case": "signal",
+      "question": "Найди по звуку, где еще в архиве встречаются эти три ноты позывного.",
+      "passed": false,
+      "seconds": 45.17
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "bell",
+      "case": "splice",
+      "question": "Найди по фонограмме повтор первого удара на этой катушке.",
+      "passed": false,
+      "seconds": 45.23
+    },
+    {
+      "status": "error",
+      "answer": "Server error '502 Bad Gateway' for url 'http://127.0.0.1:8783/api/ask'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
+      "id": "unique",
+      "case": "signal",
+      "question": "Поищи по звуку повтор контрольного тона в архиве.",
+      "passed": false,
+      "seconds": 45.09
+    }
+  ],
+  "action_token_limit": 2048
+}

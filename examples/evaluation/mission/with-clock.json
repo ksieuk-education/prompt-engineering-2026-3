@@ -1,0 +1,505 @@
+{
+  "variant": "По напечатанным меткам миссии",
+  "model": "qwen2.5:7b",
+  "suite": "mission",
+  "passed": 14,
+  "total": 14,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 102:46:04. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "102:46:04",
+          "end": "102:46:04",
+          "total": 1
+        },
+        "reference_id": 4370
+      },
+      "id": "mission/landing",
+      "case": "signal",
+      "question": "Что в стенограмме NASA сказано в 102:46:04 от старта миссии?",
+      "passed": true,
+      "seconds": 0.02
+    },
+    {
+      "status": "answered",
+      "answer": "Эта реплика напечатана на странице 317.",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "metadata": "page"
+      },
+      "id": "mission/landing-page",
+      "case": "signal",
+      "question": "А на какой странице?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 102:45:59–102:46:06. Число подходящих строк в стенограмме — 3.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 4369,
+            "page": 317,
+            "get": "102:45:59",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "Houston, Tranquility Base here.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Houston%2C%20Tranquility%20Base%20here."
+          },
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          },
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "102:45:59",
+          "end": "102:46:06",
+          "total": 3
+        },
+        "reference_id": 0
+      },
+      "id": "mission/range",
+      "case": "signal",
+      "question": "Покажи переговоры NASA с 102:45:59 до 102:46:06 по времени миссии.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "needs_input",
+      "answer": "О какой реплике речь? Уточните ее время, говорящего или слова из стенограммы.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [],
+      "transcript": {
+        "matches": [],
+        "query": "",
+        "metadata": "speaker"
+      },
+      "id": "mission/which",
+      "case": "signal",
+      "question": "Кто это сказал?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 102:46:06. Число подходящих строк в стенограмме — 1.\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "102:46:06",
+          "end": "102:46:06",
+          "total": 1
+        },
+        "reference_id": 4371
+      },
+      "id": "mission/ground",
+      "case": "signal",
+      "question": "А в 102:46:06?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 007:53:01. Число подходящих строк в стенограмме — 2.\n007:53:01 · стр. 42 · оператор связи в Хьюстоне. «Negative.»\n007:53:01 · стр. 42 · пилот командного модуля Майкл Коллинз. «Okay.»",
+      "sources": [
+        "AP11-42"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 653,
+            "page": 42,
+            "get": "007:53:01",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Negative.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Negative."
+          },
+          {
+            "id": 654,
+            "page": 42,
+            "get": "007:53:01",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Okay.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "007:53:01",
+          "end": "007:53:01",
+          "total": 2
+        },
+        "reference_id": 0
+      },
+      "id": "mission/overlap",
+      "case": "signal",
+      "question": "Кто говорит в стенограмме NASA на отметке 007:53:01?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 007:53:01. Число подходящих строк в стенограмме — 1.\n007:53:01 · стр. 42 · пилот командного модуля Майкл Коллинз. «Okay.»",
+      "sources": [
+        "AP11-42"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 654,
+            "page": 42,
+            "get": "007:53:01",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Okay.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "007:53:01",
+          "end": "007:53:01",
+          "total": 1
+        },
+        "reference_id": 654
+      },
+      "id": "mission/collins",
+      "case": "signal",
+      "question": "Что в 007:53:01 сказал Коллинз?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "По времени миссии 102:46:05 в стенограмме нет начала размеченной реплики. По меткам начала нельзя судить о тишине в эфире.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [],
+        "query": "",
+        "clock": {
+          "start": "102:46:05",
+          "end": "102:46:05",
+          "total": 0
+        },
+        "reference_id": 0
+      },
+      "id": "mission/no-start",
+      "case": "signal",
+      "question": "Есть ли начало реплики в стенограмме Apollo 11 ровно в 102:46:05?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "По времени миссии 102:46:06 в стенограмме нет начала размеченной реплики с указанными словами или говорящим. По меткам начала нельзя судить о тишине в эфире.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [],
+        "query": "the Eagle has landed",
+        "clock": {
+          "start": "102:46:06",
+          "end": "102:46:06",
+          "total": 0
+        },
+        "reference_id": 0
+      },
+      "id": "mission/wrong-quote",
+      "case": "signal",
+      "question": "Есть ли в стенограмме NASA ровно в 102:46:06 фраза «the Eagle has landed»?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 059:26:41. Число подходящих строк в стенограмме — 2.\n059:26:41 · стр. 182 · оператор связи в Хьюстоне. «That's affirmative. That completes that card. The rest of the updates are just really for your information based on our 58 hour platform - look at the platform. We are really good shape. Your GYRO's have almost no drift in them since - plotted update we were…»\n059:26:41 · стр. 253 · оператор связи в Хьюстоне. «Roger. Copy. Out.»\nНа этой странице соседние строки имеют метки 083:26:40 и 083:26:44. Порядок расходится с указанным временем.",
+      "sources": [
+        "AP11-182",
+        "AP11-253"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 2519,
+            "page": 182,
+            "get": "059:26:41",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "That's affirmative. That completes that card. The rest of the updates are just really for your information based on our 58 hour platform - look at the platform. We are really good shape. Your GYRO's have almost no drift in them since - plotted update we were looking at X of a minus 2.24 ...",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=That%27s%20affirmative.%20That%20completes%20that%20card.%20The%20rest%20of"
+          },
+          {
+            "id": 3423,
+            "page": 253,
+            "get": "059:26:41",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Copy. Out.",
+            "clock_neighbors": [
+              "083:26:40",
+              "083:26:44"
+            ],
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Copy.%20Out."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "059:26:41",
+          "end": "059:26:41",
+          "total": 2
+        },
+        "reference_id": 0
+      },
+      "id": "mission/separate-pages",
+      "case": "signal",
+      "question": "На каких страницах стенограммы NASA стоит 059:26:41?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 059:26:41. Число подходящих строк на странице 253 — 1.\n059:26:41 · стр. 253 · оператор связи в Хьюстоне. «Roger. Copy. Out.»\nНа этой странице соседние строки имеют метки 083:26:40 и 083:26:44. Порядок расходится с указанным временем.",
+      "sources": [
+        "AP11-253"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 3423,
+            "page": 253,
+            "get": "059:26:41",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Copy. Out.",
+            "clock_neighbors": [
+              "083:26:40",
+              "083:26:44"
+            ],
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Copy.%20Out."
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "059:26:41",
+          "end": "059:26:41",
+          "total": 1
+        },
+        "reference_id": 3423
+      },
+      "id": "mission/one-folio",
+      "case": "signal",
+      "question": "А на странице 253 в 059:26:41?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Время от старта миссии 130:04:54. Число подходящих строк в стенограмме — 1.\n130:04:54 · стр. 491 · пилот командного модуля Майкл Коллинз. «Right.»",
+      "sources": [
+        "AP11-491"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "mission_time",
+        "matches": [
+          {
+            "id": 8436,
+            "page": 491,
+            "get": "130:04:54",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Right.",
+            "source_url": "https://apollojournals.org/alsj/a11/a11TEC84-2p491.pdf"
+          }
+        ],
+        "query": "",
+        "clock": {
+          "start": "130:04:54",
+          "end": "130:04:54",
+          "total": 1
+        },
+        "reference_id": 8436
+      },
+      "id": "mission/restored",
+      "case": "signal",
+      "question": "Прочитай в стенограмме NASA реплику с меткой 130:04:54.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "needs_input",
+      "answer": "Введите метку в формате ЧЧЧ:ММ:СС или две метки по порядку. Минуты и секунды должны быть от 00 до 59.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "invalid_mission_time",
+        "matches": [],
+        "query": "",
+        "clock": null,
+        "reference_id": 0
+      },
+      "id": "mission/invalid",
+      "case": "signal",
+      "question": "Покажи в стенограмме NASA 102:66:05 по времени миссии.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "needs_input",
+      "answer": "Конец интервала предшествует началу. Укажите сначала более раннюю метку миссии.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "mode": "invalid_mission_time",
+        "matches": [],
+        "query": "",
+        "clock": null,
+        "reference_id": 0
+      },
+      "id": "mission/reversed",
+      "case": "signal",
+      "question": "Покажи стенограмму NASA с 102:46:06 до 102:46:04.",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

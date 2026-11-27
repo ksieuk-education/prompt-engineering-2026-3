@@ -1,0 +1,45 @@
+[
+  {
+    "question": "Сравни образец NASA с 2,50 с с расширенной версией.",
+    "status": "answered",
+    "answer": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41.",
+    "sources": [],
+    "tools": [
+      "field_catalog",
+      "compare_public"
+    ]
+  },
+  {
+    "question": "Какое время от старта миссии соответствует отметке 00:03,41 в этом WAV?",
+    "status": "answered",
+    "answer": "Счетчик запущен вместе с этой копией.",
+    "sources": [
+      "A2"
+    ],
+    "tools": [
+      "search",
+      "read",
+      "read"
+    ]
+  },
+  {
+    "question": "Найди в стенограмме NASA «the Eagle has landed».",
+    "status": "answered",
+    "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+    "sources": [
+      "AP11-317"
+    ],
+    "tools": [
+      "search_transcript"
+    ]
+  },
+  {
+    "question": "Если в стенограмме 102:46:04, какую секунду короткого WAV нужно открыть?",
+    "status": "no_evidence",
+    "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+    "sources": [],
+    "tools": [
+      "search_transcript"
+    ]
+  }
+]

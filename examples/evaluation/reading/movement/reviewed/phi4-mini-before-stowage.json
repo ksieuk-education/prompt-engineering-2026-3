@@ -1,0 +1,178 @@
+{
+  "variant": "phi4-mini-before",
+  "model": "phi4-mini:3.8b",
+  "suite": "stowage",
+  "passed": 3,
+  "total": 6,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "На странице 115 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Can we move the television setup to the lunar module tomorrow?, move television setup lunar module",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 115
+      },
+      "id": "stowage/television-in",
+      "case": "signal",
+      "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра перенести телевизионную установку в лунный модуль?",
+      "passed": false,
+      "seconds": 8.69
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 153 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "On page 153, NASA Houston's transcript requests to retrieve the surface work checklist from the flight documentation folder., NASA Houston, page 153, retrieve, surface work checklist, flight documentation folder",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 153
+      },
+      "id": "stowage/checklist-out",
+      "case": "signal",
+      "question": "На странице 153 стенограммы NASA Хьюстон просит достать контрольный список работ на поверхности из папки с полетной документацией?",
+      "passed": false,
+      "seconds": 7.32
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 544 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where on page 544 of the NASA stenogram does it say that containers with samples were placed in nests on the command module's floor?, NASA stenogram page 544 containers samples placed nests command module floor",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 544
+      },
+      "id": "stowage/containers-in",
+      "case": "signal",
+      "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами поместили в гнезда в борту командного модуля?",
+      "passed": false,
+      "seconds": 5.92
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 115 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Can we remove the television setup from the lunar module tomorrow?, remove television lunar module",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 115
+      },
+      "id": "stowage/television-out",
+      "case": "signal",
+      "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра вынуть телевизионную установку из лунного модуля?",
+      "passed": true,
+      "seconds": 7.76
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 153 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "На странице 153 стенограммы NASA Хьюстон просит положить контрольный список работ на поверхности обратно в папку с полетной документацией, NASA Houston, page 153, control list, surface work, flight documentation folder",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 153
+      },
+      "id": "stowage/checklist-in",
+      "case": "signal",
+      "question": "На странице 153 стенограммы NASA Хьюстон просит положить контрольный список работ на поверхности обратно в папку с полетной документацией?",
+      "passed": true,
+      "seconds": 7.94
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 544 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where on page 544 of the NASA stenogram does it say that containers with samples were removed from the nests in the command module?, page 544, NASA stenogram, containers with samples, removed, nests, command module",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 544
+      },
+      "id": "stowage/containers-out",
+      "case": "signal",
+      "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами вынули из гнезд в борту командного модуля?",
+      "passed": true,
+      "seconds": 10.55
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,56 @@
+{
+  "qwen25": {
+    "original": [
+      6,
+      6
+    ],
+    "all": [
+      9,
+      9
+    ],
+    "transfer": [
+      6,
+      6
+    ],
+    "positions": [
+      10,
+      10
+    ]
+  },
+  "gemma3-1b": {
+    "original": [
+      5,
+      6
+    ],
+    "all": [
+      9,
+      9
+    ],
+    "transfer": [
+      6,
+      6
+    ],
+    "positions": [
+      10,
+      10
+    ]
+  },
+  "phi4-mini": {
+    "original": [
+      5,
+      6
+    ],
+    "all": [
+      9,
+      9
+    ],
+    "transfer": [
+      6,
+      6
+    ],
+    "positions": [
+      10,
+      10
+    ]
+  }
+}

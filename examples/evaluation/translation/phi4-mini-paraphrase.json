@@ -1,0 +1,239 @@
+{
+  "variant": "Argos ru-en 1.9 + phi4-mini",
+  "model": "phi4-mini:3.8b",
+  "suite": "paraphrase",
+  "passed": 5,
+  "total": 7,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 377. Время от старта миссии 109:24:48, командир Нил Армстронг. «And the - the surface is fine and powdery. I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles.»",
+      "sources": [
+        "AP11-377"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5290,
+            "page": 377,
+            "get": "109:24:48",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "And the - the surface is fine and powdery. I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=And%20the%20-%20the%20surface%20is%20fine%20and%20powdery."
+          }
+        ],
+        "query": "What in the NASA transcript did the astronaut compare the dust stuck to the soles of his shoes?, compare dust stuck soles his shoes",
+        "mode": "fts+embeddinggemma",
+        "quote": "I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots."
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": true,
+      "seconds": 2.52
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 319. Время от старта миссии 102:55:16, командир Нил Армстронг. «The AUTO targeting was taking us right into a football field size - football field sized crater, with a large number of big boulders and rocks for about ...»",
+      "sources": [
+        "AP11-319"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4412,
+            "page": 319,
+            "get": "102:55:16",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "Hey, Houston, that may have seemed like a very long final phase. The AUTO targeting was taking us right into a football field size - football field sized crater, with a large number of big boulders and rocks for about ... one or two crater diameters around it, and it required a ... in P66 and flying manually over the rock field to find a reasonably good area.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Hey%2C%20Houston%2C%20that%20may%20have%20seemed%20like%20a%20very"
+          }
+        ],
+        "query": "Find in the Apollo 11 transcript a story about a crater the size of a football field., story crater size football field",
+        "mode": "fts+embeddinggemma",
+        "quote": "football field size - football field sized crater"
+      },
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": true,
+      "seconds": 2.87
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the NASA transcript Aldrin's words about majestic desolation., aldrin words majestic desolation",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": false,
+      "seconds": 2.49
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "Where in the NASA transcript did Houston say they were breathing again after landing?, houston say they breathing again after landing",
+        "mode": "fts+embeddinggemma",
+        "quote": "breathing again"
+      },
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": true,
+      "seconds": 2.62
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 transcript does humanity's insatiable curiosity speak?, humanity insatiable curiosity speak",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 8007,
+            "page": 589,
+            "get": "177:38:20",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Good evening. I'd like to discuss with you a few of the more symbolic aspects of the flight of our mission, Apollo 11. As we've been discussing the events that have taken place in the past 2 or 3 days here on board our spacecraft, we've come to the conclusion that this has been far more than three men on a voyage to the Moon; more, still, than the efforts of a government and industry team; more, even, than the efforts of one nation. We feel that this stands as a symbol of the insatiable curiosity of all mankind to explore the unknown. Neil's statement the other day upon first setting foot on the surface of the Moon, \"This is a small step for a man, but a great leap for mankind,\" I believe sums up these feelings very nicely. We accepted the challenge of going to the Moon; the acceptance of this challenge was inevitable. The relative ease with which we carried out our mission, I believe, is a tribute to the timeliness of that acceptance. Today, I feel we're fully capable of accepting expanded roles in the exploration of space. In retrospect, we have all been particularly pleased with the call signs that we very laboriously",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Good%20evening.%20I%27d%20like%20to%20discuss%20with%20you%20a"
+          }
+        ]
+      },
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 3.01
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where does the NASA transcript say the moon is made of green cheese?, say moon made green cheese",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": true,
+      "seconds": 2.65
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the Apollo 11 transcript the words about the purple pineapple orchestra., words purple pineapple orchestra",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": true,
+      "seconds": 1.52
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,140 @@
+{
+  "variant": "fts-dense-and-citation-check",
+  "model": "gemma3:1b",
+  "suite": "paraphrase-new",
+  "passed": 2,
+  "total": 5,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "In the NASA recording, a conversation with a listener is greeted with the phrase \"hello, earthling\"., greeting, earthling, welcome",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/earthling",
+      "case": "signal",
+      "question": "Где в стенограмме NASA встречают собеседника приветствием «привет, землянин»?",
+      "passed": false,
+      "seconds": 2.3
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "The audio quality of the conversation was significantly lower than the quality of the conversation in the living room., audio quality",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/lounge",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 сравнение качества слышимости с беседой в собственной гостиной.",
+      "passed": false,
+      "seconds": 2.53
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Laser beam pointing towards Earth., laser, beam, earth, pointing",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/laser",
+      "case": "signal",
+      "question": "Где в стенограмме NASA с Земли предлагают мигать сине-зеленым лазером?",
+      "passed": false,
+      "seconds": 2.69
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "The green giraffe stands in the foreground, a vibrant, leafy silhouette against the pale blue sky. Its long neck arches gracefully, a symbol of resilience and a, giraffe, silhouette, blue sky, resilience",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/hippo",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA стихотворение о зеленом бегемоте.",
+      "passed": true,
+      "seconds": 2.41
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Connection to the Wi-Fi network on the Moon., network connection",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/wifi",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 описано подключение космонавтов к сети Wi-Fi на Луне?",
+      "passed": true,
+      "seconds": 2.4
+    }
+  ],
+  "action_token_limit": 2048
+}

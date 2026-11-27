@@ -1,0 +1,80 @@
+{
+  "model": "qwen2.5:7b",
+  "method": "Same 26 questions as in the serial model comparison. Final replies obtained from the installed local application via HTTP, followed by six additional questions about other source lines. Only the earlier serial comparison is used to compare model latency.",
+  "before": 20,
+  "after": 22,
+  "total": 26,
+  "series": {
+    "independent": {
+      "before": 5,
+      "after": 5,
+      "total": 8,
+      "raw_output": "installed-independent.json"
+    },
+    "press": {
+      "before": 6,
+      "after": 6,
+      "total": 6,
+      "raw_output": "installed-press.json"
+    },
+    "cabin": {
+      "before": 5,
+      "after": 6,
+      "total": 6,
+      "raw_output": "installed-cabin.json"
+    },
+    "cargo": {
+      "before": 4,
+      "after": 5,
+      "total": 6,
+      "raw_output": "installed-cargo.json"
+    }
+  },
+  "gained_questions": [
+    "cabin/from-pocket",
+    "cargo/camera-in"
+  ],
+  "lost_questions": [],
+  "new_match_counts": {
+    "true_source_found": 11,
+    "supported_questions": 13,
+    "correct_rejection": 11,
+    "unsupported_questions": 13
+  },
+  "additional_stowage": {
+    "before": 4,
+    "after": 4,
+    "total": 6,
+    "raw_output": "installed-stowage.json",
+    "failures": [
+      "stowage/television-out",
+      "stowage/containers-out"
+    ],
+    "diagnostic": "missed-relations.json"
+  },
+  "source_audit": {
+    "parsed_lines": 8452,
+    "candidate_lines": 151,
+    "candidate_spans": 163,
+    "accepted_explicit_movements": 17,
+    "relation_vocabulary": "English direction and location checked against the original Russian intent and actual text of the cited line."
+  },
+  "original_dialogues": {
+    "stable_passed": 6,
+    "total": 6,
+    "raw": "installed-original.json",
+    "development_rerun": {
+      "passed": 5,
+      "total": 6,
+      "failed_question": "original/splice/1",
+      "observed_error": "Сессия закончилась. Откройте дело заново.",
+      "cause": "Development server automatically reloaded between questions in that session."
+    }
+  },
+  "qa": {
+    "browser_evidence": "installed-browsers.json",
+    "python_versions_and_rebuild": "reproducibility.json",
+    "offline_interface": "../../../interface/offline-after.json",
+    "video_decode": "../../../interface/demo-decode.json"
+  }
+}

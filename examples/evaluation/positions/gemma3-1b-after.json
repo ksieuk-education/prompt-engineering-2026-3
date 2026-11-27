@@ -1,0 +1,310 @@
+{
+  "variant": "Позиции на копии и эфирные часы: gemma3-1b",
+  "model": "gemma3:1b",
+  "suite": "positions",
+  "passed": 10,
+  "total": 10,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Метка «Музыкальная отбивка» стоит на 00:25 от начала копии.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "signal",
+          "marker": "music",
+          "label": "Музыкальная отбивка",
+          "second": 25,
+          "tape": "00:25",
+          "status": "verified",
+          "value": "00:25",
+          "sources": [
+            "A2"
+          ],
+          "detail": "Метка «Музыкальная отбивка» стоит на 00:25 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/music",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Контрольный тон» стоит на 00:04 от начала копии.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "signal",
+          "marker": "sync",
+          "label": "Контрольный тон",
+          "second": 4,
+          "tape": "00:04",
+          "status": "verified",
+          "value": "00:04",
+          "sources": [
+            "A2"
+          ],
+          "detail": "Метка «Контрольный тон» стоит на 00:04 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/tone",
+      "case": "signal",
+      "question": "А контрольный тон?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Три ноты позывного» стоит на 00:18 от начала копии.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "signal",
+          "marker": "ident",
+          "label": "Три ноты позывного",
+          "second": 18,
+          "tape": "00:18",
+          "status": "verified",
+          "value": "00:18",
+          "sources": [
+            "A2"
+          ],
+          "detail": "Метка «Три ноты позывного» стоит на 00:18 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/ident",
+      "case": "signal",
+      "question": "А три ноты позывного?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Шум зала» стоит на 00:12 от начала копии.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "splice",
+          "marker": "room",
+          "label": "Шум зала",
+          "second": 12,
+          "tape": "00:12",
+          "status": "verified",
+          "value": "00:12",
+          "sources": [
+            "B2"
+          ],
+          "detail": "Метка «Шум зала» стоит на 00:12 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/room",
+      "case": "splice",
+      "question": "На какой отметке ленты слышен шум зала?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Щелчок пуска» стоит на 00:03 от начала копии.",
+      "sources": [
+        "C2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "untimed",
+          "marker": "noise",
+          "label": "Щелчок пуска",
+          "second": 3,
+          "tape": "00:03",
+          "status": "verified",
+          "value": "00:03",
+          "sources": [
+            "C2"
+          ],
+          "detail": "Метка «Щелчок пуска» стоит на 00:03 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/click",
+      "case": "untimed",
+      "question": "Какой таймкод у щелчка пуска на этой ленте?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Начало заставки» стоит на 00:12 от начала копии.",
+      "sources": [
+        "C2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "untimed",
+          "marker": "ident",
+          "label": "Начало заставки",
+          "second": 12,
+          "tape": "00:12",
+          "status": "verified",
+          "value": "00:12",
+          "sources": [
+            "C2"
+          ],
+          "detail": "Метка «Начало заставки» стоит на 00:12 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/intro",
+      "case": "untimed",
+      "question": "А начало заставки?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "needs_input",
+      "answer": "Какую из этих меток вы имеете в виду? Первый удар / Второй удар.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read"
+      ],
+      "id": "position/which",
+      "case": "splice",
+      "question": "На какой секунде на копии удар?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Второй удар» стоит на 00:25 от начала копии.",
+      "sources": [
+        "B2"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "tape_position",
+          "case_id": "splice",
+          "marker": "last",
+          "label": "Второй удар",
+          "second": 25,
+          "tape": "00:25",
+          "status": "verified",
+          "value": "00:25",
+          "sources": [
+            "B2"
+          ],
+          "detail": "Метка «Второй удар» стоит на 00:25 от начала копии."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/second",
+      "case": "splice",
+      "question": "Второй.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Второй удар» прозвучала в 19:05:37 по эфирным часам. На ленте это 00:25.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "last",
+          "label": "Второй удар",
+          "tape": "00:25",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:37",
+          "anchor": "19:05:37",
+          "anchor_tape": "00:25",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:37 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "read",
+        "locate_marker"
+      ],
+      "id": "position/air",
+      "case": "splice",
+      "question": "А в эфире во сколько прозвучал этот же удар?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "needs_input",
+      "answer": "Такой метки в описи не нашлось. Какой звук посмотреть? Контрольный тон / Три ноты позывного / Музыкальная отбивка.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read"
+      ],
+      "id": "position/unknown",
+      "case": "signal",
+      "question": "На какой секунде копии слышен звонок телефона?",
+      "passed": true,
+      "seconds": 0.0
+    }
+  ],
+  "action_token_limit": 2048
+}

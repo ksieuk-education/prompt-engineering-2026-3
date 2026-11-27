@@ -1,0 +1,39 @@
+{
+  "qwen25": {
+    "positive": 2,
+    "negative": 3,
+    "total_each": 4,
+    "failed": [
+      "independent/legend",
+      "independent/unnamed",
+      "independent/tomato"
+    ]
+  },
+  "qwen25-argos-fallback": {
+    "positive": 2,
+    "negative": 3,
+    "total_each": 4,
+    "failed": [
+      "independent/legend",
+      "independent/unnamed",
+      "independent/tomato"
+    ]
+  },
+  "phi4-mini": {
+    "positive": 2,
+    "negative": 4,
+    "total_each": 4,
+    "failed": [
+      "independent/soup",
+      "independent/legend"
+    ]
+  },
+  "phi4-mini-argos-fallback": {
+    "positive": 3,
+    "negative": 4,
+    "total_each": 4,
+    "failed": [
+      "independent/legend"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": "qwen2.5:7b",
+  "translator": "Argos ru-en 1.9, CTranslate2 CPU int8",
+  "mode": "Normal studio.app startup, verified downloaded model directory, ARCHIVE_ARGOS_MODE=only",
+  "suites": {
+    "paraphrase-new": {
+      "passed": 5,
+      "total": 5,
+      "using_argos": [
+        "paraphrase/earthling",
+        "paraphrase/lounge",
+        "paraphrase/laser",
+        "paraphrase/hippo",
+        "paraphrase/wifi"
+      ],
+      "failed": []
+    },
+    "transcript": {
+      "passed": 8,
+      "total": 8,
+      "using_argos": [
+        "document-step"
+      ],
+      "failed": []
+    }
+  }
+}

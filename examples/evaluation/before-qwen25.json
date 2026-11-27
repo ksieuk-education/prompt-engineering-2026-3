@@ -1,0 +1,166 @@
+{
+  "variant": "before",
+  "model": "qwen2.5:7b",
+  "suite": "dialogue",
+  "passed": 3,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Метка «Три ноты позывного» прозвучала в 21:17:24 по эфирным часам. Это на 4 с позже планового времени 21:17:20.",
+      "sources": [
+        "A2",
+        "A3",
+        "A1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Три ноты позывного",
+          "tape": "00:18",
+          "sources": [
+            "A2",
+            "A3",
+            "A1"
+          ],
+          "planned": "21:17:20",
+          "status": "verified",
+          "value": "21:17:24",
+          "anchor": "21:17:10",
+          "anchor_tape": "00:04",
+          "travel_seconds": 14,
+          "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+          "shift_seconds": 4
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "compound",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и доказано ли, что задержка была из-за смены пластинки?",
+      "passed": false,
+      "seconds": 5.46
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Второй удар» прозвучала в 19:05:37 по эфирным часам. На ленте это 00:25.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "last",
+          "label": "Второй удар",
+          "tape": "00:25",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:37",
+          "anchor": "19:05:37",
+          "anchor_tape": "00:25",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:37 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "wall",
+      "case": "splice",
+      "question": "Во сколько по эфирным часам был второй удар?",
+      "passed": true,
+      "seconds": 2.36
+    },
+    {
+      "status": "answered",
+      "answer": "По одним и тем же эфирным часам первый контрольный удар передан в 19:05:12, второй в 19:05:37. Обе отметки относятся к записи из малого концертного зала.",
+      "sources": [
+        "B1"
+      ],
+      "passages": [
+        "B1.1",
+        "B1.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "locate_marker"
+      ],
+      "id": "followup",
+      "case": "splice",
+      "question": "А первый?",
+      "passed": true,
+      "seconds": 2.24
+    },
+    {
+      "status": "answered",
+      "answer": "По сетке заставка стояла на 09:40:00.",
+      "sources": [
+        "C1"
+      ],
+      "passages": [
+        "C1.1"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "plan",
+      "case": "untimed",
+      "question": "Верно ли, что заставка вышла в эфир ровно в 09:40:00?",
+      "passed": false,
+      "seconds": 2.5
+    },
+    {
+      "status": "answered",
+      "answer": "Музыкальная отбивка вступает на 00:25.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "tape",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 0.97
+    },
+    {
+      "status": "answered",
+      "answer": "На вечерний выпуск три ноты позывного поставлены в сетке на 21:17:20. Это плановое время.",
+      "sources": [
+        "A1"
+      ],
+      "passages": [
+        "A1.1",
+        "A1.2"
+      ],
+      "measurements": [],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "id": "outside",
+      "case": "signal",
+      "question": "Какое расстояние от Земли до Луны?",
+      "passed": false,
+      "seconds": 1.61
+    }
+  ]
+}

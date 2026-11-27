@@ -1,0 +1,122 @@
+{
+  "model": "qwen2.5:7b",
+  "cases": [
+    {
+      "id": "right-speaker",
+      "question": "Найди в стенограмме NASA слова Армстронга «the Eagle has landed».",
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "tools": [
+        "search_transcript"
+      ],
+      "passed": true
+    },
+    {
+      "id": "who",
+      "question": "Кто это сказал?",
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "tools": [
+        "search"
+      ],
+      "passed": false
+    },
+    {
+      "id": "time",
+      "question": "А какое время миссии у этой фразы?",
+      "status": "answered",
+      "answer": "На вечерний выпуск три ноты позывного поставлены в сетке на 21:17:20. Это плановое время. Графа фактического выхода осталась пустой.",
+      "sources": [
+        "A1"
+      ],
+      "tools": [
+        "search",
+        "read"
+      ],
+      "passed": false
+    },
+    {
+      "id": "wrong-speaker",
+      "question": "Найди в стенограмме NASA реплику Коллинза «the Eagle has landed».",
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "tools": [
+        "search_transcript"
+      ],
+      "passed": false
+    },
+    {
+      "id": "houston",
+      "question": "Найди в стенограмме NASA слова Хьюстона «turn blue».",
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "tools": [
+        "search_transcript"
+      ],
+      "passed": true
+    },
+    {
+      "id": "ground-who",
+      "question": "Кто именно это сказал?",
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18.",
+      "sources": [
+        "A2"
+      ],
+      "tools": [
+        "search",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read"
+      ],
+      "passed": false
+    },
+    {
+      "id": "wrong-connection",
+      "question": "Найди в стенограмме Apollo 11 место, где говорится об отправке данных через USB-C.",
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "passed": true
+    },
+    {
+      "id": "window",
+      "question": "Найди в стенограмме NASA слова о том, что космонавту наконец дали окно, чтобы смотреть наружу.",
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 2. Время от старта миссии 000:03:36, командир Нил Армстронг. «Yes. They finally gave me a window to look out.»",
+      "sources": [
+        "AP11-2"
+      ],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": 4,
+  "total": 8
+}

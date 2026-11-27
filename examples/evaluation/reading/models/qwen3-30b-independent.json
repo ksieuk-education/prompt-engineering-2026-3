@@ -1,0 +1,293 @@
+{
+  "variant": "qwen3-30b-serial",
+  "model": "hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M",
+  "suite": "independent",
+  "passed": 8,
+  "total": 8,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 535. Время от старта миссии 151:43:50, командир Нил Армстронг. «My compliments to the chef. The food is outstanding. This cream of chicken soup I give at least three spoons.»",
+      "sources": [
+        "AP11-535"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7432,
+            "page": 535,
+            "get": "151:43:50",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "My compliments to the chef. The food is outstanding. This cream of chicken soup I give at least three spoons.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=My%20compliments%20to%20the%20chef.%20The%20food%20is%20outstanding."
+          }
+        ],
+        "query": "the commander praises the cook and evaluates chicken cream soup at least three spoons, commander praises chicken soup",
+        "mode": "fts+embeddinggemma",
+        "quote": "My compliments to the chef. The food is outstanding. This cream of chicken soup I give at least three spoons."
+      },
+      "id": "independent/soup",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA, как командир хвалит повара и оценивает куриный крем-суп как минимум в три ложки.",
+      "passed": true,
+      "seconds": 27.57
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 610. Время от старта миссии 190:51:01, пилот командного модуля Майкл Коллинз. «I'm right in the middle of my orange juice. Be with you in about 5 minutes.»",
+      "sources": [
+        "AP11-610"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8207,
+            "page": 610,
+            "get": "190:51:01",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "I'm right in the middle of my orange juice. Be with you in about 5 minutes.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=I%27m%20right%20in%20the%20middle%20of%20my%20orange%20juice."
+          }
+        ],
+        "query": "",
+        "mode": "fts+embeddinggemma",
+        "quote": "I'm right in the middle of my orange juice. Be with you in about 5 minutes."
+      },
+      "id": "independent/orange",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз занят апельсиновым соком и обещает вернуться примерно через пять минут?",
+      "passed": true,
+      "seconds": 15.37
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree.»",
+      "sources": [
+        "AP11-270"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 3592,
+            "page": 270,
+            "get": "095:17:28",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Among%20the%20large%20headlines%20concerning%20Apollo%20this%20morning%2C"
+          }
+        ],
+        "query": "где в стенограмме NASA пересказывают легенду о кролике, который стоит на задних лапах в тени коричного дерева",
+        "mode": "fts+embeddinggemma",
+        "quote": "you might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree"
+      },
+      "id": "independent/legend",
+      "case": "signal",
+      "question": "Где в стенограмме NASA пересказывают легенду о кролике, который стоит на задних лапах в тени коричного дерева?",
+      "passed": true,
+      "seconds": 15.87
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «The name of the rabbit is not reported.»",
+      "sources": [
+        "AP11-270"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 3592,
+            "page": 270,
+            "get": "095:17:28",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Among%20the%20large%20headlines%20concerning%20Apollo%20this%20morning%2C"
+          }
+        ],
+        "query": "the name of the rabbit from the legend is not mentioned",
+        "mode": "fts+embeddinggemma",
+        "quote": "The name of the rabbit is not reported."
+      },
+      "id": "independent/unnamed",
+      "case": "signal",
+      "question": "Где в стенограмме NASA прямо сказано, что имя кролика из легенды не сообщается?",
+      "passed": true,
+      "seconds": 14.91
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Armstrong praises tomato cream soup and awards it three spoons",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 7432,
+            "page": 535,
+            "get": "151:43:50",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "My compliments to the chef. The food is outstanding. This cream of chicken soup I give at least three spoons.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=My%20compliments%20to%20the%20chef.%20The%20food%20is%20outstanding."
+          },
+          {
+            "id": 7433,
+            "page": 536,
+            "get": "151:43:58",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Okay. Cream of chicken, three spoons.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20Cream%20of%20chicken%2C%20three%20spoons."
+          }
+        ]
+      },
+      "id": "independent/tomato",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA, где Армстронг хвалит томатный крем-суп и присуждает ему три ложки.",
+      "passed": true,
+      "seconds": 14.77
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 transcript does Collins ask for five more minutes to finish drinking apple juice?, Collins apple juice",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/apple",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз просит еще пять минут, чтобы допить яблочный сок?",
+      "passed": true,
+      "seconds": 15.06
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript does the crew report that with their own eyes saw on the Moon a rabbit under a cinnamon tree?, rabbit Moon cinnamon tree",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 3592,
+            "page": 270,
+            "get": "095:17:28",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Among%20the%20large%20headlines%20concerning%20Apollo%20this%20morning%2C"
+          }
+        ]
+      },
+      "id": "independent/sighting",
+      "case": "signal",
+      "question": "Где в стенограмме NASA экипаж сообщает, что своими глазами увидел на Луне кролика под коричным деревом?",
+      "passed": true,
+      "seconds": 23.37
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Houston Jade",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/jade",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA строку, где Хьюстон сообщает, что лунного кролика звали Нефритовый.",
+      "passed": true,
+      "seconds": 15.01
+    }
+  ],
+  "action_token_limit": 2048
+}

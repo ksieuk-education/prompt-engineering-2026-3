@@ -1,0 +1,175 @@
+{
+  "method": "Same 26 authored questions for each model, 13 with a specific source and 13 with a changed detail. Matched outcomes are descriptive for this set.",
+  "question_files_sha256": {
+    "independent": "2f931b99dc081dc2f27f61daedfc259d8aac9c1d727ee62a958f9a3a9a4fed6a",
+    "press": "a7601bfe176fdfda759ee7a82ed23a944841faa07231e55831fe0f392d5f0150",
+    "cabin": "3529fb4255cd737d77d0238f2648e05b6e416596d3de061d3109143d2b58397e",
+    "cargo": "e487cd89e791fb7b57f79da5858b331951911ad94e09548a50df4ef1038dba80"
+  },
+  "models": {
+    "qwen3-30b": {
+      "supported_questions": 13,
+      "unsupported_questions": 13,
+      "found_correct_source": 13,
+      "missed_real_source": 0,
+      "correct_rejections": 8,
+      "false_confirmations": 5
+    },
+    "qwen25": {
+      "supported_questions": 13,
+      "unsupported_questions": 13,
+      "found_correct_source": 11,
+      "missed_real_source": 2,
+      "correct_rejections": 9,
+      "false_confirmations": 4
+    },
+    "phi4-mini": {
+      "supported_questions": 13,
+      "unsupported_questions": 13,
+      "found_correct_source": 7,
+      "missed_real_source": 6,
+      "correct_rejections": 10,
+      "false_confirmations": 3
+    }
+  },
+  "pairs": {
+    "qwen3-30b vs qwen25": {
+      "left": "qwen3-30b",
+      "right": "qwen25",
+      "counts": {
+        "both_correct": 18,
+        "left_only": 3,
+        "right_only": 2,
+        "both_missed": 3
+      },
+      "questions": {
+        "both_correct": [
+          "independent/soup",
+          "independent/orange",
+          "independent/apple",
+          "independent/sighting",
+          "independent/jade",
+          "press/album",
+          "press/sandwiches",
+          "press/headlines",
+          "press/album-new",
+          "press/smallest",
+          "cabin/helmet",
+          "cabin/bavaria",
+          "cabin/pocket",
+          "cabin/right-couch",
+          "cabin/bavaria-school",
+          "cargo/helmets-in",
+          "cargo/camera-out",
+          "cargo/restraint-in"
+        ],
+        "left_only": [
+          "independent/legend",
+          "independent/unnamed",
+          "independent/tomato"
+        ],
+        "right_only": [
+          "press/waiting-sandwiches",
+          "cargo/helmets-out"
+        ],
+        "both_missed": [
+          "cabin/from-pocket",
+          "cargo/camera-in",
+          "cargo/restraint-out"
+        ]
+      }
+    },
+    "qwen3-30b vs phi4-mini": {
+      "left": "qwen3-30b",
+      "right": "phi4-mini",
+      "counts": {
+        "both_correct": 15,
+        "left_only": 6,
+        "right_only": 2,
+        "both_missed": 3
+      },
+      "questions": {
+        "both_correct": [
+          "independent/orange",
+          "independent/unnamed",
+          "independent/tomato",
+          "independent/apple",
+          "independent/sighting",
+          "independent/jade",
+          "press/sandwiches",
+          "press/headlines",
+          "press/album-new",
+          "press/smallest",
+          "cabin/pocket",
+          "cabin/right-couch",
+          "cabin/bavaria-school",
+          "cargo/camera-out",
+          "cargo/restraint-in"
+        ],
+        "left_only": [
+          "independent/soup",
+          "independent/legend",
+          "press/album",
+          "cabin/helmet",
+          "cabin/bavaria",
+          "cargo/helmets-in"
+        ],
+        "right_only": [
+          "press/waiting-sandwiches",
+          "cargo/helmets-out"
+        ],
+        "both_missed": [
+          "cabin/from-pocket",
+          "cargo/camera-in",
+          "cargo/restraint-out"
+        ]
+      }
+    },
+    "qwen25 vs phi4-mini": {
+      "left": "qwen25",
+      "right": "phi4-mini",
+      "counts": {
+        "both_correct": 15,
+        "left_only": 5,
+        "right_only": 2,
+        "both_missed": 4
+      },
+      "questions": {
+        "both_correct": [
+          "independent/orange",
+          "independent/apple",
+          "independent/sighting",
+          "independent/jade",
+          "press/sandwiches",
+          "press/headlines",
+          "press/album-new",
+          "press/waiting-sandwiches",
+          "press/smallest",
+          "cabin/pocket",
+          "cabin/right-couch",
+          "cabin/bavaria-school",
+          "cargo/camera-out",
+          "cargo/restraint-in",
+          "cargo/helmets-out"
+        ],
+        "left_only": [
+          "independent/soup",
+          "press/album",
+          "cabin/helmet",
+          "cabin/bavaria",
+          "cargo/helmets-in"
+        ],
+        "right_only": [
+          "independent/unnamed",
+          "independent/tomato"
+        ],
+        "both_missed": [
+          "independent/legend",
+          "cabin/from-pocket",
+          "cargo/camera-in",
+          "cargo/restraint-out"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "variant": "qwen25-index",
+  "model": "qwen2.5:7b",
+  "suite": "holdout",
+  "passed": 5,
+  "total": 6,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript do they propose to record Armstrong eating oatmeal?, NASA, transcript, Armstrong, oatmeal",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/oatmeal",
+      "case": "signal",
+      "question": "Где в стенограмме NASA предлагают записать Олдрина на соревнование по поеданию овсянки?",
+      "passed": false,
+      "seconds": 6.57
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 578. Время от старта миссии 173:49:18, пилот командного модуля Майкл Коллинз. «Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.»",
+      "sources": [
+        "AP11-578"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7869,
+            "page": 578,
+            "get": "173:49:18",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Breakfast%20was%20magnificent%20as%20usual.%20I%20had%20sliced%20peaches%2C"
+          }
+        ],
+        "query": "In what place in the NASA transcript list a breakfast with sliced peaches, sausages, and two cups of coffee?, NASA transcript breakfast",
+        "mode": "fts+embeddinggemma",
+        "quote": "sliced peaches, sausage patties, two cups of coffee"
+      },
+      "id": "paraphrase/breakfast",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA перечисляют завтрак с нарезанными персиками, колбасными котлетами и двумя чашками кофе?",
+      "passed": true,
+      "seconds": 9.57
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 30. Время от старта миссии 005:24:05, командир Нил Армстронг. «I think today is also the birthday of California, and I believe they are 200 years old, and we send them a happy birthday. And I think it's Dr. Mueller's birthday, also, and I don't think he is that old.»",
+      "sources": [
+        "AP11-30"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 472,
+            "page": 30,
+            "get": "005:24:05",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "I think today is also the birthday of California, and I believe they are 200 years old, and we send them a happy birthday. And I think it's Dr. Mueller's birthday, also, and I don't think he is that old.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=I%20think%20today%20is%20also%20the%20birthday%20of%20California%2C"
+          }
+        ],
+        "query": "Find in the transcript of Apollo 11 how Armstrong congratulates California on its bicentennial., Apollo 11, Armstrong, California, bicentennial",
+        "mode": "fts+embeddinggemma",
+        "quote": "I think today is also the birthday of California, and I believe they are 200 years old, and we send them a happy birthday."
+      },
+      "id": "paraphrase/california",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11, как Армстронг поздравляет Калифорнию с двухсотлетием.",
+      "passed": true,
+      "seconds": 8.44
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the NASA transcript the message that Aldrin won the competition to eat oatmeal., NASA, Aldrin, oatmeal, competition",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/winner",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA сообщение, что Олдрин победил в соревновании по поеданию овсянки.",
+      "passed": true,
+      "seconds": 9.07
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание. На стр. 578 в источнике стоит «two cups of coffee». В вопросе указано другое количество (3).",
+      "sources": [
+        "AP11-578"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript does it say that the astronaut drank three cups of coffee after eating peaches for breakfast?, NASA transcript coffee cups",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "counterexample": {
+          "id": 7869,
+          "page": 578,
+          "get": "173:49:18",
+          "speaker": "CMP",
+          "role": "пилот командного модуля Майкл Коллинз",
+          "text": "Breakfast was magnificent as usual. I had sliced peaches, sausage patties, two cups of coffee, and I forget all what else.",
+          "quantity_difference": {
+            "requested": 3,
+            "printed": 2,
+            "words": "two cups of coffee"
+          },
+          "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Breakfast%20was%20magnificent%20as%20usual.%20I%20had%20sliced%20peaches%2C"
+        },
+        "review_candidates": [
+          {
+            "id": 1212,
+            "page": 87,
+            "get": "027:31:17",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "We made three cups of coffee today. The last one - you know when all the plumbing was warmed up, the hydrogen gun and everything, was warmest of the three. I don't know who had that one - Neil, did you have that one? How was your coffee? You didn't drink it till later, did you? Anyway, it's pretty good. It's not piping hot, but it sure beats stone-cold coffee.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20made%20three%20cups%20of%20coffee%20today.%20The%20last"
+          }
+        ]
+      },
+      "id": "paraphrase/three-cups",
+      "case": "signal",
+      "question": "Где в стенограмме NASA говорит, что за завтраком с персиками астронавт выпил три чашки кофе?",
+      "passed": true,
+      "seconds": 6.85
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the transcript of Apollo 11 the phrase about the collection of maple syrup on the Moon's surface., Apollo 11, maple syrup, Moon",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/moon-maple",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 фразу о добыче кленового сиропа на поверхности Луны.",
+      "passed": true,
+      "seconds": 5.65
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,101 @@
+{
+  "scope": "Three actual misses. Hand-supplied names are a diagnostic upper bound on matching the cited line and were never supplied to the deployed agent.",
+  "cases": [
+    {
+      "case": "cargo/restraint-out",
+      "question": "Найди на странице 601 стенограммы NASA совет Хьюстона вынуть снаряжение из спального крепления под правым креслом.",
+      "line_id": 8147,
+      "page": 601,
+      "translation": "Find on page 601 of the NASA Houston transcript remove equipment from sleeping restraint under right seat.",
+      "llm_fields": {
+        "verb": "remove",
+        "item": "equipment",
+        "place": "under right seat",
+        "direction": "from"
+      },
+      "accepted_request_parts": [],
+      "source": [
+        {
+          "place": "restraint",
+          "items": [],
+          "direction": "into",
+          "words": "put it in the sleep restraint"
+        }
+      ],
+      "actual_direction_difference": false,
+      "diagnostic_by_replacing_names": {
+        "literal translation": true,
+        "printed place only": true,
+        "printed item and place": true
+      }
+    },
+    {
+      "case": "stowage/television-out",
+      "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра вынуть телевизионную установку из лунного модуля?",
+      "line_id": 1614,
+      "page": 115,
+      "translation": "On page 115 of the NASA transcript, they discuss whether they can remove the television equipment from the lunar module tomorrow.",
+      "llm_fields": {
+        "verb": "remove",
+        "item": "television equipment",
+        "place": "from the lunar module",
+        "direction": "into"
+      },
+      "accepted_request_parts": [],
+      "source": [
+        {
+          "place": "lm",
+          "items": [
+            "tv"
+          ],
+          "direction": "into",
+          "words": "take the TV into the LM"
+        }
+      ],
+      "actual_direction_difference": false,
+      "diagnostic_by_replacing_names": {
+        "literal translation": false,
+        "printed place only": false,
+        "printed item and place": true
+      }
+    },
+    {
+      "case": "stowage/containers-out",
+      "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами вынули из гнезд в борту командного модуля?",
+      "line_id": 7542,
+      "page": 544,
+      "translation": "On page 544 of the NASA transcript, where the containers with samples were removed from the slots in the command module hull?",
+      "llm_fields": {
+        "verb": "removed",
+        "item": "containers with samples",
+        "place": "from the slots in the command module hull",
+        "direction": "from"
+      },
+      "accepted_request_parts": [
+        {
+          "place": "slots",
+          "items": [
+            "containers",
+            "samples",
+            "with"
+          ],
+          "direction": "from"
+        }
+      ],
+      "source": [
+        {
+          "place": "receptacle",
+          "items": [],
+          "direction": "into",
+          "words": "placed in these receptacles"
+        }
+      ],
+      "actual_direction_difference": false,
+      "diagnostic_by_replacing_names": {
+        "literal translation": false,
+        "printed place only": true,
+        "printed item and place": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "key": "helmets-in",
+    "question": "Найди на странице 592 стенограммы NASA, как Армстронг планирует положить шлемы в сумку для люка.",
+    "id": 8027,
+    "page": 592,
+    "quote": "helmets in the hatch bag"
+  },
+  {
+    "key": "camera-out",
+    "question": "На странице 397 стенограммы NASA Хьюстон спрашивает Базза, достал ли он камеру для крупных планов из MESA?",
+    "id": 5589,
+    "page": 397,
+    "quote": "removed the closeup camera from the mesa"
+  },
+  {
+    "key": "restraint-in",
+    "question": "Найди на странице 601 стенограммы NASA совет Хьюстона положить снаряжение в спальное крепление под правым креслом.",
+    "id": 8147,
+    "page": 601,
+    "quote": "put it in the sleep restraint"
+  },
+  {
+    "key": "helmets-out",
+    "question": "Найди на странице 592 стенограммы NASA, как Армстронг планирует вынуть шлемы из сумки для люка.",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 8027,
+      "requested": "from",
+      "observed": "into"
+    }
+  },
+  {
+    "key": "camera-in",
+    "question": "На странице 397 стенограммы NASA Хьюстон спрашивает Базза, положил ли он камеру для крупных планов обратно в MESA?",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 5589,
+      "requested": "into",
+      "observed": "from"
+    }
+  },
+  {
+    "key": "restraint-out",
+    "question": "Найди на странице 601 стенограммы NASA совет Хьюстона вынуть снаряжение из спального крепления под правым креслом.",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 8147,
+      "requested": "from",
+      "observed": "into"
+    }
+  }
+]

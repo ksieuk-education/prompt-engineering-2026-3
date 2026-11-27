@@ -1,0 +1,130 @@
+{
+  "variant": "fts-dense-and-citation-check",
+  "model": "hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M",
+  "suite": "paraphrase",
+  "passed": 2,
+  "total": 7,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 377. Время от старта миссии 109:24:48, командир Нил Армстронг. «And the - the surface is fine and powdery. I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles.»",
+      "sources": [
+        "AP11-377"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5290,
+            "page": 377,
+            "get": "109:24:48",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "And the - the surface is fine and powdery. I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=And%20the%20-%20the%20surface%20is%20fine%20and%20powdery."
+          }
+        ],
+        "query": "the dust on the soles of the boots",
+        "mode": "fts+embeddinggemma",
+        "quote": "It does adhere in fine layers like powdered charcoal to the sole and sides of my boots"
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": true,
+      "seconds": 17.04
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": false,
+      "seconds": 6.45
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 382. Время от старта миссии 109:43:24, пилот лунного модуля Эдвин Олдрин. «Magnificent desolation.»",
+      "sources": [
+        "AP11-382"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5367,
+            "page": 382,
+            "get": "109:43:24",
+            "speaker": "LMP (EVA)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Magnificent desolation.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Magnificent%20desolation."
+          }
+        ],
+        "query": "the majestic desolation, majestic desolation",
+        "mode": "fts+embeddinggemma",
+        "quote": "Magnificent desolation."
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": true,
+      "seconds": 12.39
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": false,
+      "seconds": 6.5
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 2.6
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": false,
+      "seconds": 2.6
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": false,
+      "seconds": 2.57
+    }
+  ],
+  "action_token_limit": 2048
+}

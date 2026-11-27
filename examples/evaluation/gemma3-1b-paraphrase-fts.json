@@ -1,0 +1,234 @@
+{
+  "variant": "strict-fts",
+  "model": "gemma3:1b",
+  "suite": "paraphrase",
+  "passed": 2,
+  "total": 7,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 316. Время от старта миссии 102:45:17, пилот лунного модуля Эдвин Олдрин. «40 feet, down 2 1/2. Kicking up some dust.»",
+      "sources": [
+        "AP11-316"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4355,
+            "page": 316,
+            "get": "102:45:17",
+            "speaker": "LMP (EAGLE)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "40 feet, down 2 1/2. Kicking up some dust.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=40%20feet%2C%20down%202%201%2F2.%20Kicking%20up%20some%20dust."
+          },
+          {
+            "id": 7207,
+            "page": 511,
+            "get": "137:17:50",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Copy. Also, did you notice - was there any indication of any dust cloud as you lifted off? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Copy.%20Also%2C%20did%20you%20notice%20-%20was%20there"
+          },
+          {
+            "id": 2278,
+            "page": 165,
+            "get": "056:14:32",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "- - some particles jumping around on your screen. That's just dust particles that are being illuminated by Sun shafting in the window.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=-%20-%20some%20particles%20jumping%20around%20on%20your%20screen."
+          }
+        ],
+        "query": "dust"
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": false,
+      "seconds": 0.2
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 400. Время от старта миссии 111:00:00, командир Нил Армстронг. «These boulders look like basalt, and they have probably 2 percent white minerals in them, the white crystals. And the thing that I reported as the vesicular before, I'm not - I don't believe I believe that any more. I think that small craters - they look like little impact craters where shot - B B shot has hit the surface.»",
+      "sources": [
+        "AP11-400"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5646,
+            "page": 400,
+            "get": "111:00:00",
+            "speaker": "CDR (EVA)",
+            "role": "командир Нил Армстронг",
+            "text": "These boulders look like basalt, and they have probably 2 percent white minerals in them, the white crystals. And the thing that I reported as the vesicular before, I'm not - I don't believe I believe that any more. I think that small craters - they look like little impact craters where shot - B B shot has hit the surface.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=These%20boulders%20look%20like%20basalt%2C%20and%20they%20have%20probably"
+          },
+          {
+            "id": 3125,
+            "page": 232,
+            "get": "078:40:22",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Yea. It's a very bright crater. It's not a large one but an extremely bright one. It looks like a very recent and, I would guess, impact crater with rays streaming out in all directions which should make my - Correction - the Foaming Sea easy to see coming up on it now. Crater Camp is one of the smaller ones out on the - on the floor of the Foaming Sea.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Yea.%20It%27s%20a%20very%20bright%20crater.%20It%27s%20not%20a"
+          }
+        ],
+        "query": "impact crater"
+      },
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": false,
+      "seconds": 0.21
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 341. Время от старта миссии 105:35:03, пилот лунного модуля Эдвин Олдрин. «That's about ready to fall off.»",
+      "sources": [
+        "AP11-341"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4748,
+            "page": 341,
+            "get": "105:35:03",
+            "speaker": "LMP (TRANQ)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "That's about ready to fall off.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=That%27s%20about%20ready%20to%20fall%20off."
+          },
+          {
+            "id": 5771,
+            "page": 408,
+            "get": "111:34:20",
+            "speaker": "CDR (EVA)",
+            "role": "командир Нил Армстронг",
+            "text": "Boy, that bilge from on the LEC is kind of falling all over me while I'm doing this.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Boy%2C%20that%20bilge%20from%20on%20the%20LEC%20is%20kind"
+          },
+          {
+            "id": 8340,
+            "page": 620,
+            "get": "194:24:43",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Roger. The first horizon check 194 23 06 at a pitch angle of 298 does not quite fall on the 31 7 line. It's just a little high. It's within 5 degrees tolerance.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20The%20first%20horizon%20check%20194%2023%2006%20at"
+          }
+        ],
+        "query": "fall"
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": false,
+      "seconds": 0.18
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "NASA Apollo 11 recordings"
+      },
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": false,
+      "seconds": 0.19
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Humanity's relentless pursuit"
+      },
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 0.22
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "green cheese moon"
+      },
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": true,
+      "seconds": 0.17
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "purple pineapple orchestra"
+      },
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": true,
+      "seconds": 0.18
+    }
+  ],
+  "action_token_limit": 2048
+}

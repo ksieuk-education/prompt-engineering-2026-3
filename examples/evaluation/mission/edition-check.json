@@ -1,0 +1,29 @@
+{
+  "source": "https://www.nasa.gov/wp-content/uploads/2026/01/as11-tec.pdf",
+  "original_pdf_sha256": "d519ee18dfa0c318f39d36a6b6c492f1de286134988e23b594d63f3a18703870",
+  "extracted_pdf_sha256": "5edc91b3e51dbf9ed0344ab5ea4f111ae059fed8bec4b0e317205f16e3bfa5c3",
+  "pages": [
+    {
+      "line_id": 3145,
+      "printed_page": 234,
+      "pdf_page": 236,
+      "local_pdf_page": 1,
+      "rendered_pixels_equal": true,
+      "raster_sha256_2x_grayscale": "6bcce0d7e6a1a8258ac2ec034ba9e19a6036739559991ea27bf38c08cfe1ea36",
+      "pdf_text_layer_line": "05 06 46 31 LMP Roger.",
+      "timestamp_read_from_image": "03 06 46 31",
+      "html_timestamp": "05 06 46 31"
+    },
+    {
+      "line_id": 4426,
+      "printed_page": 320,
+      "pdf_page": 322,
+      "local_pdf_page": 2,
+      "rendered_pixels_equal": true,
+      "raster_sha256_2x_grayscale": "08b29ec09a3c8be711c3e8b8ab29e1327a73030ef2901965cbecc6441199673f",
+      "pdf_text_layer_line": "02 06 58 12 CMP And thanks for putting me on relay, Houston.",
+      "timestamp_read_from_image": "04 06 58 12",
+      "html_timestamp": "02 06 58 12"
+    }
+  ]
+}

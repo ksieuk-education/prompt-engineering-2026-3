@@ -1,0 +1,62 @@
+{
+  "qwen25-before": {
+    "stowage": {
+      "passed": 4,
+      "total": 6,
+      "failed": [
+        "stowage/television-out",
+        "stowage/containers-out"
+      ],
+      "counterexamples": []
+    }
+  },
+  "qwen25-reviewed": {
+    "stowage": {
+      "passed": 4,
+      "total": 6,
+      "failed": [
+        "stowage/television-out",
+        "stowage/containers-out"
+      ],
+      "counterexamples": []
+    },
+    "cargo": {
+      "passed": 5,
+      "total": 6,
+      "failed": [
+        "cargo/restraint-out"
+      ],
+      "counterexamples": [
+        "cargo/camera-in"
+      ]
+    },
+    "cabin": {
+      "passed": 6,
+      "total": 6,
+      "failed": [],
+      "counterexamples": [
+        "cabin/from-pocket"
+      ]
+    },
+    "holdout": {
+      "passed": 5,
+      "total": 6,
+      "failed": [
+        "paraphrase/oatmeal"
+      ],
+      "counterexamples": []
+    },
+    "paraphrase": {
+      "passed": 7,
+      "total": 7,
+      "failed": [],
+      "counterexamples": []
+    },
+    "witnesses": {
+      "passed": 8,
+      "total": 8,
+      "failed": [],
+      "counterexamples": []
+    }
+  }
+}

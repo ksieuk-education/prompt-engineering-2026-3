@@ -1,0 +1,246 @@
+{
+  "variant": "qwen25-live-parser-old-acronym",
+  "model": "qwen2.5:7b",
+  "suite": "cargo",
+  "passed": 4,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 592. Время от старта миссии 177:56:53, командир Нил Армстронг. «Okay. We think we are going to put the LEVVA's and helmets in the hatch bag, and we'll let you know any other nonstandard stowage locations that we complete this evening.»",
+      "sources": [
+        "AP11-592"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8027,
+            "page": 592,
+            "get": "177:56:53",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "Okay. We think we are going to put the LEVVA's and helmets in the hatch bag, and we'll let you know any other nonstandard stowage locations that we complete this evening.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20We%20think%20we%20are%20going%20to%20put%20the"
+          }
+        ],
+        "query": "On page 592 of the NASA transcript, find where Armstrong plans to put the helmets in the hatch bag., NASA, Armstrong, helmets, hatch bag",
+        "mode": "page",
+        "quote": "We think we are going to put the LEVVA's and helmets in the hatch bag",
+        "scope_page": 592
+      },
+      "id": "cargo/helmets-in",
+      "case": "signal",
+      "question": "Найди на странице 592 стенограммы NASA, как Армстронг планирует положить шлемы в сумку для люка.",
+      "passed": true,
+      "seconds": 4.9
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 397. Время от старта миссии 110:42:39, оператор связи в Хьюстоне. «Buzz, this is Houston. Have you removed the closeup camera from the MESA yet? Over.»",
+      "sources": [
+        "AP11-397"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5589,
+            "page": 397,
+            "get": "110:42:39",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Buzz, this is Houston. Have you removed the closeup camera from the MESA yet? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Buzz%2C%20this%20is%20Houston.%20Have%20you%20removed%20the%20closeup"
+          }
+        ],
+        "query": "MESA",
+        "mode": "phrase",
+        "quote": "",
+        "scope_page": 397
+      },
+      "id": "cargo/camera-out",
+      "case": "signal",
+      "question": "На странице 397 стенограммы NASA Хьюстон спрашивает Базза, достал ли он камеру для крупных планов из MESA?",
+      "passed": true,
+      "seconds": 0.01
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 601. Время от старта миссии 181:41:16, оператор связи в Хьюстоне. «Our recommendation on the gear you got in the helmet bag - correction, hatch bag, would be to remove that stuff and put it in the sleep restraint under the right couch.»",
+      "sources": [
+        "AP11-601"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8147,
+            "page": 601,
+            "get": "181:41:16",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "11, Houston. Our recommendation on the gear you got in the helmet bag - correction, hatch bag, would be to remove that stuff and put it in the sleep restraint under the right couch. The reason is that the hatch bag straps are only configured for zero g, and it is a pretty difficult job getting it lashed down. With the gear in the sleep restraint, it's a pretty standard lash down procedure, and you could also use the Beta cord that you have on hoard. You concur? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=11%2C%20Houston.%20Our%20recommendation%20on%20the%20gear%20you%20got"
+          }
+        ],
+        "query": "On page 601 of the NASA Houston transcript, find where the equipment was placed in the sleeping restraint under the right seat., NASA, Houston, equipment, sleeping restraint",
+        "mode": "page",
+        "quote": "put it in the sleep restraint under the right couch",
+        "scope_page": 601
+      },
+      "id": "cargo/restraint-in",
+      "case": "signal",
+      "question": "Найди на странице 601 стенограммы NASA совет Хьюстона положить снаряжение в спальное крепление под правым креслом.",
+      "passed": true,
+      "seconds": 5.06
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 592 подтвердить запрошенную фразу не удалось. На стр. 592 стоит «put the LEVVA's and helmets in the hatch bag». В этой строке направление действия обратное тому, о котором вы спросили.",
+      "sources": [
+        "AP11-592"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "movement_check",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "On page 592 of the NASA transcript, find where Armstrong plans to remove helmets from the hatch bag., NASA, Armstrong, helmets, hatch",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 592,
+        "counterexample": {
+          "id": 8027,
+          "page": 592,
+          "get": "177:56:53",
+          "speaker": "CDR",
+          "role": "командир Нил Армстронг",
+          "text": "Okay. We think we are going to put the LEVVA's and helmets in the hatch bag, and we'll let you know any other nonstandard stowage locations that we complete this evening.",
+          "movement_difference": {
+            "requested": "from",
+            "observed": "into",
+            "place": "bag",
+            "request_words": "remove helmets from the hatch bag",
+            "source_words": "put the LEVVA's and helmets in the hatch bag"
+          },
+          "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Okay.%20We%20think%20we%20are%20going%20to%20put%20the"
+        }
+      },
+      "id": "cargo/helmets-out",
+      "case": "signal",
+      "question": "Найди на странице 592 стенограммы NASA, как Армстронг планирует вынуть шлемы из сумки для люка.",
+      "passed": true,
+      "seconds": 3.73
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 397. Время от старта миссии 110:42:39, оператор связи в Хьюстоне. «Buzz, this is Houston. Have you removed the closeup camera from the MESA yet? Over.»",
+      "sources": [
+        "AP11-397"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5589,
+            "page": 397,
+            "get": "110:42:39",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Buzz, this is Houston. Have you removed the closeup camera from the MESA yet? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Buzz%2C%20this%20is%20Houston.%20Have%20you%20removed%20the%20closeup"
+          }
+        ],
+        "query": "MESA",
+        "mode": "phrase",
+        "quote": "",
+        "scope_page": 397
+      },
+      "id": "cargo/camera-in",
+      "case": "signal",
+      "question": "На странице 397 стенограммы NASA Хьюстон спрашивает Базза, положил ли он камеру для крупных планов обратно в MESA?",
+      "passed": false,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 601. Время от старта миссии 181:41:16, оператор связи в Хьюстоне. «Our recommendation on the gear you got in the helmet bag - correction, hatch bag, would be to remove that stuff and put it in the sleep restraint under the right couch.»",
+      "sources": [
+        "AP11-601"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8147,
+            "page": 601,
+            "get": "181:41:16",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "11, Houston. Our recommendation on the gear you got in the helmet bag - correction, hatch bag, would be to remove that stuff and put it in the sleep restraint under the right couch. The reason is that the hatch bag straps are only configured for zero g, and it is a pretty difficult job getting it lashed down. With the gear in the sleep restraint, it's a pretty standard lash down procedure, and you could also use the Beta cord that you have on hoard. You concur? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=11%2C%20Houston.%20Our%20recommendation%20on%20the%20gear%20you%20got"
+          }
+        ],
+        "query": "Find on page 601 of the NASA Houston transcript remove equipment from sleeping restraint under right seat., NASA, Houston, transcript, equipment, sleeping restraint",
+        "mode": "page",
+        "quote": "under the right couch",
+        "scope_page": 601
+      },
+      "id": "cargo/restraint-out",
+      "case": "signal",
+      "question": "Найди на странице 601 стенограммы NASA совет Хьюстона вынуть снаряжение из спального крепления под правым креслом.",
+      "passed": false,
+      "seconds": 4.87
+    }
+  ],
+  "action_token_limit": 2048
+}

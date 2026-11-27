@@ -1,0 +1,191 @@
+{
+  "spacy": "3.8.18",
+  "model": "en_core_web_sm 3.8.0",
+  "wheel_sha256": "1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85",
+  "source": "https://spacy.io/models/en/#en_core_web_sm",
+  "task": "Recognize explicitly opposite physical movement involving the same item and location in this line, without drawing conclusions about other events.",
+  "passed": 18,
+  "total": 18,
+  "cases": [
+    {
+      "id": "drawer-out",
+      "request": "Take the book out of the drawer.",
+      "passage": "I put the book into the drawer.",
+      "opposite": true,
+      "difference": {
+        "requested": "from",
+        "observed": "into",
+        "place": "drawer",
+        "request_words": "Take the book out of the drawer",
+        "source_words": "put the book into the drawer"
+      },
+      "passed": true
+    },
+    {
+      "id": "cabinet-in",
+      "request": "Put the key in the cabinet.",
+      "passage": "She removed the key from the cabinet.",
+      "opposite": true,
+      "difference": {
+        "requested": "into",
+        "observed": "from",
+        "place": "cabinet",
+        "request_words": "Put the key in the cabinet",
+        "source_words": "removed the key from the cabinet"
+      },
+      "passed": true
+    },
+    {
+      "id": "shelf-box",
+      "request": "Remove the lens from the box.",
+      "passage": "They had placed the lens in the box earlier.",
+      "opposite": true,
+      "difference": {
+        "requested": "from",
+        "observed": "into",
+        "place": "box",
+        "request_words": "Remove the lens from the box",
+        "source_words": "placed the lens in the box"
+      },
+      "passed": true
+    },
+    {
+      "id": "inside-case",
+      "request": "Take the recorder out of its case.",
+      "passage": "I tucked the recorder inside the case.",
+      "opposite": true,
+      "difference": {
+        "requested": "from",
+        "observed": "into",
+        "place": "case",
+        "request_words": "Take the recorder out of its case",
+        "source_words": "tucked the recorder inside the case"
+      },
+      "passed": true
+    },
+    {
+      "id": "satchel",
+      "request": "Put the letter into the satchel.",
+      "passage": "She pulled the letter out of the satchel.",
+      "opposite": true,
+      "difference": {
+        "requested": "into",
+        "observed": "from",
+        "place": "satchel",
+        "request_words": "Put the letter into the satchel",
+        "source_words": "pulled the letter out of the satchel"
+      },
+      "passed": true
+    },
+    {
+      "id": "contrary-goal",
+      "request": "Remove the map from the top drawer.",
+      "passage": "I stored the map in the top drawer.",
+      "opposite": true,
+      "difference": {
+        "requested": "from",
+        "observed": "into",
+        "place": "drawer",
+        "request_words": "Remove the map from the top drawer",
+        "source_words": "stored the map in the top drawer"
+      },
+      "passed": true
+    },
+    {
+      "id": "same-in",
+      "request": "Put the book into the drawer.",
+      "passage": "I placed the book in the drawer.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "same-out",
+      "request": "Remove the key from the cabinet.",
+      "passage": "I took the key out of the cabinet.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "different-target",
+      "request": "Remove the lens from the box.",
+      "passage": "I put the lens into a drawer.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "different-item",
+      "request": "Remove the book from the box.",
+      "passage": "I put my glasses into the box.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "different-drawer",
+      "request": "Take the map from the lower drawer.",
+      "passage": "I put the map in the upper drawer.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "both-directions",
+      "request": "Take the card out of the box.",
+      "passage": "I put the card in the box and later removed the card from the box.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "static",
+      "request": "Take the cable out of the bag.",
+      "passage": "The cable is in the bag.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "negative",
+      "request": "Remove the cable from the bag.",
+      "passage": "I did not put the cable into the bag.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "negative-request",
+      "request": "Do not put the cable into the bag.",
+      "passage": "I removed the cable from the bag.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "no-place",
+      "request": "Pick up the cable.",
+      "passage": "I installed it in the bag.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "different-actions",
+      "request": "Take a break from your work.",
+      "passage": "I put my notebook in the bag.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    },
+    {
+      "id": "two-items",
+      "request": "Remove the card from the case.",
+      "passage": "I took the card out of the case and put the pen into the case.",
+      "opposite": false,
+      "difference": null,
+      "passed": true
+    }
+  ]
+}

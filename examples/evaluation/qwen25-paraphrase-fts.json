@@ -1,0 +1,210 @@
+{
+  "variant": "strict-fts",
+  "model": "qwen2.5:7b",
+  "suite": "paraphrase",
+  "passed": 3,
+  "total": 7,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 385. Время от старта миссии 109:54:07, пилот лунного модуля Эдвин Олдрин. «The surface material is powdery. *** How good your lens is, but if you can *** smudges ... very much like a very finely powdered carbon, but it's very pretty looking.»",
+      "sources": [
+        "AP11-385"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 5413,
+            "page": 385,
+            "get": "109:54:07",
+            "speaker": "LMP (EVA)",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "The surface material is powdery. *** How good your lens is, but if you can *** smudges ... very much like a very finely powdered carbon, but it's very pretty looking.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=The%20surface%20material%20is%20powdery.%20%2A%2A%2A%20How%20good%20your"
+          },
+          {
+            "id": 5287,
+            "page": 377,
+            "get": "109:23:38",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "I'm at the foot of the ladder. The LM footpads are only depressed in the surface about 1 or 2 inches, although the surface appears to be very, very fine grained, as you get close to it. It's almost like a powder. Down there, it's very fine.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=I%27m%20at%20the%20foot%20of%20the%20ladder.%20The%20LM"
+          },
+          {
+            "id": 5290,
+            "page": 377,
+            "get": "109:24:48",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "And the - the surface is fine and powdery. I can - I can pick it up loosely with my toe. It does adhere in fine layers like powdered charcoal to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=And%20the%20-%20the%20surface%20is%20fine%20and%20powdery."
+          }
+        ],
+        "query": "powder like"
+      },
+      "id": "paraphrase/dust",
+      "case": "signal",
+      "question": "С чем в стенограмме NASA астронавт сравнил пыль, прилипшую к подошвам ботинок?",
+      "passed": false,
+      "seconds": 0.39
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 319. Время от старта миссии 102:55:16, командир Нил Армстронг. «Hey, Houston, that may have seemed like a very long final phase. The AUTO targeting was taking us right into a football field size - football field sized crater, with a large number of big boulders and rocks for about ... one or two crater diameters around it, and it required a ... in P66 and flying manually over the rock field to find a reasonably good area.»",
+      "sources": [
+        "AP11-319"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4412,
+            "page": 319,
+            "get": "102:55:16",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "Hey, Houston, that may have seemed like a very long final phase. The AUTO targeting was taking us right into a football field size - football field sized crater, with a large number of big boulders and rocks for about ... one or two crater diameters around it, and it required a ... in P66 and flying manually over the rock field to find a reasonably good area.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Hey%2C%20Houston%2C%20that%20may%20have%20seemed%20like%20a%20very"
+          },
+          {
+            "id": 6069,
+            "page": 429,
+            "get": "114:45:50",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Copy. That's also the way it appeared from the television, I think. And now the final question. You commented, Neil, that on your approach to the landing spot, you had passed over a football field sized crater containing rather large blocks of solid rock perhaps 10 to 15 feet in size. Can you estimate the distance to this football sized crater from your present position? Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Copy.%20That%27s%20also%20the%20way%20it%20appeared%20from"
+          },
+          {
+            "id": 6325,
+            "page": 450,
+            "get": "123:13:05",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "I suspect this boulder field may have some of its origin with this large sharp edged rocky rim crater that we passed over at final descent. Now yesterday I said that was about the size of a football field, and I have to admit it was a little - little hard to measure coming in. But I thought that it might just fit in the Astrodome as we came by it. And the rocks in the vicinity of the - of this rocky rim crater are much larger than these in this area. Some are 10 feet or so and perhaps bigger, and they are very thickly populated out to about one crater diameter beyond the crater rim. Beyond that, there is some diminishing, and even out in this area the blocks seem to run out in rows with irregular patterns, and then there are paths between them where there are considerably less surface evidence of hard rocks. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=I%20suspect%20this%20boulder%20field%20may%20have%20some%20of"
+          }
+        ],
+        "query": "crater size football field"
+      },
+      "id": "paraphrase/crater",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 рассказ о кратере размером с футбольное поле.",
+      "passed": true,
+      "seconds": 0.42
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "module appeared"
+      },
+      "id": "paraphrase/desolation",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Олдрина про величественное запустение.",
+      "passed": false,
+      "seconds": 0.37
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Houston breathe"
+      },
+      "id": "paraphrase/breath",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA Хьюстон после посадки сказал, что они снова дышат?",
+      "passed": false,
+      "seconds": 0.4
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "unquenchable curiosity of mankind"
+      },
+      "id": "paraphrase/curiosity",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 говорится о неутолимом любопытстве человечества?",
+      "passed": false,
+      "seconds": 0.31
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "green cheese"
+      },
+      "id": "paraphrase/cheese",
+      "case": "signal",
+      "question": "В каком месте стенограммы NASA говорится, что Луна сделана из зеленого сыра?",
+      "passed": true,
+      "seconds": 0.22
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В размеченных репликах совпадений по этим словам не нашлось. Попробуйте другую формулировку.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "fuchsia pineapple orchestra"
+      },
+      "id": "paraphrase/trio",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 слова про фиолетовый ананасовый оркестр.",
+      "passed": true,
+      "seconds": 0.26
+    }
+  ],
+  "action_token_limit": 2048
+}

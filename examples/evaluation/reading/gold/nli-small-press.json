@@ -1,0 +1,93 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+  "weights": "model_qint8_arm64.onnx",
+  "weights_sha256": "a1da6815c8da542d16381c7d84892d409b4b6604d655bb3054ecb15dd8714e6e",
+  "speaker_included": true,
+  "suite": "press",
+  "pair_source": "handwritten English hypotheses, gold source line supplied",
+  "passed": 6,
+  "total": 6,
+  "false_confirmations": 0,
+  "false_rejections": 0,
+  "cases": [
+    {
+      "line_id": 7698,
+      "page": 557,
+      "claim": "The commander says his favorite album was made about twenty years ago.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00092,
+        "entailment": 0.97006,
+        "neutral": 0.02902
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7698,
+      "page": 557,
+      "claim": "The commander says his favorite album was made yesterday.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.9997,
+        "entailment": 0.00011,
+        "neutral": 0.00019
+      },
+      "correct": true
+    },
+    {
+      "line_id": 461,
+      "page": 30,
+      "claim": "Collins says they may be late answering because they are eating sandwiches.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00011,
+        "entailment": 0.99768,
+        "neutral": 0.00221
+      },
+      "correct": true
+    },
+    {
+      "line_id": 461,
+      "page": 30,
+      "claim": "Collins says they may be late answering because they are still waiting for their sandwiches to arrive.",
+      "supported_by_source": false,
+      "model_label": "neutral",
+      "probabilities": {
+        "contradiction": 0.00368,
+        "entailment": 0.00751,
+        "neutral": 0.98882
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7020,
+      "page": 496,
+      "claim": "Houston reports that after the landing the New York Times used the largest headlines in the newspaper's history.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00095,
+        "entailment": 0.99567,
+        "neutral": 0.00337
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7020,
+      "page": 496,
+      "claim": "Houston reports that after the landing the New York Times used the smallest headlines in the newspaper's history.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99941,
+        "entailment": 0.00033,
+        "neutral": 0.00026
+      },
+      "correct": true
+    }
+  ]
+}

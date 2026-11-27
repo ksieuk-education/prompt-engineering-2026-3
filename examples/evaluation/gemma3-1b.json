@@ -1,0 +1,312 @@
+{
+  "variant": "same-prompt",
+  "model": "gemma3:1b",
+  "suite": "all",
+  "passed": 9,
+  "total": 9,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Метка «Три ноты позывного» прозвучала в 21:17:24 по эфирным часам. Это на 4 с позже планового времени 21:17:20. На обороте написано «смена пластинки?». У записи нет подписи, времени и указания на конкретный фрагмент. Объяснение задержки остается предположением.",
+      "sources": [
+        "A2",
+        "A3",
+        "A1",
+        "A4"
+      ],
+      "passages": [
+        "A4.1",
+        "A4.2",
+        "A4.3"
+      ],
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Три ноты позывного",
+          "tape": "00:18",
+          "sources": [
+            "A2",
+            "A3",
+            "A1"
+          ],
+          "planned": "21:17:20",
+          "status": "verified",
+          "value": "21:17:24",
+          "anchor": "21:17:10",
+          "anchor_tape": "00:04",
+          "travel_seconds": 14,
+          "detail": "Опора 21:17:10 и сдвиг по ленте +14 с. Отклонение от сетки +4 с.",
+          "shift_seconds": 4
+        }
+      ],
+      "tools": [
+        "search",
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "compound",
+      "case": "signal",
+      "question": "Во сколько прозвучал позывной и доказано ли, что задержка была из-за смены пластинки?",
+      "passed": true,
+      "seconds": 2.63
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Второй удар» прозвучала в 19:05:37 по эфирным часам. На ленте это 00:25.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "last",
+          "label": "Второй удар",
+          "tape": "00:25",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:37",
+          "anchor": "19:05:37",
+          "anchor_tape": "00:25",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:37 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "wall",
+      "case": "splice",
+      "question": "Во сколько по эфирным часам был второй удар?",
+      "passed": true,
+      "seconds": 1.21
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Первый удар» прозвучала в 19:05:12 по эфирным часам. На ленте это 00:05.",
+      "sources": [
+        "B2",
+        "B1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "first",
+          "label": "Первый удар",
+          "tape": "00:05",
+          "sources": [
+            "B2",
+            "B1"
+          ],
+          "status": "verified",
+          "value": "19:05:12",
+          "anchor": "19:05:12",
+          "anchor_tape": "00:05",
+          "travel_seconds": 0,
+          "detail": "Опора 19:05:12 и сдвиг по ленте +0 с."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "followup",
+      "case": "splice",
+      "question": "А первый?",
+      "passed": true,
+      "seconds": 1.45
+    },
+    {
+      "status": "answered",
+      "answer": "Метка «Начало заставки» стоит на 00:12 от начала копии. По сетке планировалось 09:40:00. Эфирное время установить нельзя. Нужна общая метка с известным эфирным временем.",
+      "sources": [
+        "C2",
+        "C3",
+        "C1"
+      ],
+      "passages": [],
+      "measurements": [
+        {
+          "marker": "ident",
+          "label": "Начало заставки",
+          "tape": "00:12",
+          "sources": [
+            "C2",
+            "C3",
+            "C1"
+          ],
+          "planned": "09:40:00",
+          "status": "insufficient",
+          "value": "Нет привязки к эфиру",
+          "detail": "На ленте 00:12. Нужна общая метка с известным эфирным временем."
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "locate_marker"
+      ],
+      "id": "plan",
+      "case": "untimed",
+      "question": "Верно ли, что заставка вышла в эфир ровно в 09:40:00?",
+      "passed": true,
+      "seconds": 1.66
+    },
+    {
+      "status": "answered",
+      "answer": "Первая из трех нот позывного слышна на 00:18. Музыкальная отбивка вступает на 00:25.",
+      "sources": [
+        "A2"
+      ],
+      "passages": [
+        "A2.2",
+        "A2.3"
+      ],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "tape",
+      "case": "signal",
+      "question": "На какой секунде копии начинается музыкальная отбивка?",
+      "passed": true,
+      "seconds": 1.01
+    },
+    {
+      "status": "no_evidence",
+      "answer": "В материалах этого дела нет сведений по вашему вопросу.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search"
+      ],
+      "id": "outside",
+      "case": "signal",
+      "question": "Какое расстояние от Земли до Луны?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-031 на 00:12. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 18.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "untimed",
+              "code": "ФН-031",
+              "second": 12.0,
+              "score": 0.9996
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-031 на 00:12. Позиции указаны от начала файлов.",
+          "marker": "ident"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "motif",
+      "case": "signal",
+      "question": "Найди по звуку, где еще в архиве встречаются эти три ноты позывного.",
+      "passed": true,
+      "seconds": 1.67
+    },
+    {
+      "status": "answered",
+      "answer": "Похожий звук найден: ФН-027 на 00:25. Позиции указаны от начала файлов.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "splice",
+          "reference_second": 5.0,
+          "window_seconds": 1.6,
+          "scope": "case",
+          "minimum_score": 0.87,
+          "matches": [
+            {
+              "case_id": "splice",
+              "code": "ФН-027",
+              "second": 25.0,
+              "score": 0.9983
+            }
+          ],
+          "status": "matched",
+          "value": "Найдено совпадений: 1",
+          "detail": "Похожий звук найден: ФН-027 на 00:25. Позиции указаны от начала файлов.",
+          "marker": "first"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "bell",
+      "case": "splice",
+      "question": "Найди по фонограмме повтор первого удара на этой катушке.",
+      "passed": true,
+      "seconds": 1.94
+    },
+    {
+      "status": "answered",
+      "answer": "Похожих фрагментов не найдено. Проверено катушек: 3. При пороге 0.87 других совпадений нет.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "audio",
+          "label": "Сравнение фонограмм",
+          "sources": [],
+          "case_id": "signal",
+          "reference_second": 4.0,
+          "window_seconds": 1.6,
+          "scope": "archive",
+          "minimum_score": 0.87,
+          "matches": [],
+          "status": "no_match",
+          "value": "Похожих фрагментов не найдено",
+          "detail": "Проверено катушек: 3. При пороге 0.87 других совпадений нет.",
+          "marker": "sync"
+        }
+      ],
+      "tools": [
+        "search",
+        "skill",
+        "match_sound"
+      ],
+      "id": "unique",
+      "case": "signal",
+      "question": "Поищи по звуку повтор контрольного тона в архиве.",
+      "passed": true,
+      "seconds": 2.06
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,273 @@
+{
+  "variant": "qwen25-reviewed",
+  "model": "qwen2.5:7b",
+  "suite": "witnesses",
+  "passed": 8,
+  "total": 8,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:04, командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "the Eagle has landed",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "witness/right-speaker",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Армстронга «the Eagle has landed».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "На странице 317 эта строка обозначена CDR (TRANQ). Это командир Нил Армстронг.",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "metadata": "speaker"
+      },
+      "id": "witness/who",
+      "case": "signal",
+      "question": "Кто это сказал?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "В стенограмме рядом с этой фразой стоит 102:46:04 от старта миссии.",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "",
+        "metadata": "time"
+      },
+      "id": "witness/time",
+      "case": "signal",
+      "question": "А какое время миссии у этой фразы?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "В строках с обозначением CMP (пилот командного модуля Майкл Коллинз) такой дословной цитаты не нашлось. На стр. 317 ее произносит командир Нил Армстронг. Время от старта миссии 102:46:04. «THE EAGLE HAS LANDED.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript",
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4370,
+            "page": 317,
+            "get": "102:46:04",
+            "speaker": "CDR (TRANQ)",
+            "role": "командир Нил Армстронг",
+            "text": "THE EAGLE HAS LANDED.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=THE%20EAGLE%20HAS%20LANDED."
+          }
+        ],
+        "query": "the Eagle has landed",
+        "mode": "phrase",
+        "quote": "",
+        "attribution": {
+          "asserted": "CMP",
+          "actual": "CDR"
+        }
+      },
+      "id": "witness/wrong-speaker",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA реплику Коллинза «the Eagle has landed».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 317. Время от старта миссии 102:46:06, оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "search_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "turn blue",
+        "mode": "phrase",
+        "quote": ""
+      },
+      "id": "witness/houston",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова Хьюстона «turn blue».",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "На странице 317 эта строка обозначена CC. Это оператор связи в Хьюстоне. Личное имя в этой строке не указано.",
+      "sources": [
+        "AP11-317"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 4371,
+            "page": 317,
+            "get": "102:46:06",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger%2C%20Tranquility.%20We%20copy%20you%20on%20the%20ground.%20You"
+          }
+        ],
+        "query": "",
+        "metadata": "speaker"
+      },
+      "id": "witness/ground-who",
+      "case": "signal",
+      "question": "Кто именно это сказал?",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Find in the transcript of Apollo 11 where it is mentioned about sending data through USB-C., Apollo 11, USB-C",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "witness/wrong-connection",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 место, где говорится об отправке данных через USB-C.",
+      "passed": true,
+      "seconds": 11.27
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 2. Время от старта миссии 000:03:36, командир Нил Армстронг. «Yes. They finally gave me a window to look out.»",
+      "sources": [
+        "AP11-2"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 25,
+            "page": 2,
+            "get": "000:03:36",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "Yes. They finally gave me a window to look out.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Yes.%20They%20finally%20gave%20me%20a%20window%20to%20look"
+          }
+        ],
+        "query": "Find in the NASA transcript words that the astronaut was finally given a window to look outside., astronaut, window, look outside",
+        "mode": "fts+embeddinggemma",
+        "quote": "Yes. They finally gave me a window to look out."
+      },
+      "id": "witness/window",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA слова о том, что космонавту наконец дали окно, чтобы смотреть наружу.",
+      "passed": true,
+      "seconds": 12.22
+    }
+  ],
+  "action_token_limit": 2048
+}

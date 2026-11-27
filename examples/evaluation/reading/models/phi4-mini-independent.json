@@ -1,0 +1,253 @@
+{
+  "variant": "phi4-mini-serial",
+  "model": "phi4-mini:3.8b",
+  "suite": "independent",
+  "passed": 6,
+  "total": 8,
+  "cases": [
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "commander praises the cook and evaluates chicken cream soup at least in three tablespoons, commander praises cook chicken cream soup three tablespoons",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/soup",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA, как командир хвалит повара и оценивает куриный крем-суп как минимум в три ложки.",
+      "passed": false,
+      "seconds": 3.18
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 610. Время от старта миссии 190:51:01, пилот командного модуля Майкл Коллинз. «I'm right in the middle of my orange juice. Be with you in about 5 minutes.»",
+      "sources": [
+        "AP11-610"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 8207,
+            "page": 610,
+            "get": "190:51:01",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "I'm right in the middle of my orange juice. Be with you in about 5 minutes.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=I%27m%20right%20in%20the%20middle%20of%20my%20orange%20juice."
+          }
+        ],
+        "query": "Where in the Apollo 11 transcript Collins is drinking orange juice and promises to return in about five minutes?, Apollo 11 transcript Collins orange juice promise return five minutes",
+        "mode": "fts+embeddinggemma",
+        "quote": "I'm right in the middle of my orange juice."
+      },
+      "id": "independent/orange",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз занят апельсиновым соком и обещает вернуться примерно через пять минут?",
+      "passed": true,
+      "seconds": 3.1
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA transcript do they retell the legend of the rabbit standing on its hind legs in the shadow of the chestnut tree?, NASA transcript legend rabbit hind legs shadow chestnut tree",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/legend",
+      "case": "signal",
+      "question": "Где в стенограмме NASA пересказывают легенду о кролике, который стоит на задних лапах в тени коричного дерева?",
+      "passed": false,
+      "seconds": 3.48
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 270. Время от старта миссии 095:17:28, оператор связи в Хьюстоне. «Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit.»",
+      "sources": [
+        "AP11-270"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 3592,
+            "page": 270,
+            "get": "095:17:28",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit. An ancient legend says a beautiful Chinese girl called Chang-o has been living there for 4000 years. It seems she was banished to the Moon because she stole the pill of immortality from her husband. You might also look for her companion, a large Chinese rabbit, who is easy to spot since he is always standing on his hind feet in the shade of a cinnamon tree. The name of the rabbit is not reported.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20Among%20the%20large%20headlines%20concerning%20Apollo%20this%20morning%2C"
+          }
+        ],
+        "query": "Where in the NASA transcript does it directly say that the name of the rabbit in the legend is not mentioned?, NASA transcript, directly say, name of the rabbit, not mentioned",
+        "mode": "fts+embeddinggemma",
+        "quote": "Among the large headlines concerning Apollo this morning, there's one asking that you watch for a lovely girl with a big rabbit."
+      },
+      "id": "independent/unnamed",
+      "case": "signal",
+      "question": "Где в стенограмме NASA прямо сказано, что имя кролика из легенды не сообщается?",
+      "passed": true,
+      "seconds": 3.3
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Armstrong praises tomato cream soup and awards it three tablespoons, Armstrong praises tomato cream soup three tablespoons",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/tomato",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA, где Армстронг хвалит томатный крем-суп и присуждает ему три ложки.",
+      "passed": true,
+      "seconds": 2.16
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the Apollo 11 wall chart does Collins ask for five more minutes to drink apple juice?, Apollo 11, Collins, asks, five minutes, drink, apple juice",
+        "mode": "fts+embeddinggemma",
+        "quote": "",
+        "review_candidates": [
+          {
+            "id": 4603,
+            "page": 331,
+            "get": "104:14:47",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Twenty five minutes until T3.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Twenty%20five%20minutes%20until%20T3."
+          }
+        ]
+      },
+      "id": "independent/apple",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 Коллинз просит еще пять минут, чтобы допить яблочный сок?",
+      "passed": true,
+      "seconds": 3.21
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Where in the NASA wall chart does the crew report seeing a rabbit under a coniferous tree on the Moon?, NASA wall chart, crew report, sees rabbit, coniferous tree, Moon",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/sighting",
+      "case": "signal",
+      "question": "Где в стенограмме NASA экипаж сообщает, что своими глазами увидел на Луне кролика под коричным деревом?",
+      "passed": true,
+      "seconds": 3.33
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "Houston, we have a problem, Houston, problem, Nefertiti",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "independent/jade",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA строку, где Хьюстон сообщает, что лунного кролика звали Нефритовый.",
+      "passed": true,
+      "seconds": 3.14
+    }
+  ],
+  "action_token_limit": 2048
+}

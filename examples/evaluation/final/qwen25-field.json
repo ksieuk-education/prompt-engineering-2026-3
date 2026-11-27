@@ -1,0 +1,140 @@
+{
+  "variant": "public-archive",
+  "model": "qwen2.5:7b",
+  "suite": "field",
+  "passed": 4,
+  "total": 4,
+  "cases": [
+    {
+      "status": "needs_input",
+      "answer": "С какой секунды короткой записи взять образец? Можно ответить, например, «с 2,50 с».",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "field_catalog"
+      ],
+      "id": "field-start",
+      "case": "signal",
+      "question": "Сверь две записи NASA по спектру.",
+      "passed": true,
+      "seconds": 0.0
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "eagle-extended",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 3.4501,
+            "score": 0.1444,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 3.41,
+            "score": 0.7729,
+            "passes": true
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,144, ниже порога. По спектру r = 0,773, кандидат на 00:03,41."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "field-positive",
+      "case": "signal",
+      "question": "с 2,50 с",
+      "passed": true,
+      "seconds": 1.56
+    },
+    {
+      "status": "answered",
+      "answer": "По волне r = 0,153, ниже порога. По спектру r = 0,418, ниже порога.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "small-step",
+          "reference_second": 2.5,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7
+          },
+          "window_seconds": 1.6,
+          "waveform": {
+            "second": 5.0282,
+            "score": 0.1528,
+            "passes": false
+          },
+          "spectrum": {
+            "second": 1.08,
+            "score": 0.418,
+            "passes": false
+          },
+          "status": "compared",
+          "value": "Две записи сравнены",
+          "detail": "По волне r = 0,153, ниже порога. По спектру r = 0,418, ниже порога."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "field-negative",
+      "case": "signal",
+      "question": "А теперь сравни с другой репликой о первом шаге.",
+      "passed": true,
+      "seconds": 0.75
+    },
+    {
+      "status": "answered",
+      "answer": "Образец выходит за конец исходной записи.",
+      "sources": [],
+      "passages": [],
+      "measurements": [
+        {
+          "kind": "public_audio",
+          "sources": [],
+          "candidate": "eagle-extended",
+          "reference_second": 8.0,
+          "label": "Сверка записей NASA",
+          "thresholds": {
+            "waveform": 0.87,
+            "spectrum": 0.7
+          },
+          "status": "invalid_window",
+          "value": "Проверьте начало образца",
+          "detail": "Образец выходит за конец исходной записи."
+        }
+      ],
+      "tools": [
+        "field_catalog",
+        "compare_public"
+      ],
+      "id": "field-edge",
+      "case": "signal",
+      "question": "Сравни образец NASA с 8 с с расширенной версией.",
+      "passed": true,
+      "seconds": 0.65
+    }
+  ],
+  "action_token_limit": 2048
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "key": "television-in",
+    "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра перенести телевизионную установку в лунный модуль?",
+    "id": 1614,
+    "page": 115,
+    "quote": "take the tv into the lm"
+  },
+  {
+    "key": "checklist-out",
+    "question": "На странице 153 стенограммы NASA Хьюстон просит достать контрольный список работ на поверхности из папки с полетной документацией?",
+    "id": 2053,
+    "page": 153,
+    "quote": "out of the flight data file"
+  },
+  {
+    "key": "containers-in",
+    "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами поместили в гнезда в борту командного модуля?",
+    "id": 7542,
+    "page": 544,
+    "quote": "placed in these receptacles"
+  },
+  {
+    "key": "television-out",
+    "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра вынуть телевизионную установку из лунного модуля?",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 1614,
+      "requested": "from",
+      "observed": "into"
+    }
+  },
+  {
+    "key": "checklist-in",
+    "question": "На странице 153 стенограммы NASA Хьюстон просит положить контрольный список работ на поверхности обратно в папку с полетной документацией?",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 2053,
+      "requested": "into",
+      "observed": "from"
+    }
+  },
+  {
+    "key": "containers-out",
+    "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами вынули из гнезд в борту командного модуля?",
+    "id": null,
+    "page": null,
+    "quote": "",
+    "opposite": {
+      "id": 7542,
+      "requested": "from",
+      "observed": "into"
+    }
+  }
+]

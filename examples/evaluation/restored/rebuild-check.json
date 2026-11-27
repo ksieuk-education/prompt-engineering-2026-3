@@ -1,0 +1,9 @@
+{
+  "rows": 8452,
+  "dimensions": 768,
+  "arrays_identical": true,
+  "min_cosine": 0.9999999,
+  "max_int8_difference": 0,
+  "model_digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "corpus_digest": "b1afccc39d16301b7a3969ba71e1448edd376c6d5fd33c37433ddce951f3ee01"
+}

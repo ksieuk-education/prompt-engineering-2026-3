@@ -1,0 +1,113 @@
+{
+  "variant": "fts-dense-and-citation-check",
+  "model": "hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M",
+  "suite": "paraphrase-new",
+  "passed": 2,
+  "total": 5,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 170. Время от старта миссии 056:34:46, пилот командного модуля Майкл Коллинз. «Hello there, earthling.»",
+      "sources": [
+        "AP11-170"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 2338,
+            "page": 170,
+            "get": "056:34:46",
+            "speaker": "CMP",
+            "role": "пилот командного модуля Майкл Коллинз",
+            "text": "Hello there, earthling.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Hello%20there%2C%20earthling."
+          }
+        ],
+        "query": "hello earthling",
+        "mode": "fts+embeddinggemma",
+        "quote": "Hello there, earthling."
+      },
+      "id": "paraphrase/earthling",
+      "case": "signal",
+      "question": "Где в стенограмме NASA встречают собеседника приветствием «привет, землянин»?",
+      "passed": true,
+      "seconds": 10.1
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/lounge",
+      "case": "signal",
+      "question": "Найди в стенограмме Apollo 11 сравнение качества слышимости с беседой в собственной гостиной.",
+      "passed": false,
+      "seconds": 6.54
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "where in the NASA transcript from Earth do they suggest blinking a blue-green laser",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/laser",
+      "case": "signal",
+      "question": "Где в стенограмме NASA с Земли предлагают мигать сине-зеленым лазером?",
+      "passed": false,
+      "seconds": 7.01
+    },
+    {
+      "status": "no_evidence",
+      "answer": "Среди найденных реплик не удалось подтвердить это описание.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "transcript_terms",
+        "search_transcript",
+        "rank_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "poem about the green hippopotamus",
+        "mode": "fts+embeddinggemma",
+        "quote": ""
+      },
+      "id": "paraphrase/hippo",
+      "case": "signal",
+      "question": "Найди в стенограмме NASA стихотворение о зеленом бегемоте.",
+      "passed": true,
+      "seconds": 9.99
+    },
+    {
+      "status": "error",
+      "answer": "Не удалось получить ответ. Проверьте Ollama и наличие модели hf.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF:Q4_K_M.",
+      "id": "paraphrase/wifi",
+      "case": "signal",
+      "question": "Где в стенограмме Apollo 11 описано подключение космонавтов к сети Wi-Fi на Луне?",
+      "passed": false,
+      "seconds": 6.56
+    }
+  ],
+  "action_token_limit": 2048
+}

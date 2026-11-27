@@ -1,0 +1,241 @@
+{
+  "variant": "qwen25-reviewed",
+  "model": "qwen2.5:7b",
+  "suite": "stowage",
+  "passed": 4,
+  "total": 6,
+  "cases": [
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 115. Время от старта миссии 034:25:39, пилот лунного модуля Эдвин Олдрин. «Charlie, we checked out the cable lengths, and we're thinking we might want to see if we can take the TV into the LM with us tomorrow for part of the time. Over.»",
+      "sources": [
+        "AP11-115"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 1614,
+            "page": 115,
+            "get": "034:25:39",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Charlie, we checked out the cable lengths, and we're thinking we might want to see if we can take the TV into the LM with us tomorrow for part of the time. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Charlie%2C%20we%20checked%20out%20the%20cable%20lengths%2C%20and%20we%27re"
+          }
+        ],
+        "query": "On page 115 of the NASA transcript, they discuss whether they can move the television equipment to the lunar module tomorrow., NASA, transcript, television, lunar module",
+        "mode": "page",
+        "quote": "we might want to see if we can take the TV into the LM with us tomorrow for part of the time",
+        "scope_page": 115
+      },
+      "id": "stowage/television-in",
+      "case": "signal",
+      "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра перенести телевизионную установку в лунный модуль?",
+      "passed": true,
+      "seconds": 8.37
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 153. Время от старта миссии 055:02:36, оператор связи в Хьюстоне. «Roger. We'd like you to pick up the - out of the flight data file, the surface checklist, the mission rules NO-GO card, the DPS, APS, RCS limit cue card. Over.»",
+      "sources": [
+        "AP11-153"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 2053,
+            "page": 153,
+            "get": "055:02:36",
+            "speaker": "CC",
+            "role": "оператор связи в Хьюстоне",
+            "text": "Roger. We'd like you to pick up the - out of the flight data file, the surface checklist, the mission rules NO-GO card, the DPS, APS, RCS limit cue card. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Roger.%20We%27d%20like%20you%20to%20pick%20up%20the%20-"
+          }
+        ],
+        "query": "On page 153 of the NASA Houston transcript, it asks to retrieve the surface work checklist from the flight documentation folder?, transcript, checklist, surface, folder",
+        "mode": "page",
+        "quote": "We'd like you to pick up the - out of the flight data file, the surface checklist, the mission rules NO-GO card, the DPS, APS, RCS limit cue card.",
+        "scope_page": 153
+      },
+      "id": "stowage/checklist-out",
+      "case": "signal",
+      "question": "На странице 153 стенограммы NASA Хьюстон просит достать контрольный список работ на поверхности из папки с полетной документацией?",
+      "passed": true,
+      "seconds": 10.91
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 544. Время от старта миссии 155:40:32, командир Нил Армстронг. «We know there's a lot of scientists from a number of countries standing by to see the lunar samples, and we thought you'd be interested to see them as they really are here. These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then brought inside the LM and put inside these fiber glass bags, zippered, and resealed around the outside, and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship,»",
+      "sources": [
+        "AP11-544"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "movement_request",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7542,
+            "page": 544,
+            "get": "155:40:32",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "We know there's a lot of scientists from a number of countries standing by to see the lunar samples, and we thought you'd be interested to see them as they really are here. These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then brought inside the LM and put inside these fiber glass bags, zippered, and resealed around the outside, and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship,",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20know%20there%27s%20a%20lot%20of%20scientists%20from%20a"
+          }
+        ],
+        "query": "On page 544 of the NASA transcript, where containers with samples were placed in holders on the command module hull?, NASA transcript, command module, containers, samples",
+        "mode": "page",
+        "quote": "and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship",
+        "scope_page": 544
+      },
+      "id": "stowage/containers-in",
+      "case": "signal",
+      "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами поместили в гнезда в борту командного модуля?",
+      "passed": true,
+      "seconds": 15.32
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 115. Время от старта миссии 034:25:39, пилот лунного модуля Эдвин Олдрин. «Charlie, we checked out the cable lengths, and we're thinking we might want to see if we can take the TV into the LM with us tomorrow for part of the time. Over.»",
+      "sources": [
+        "AP11-115"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 1614,
+            "page": 115,
+            "get": "034:25:39",
+            "speaker": "LMP",
+            "role": "пилот лунного модуля Эдвин Олдрин",
+            "text": "Charlie, we checked out the cable lengths, and we're thinking we might want to see if we can take the TV into the LM with us tomorrow for part of the time. Over.",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=Charlie%2C%20we%20checked%20out%20the%20cable%20lengths%2C%20and%20we%27re"
+          }
+        ],
+        "query": "On page 115 of the NASA transcript, they discuss whether they can remove the television equipment from the lunar module tomorrow., NASA, transcript, television, lunar module",
+        "mode": "page",
+        "quote": "we might want to see if we can take the TV into the LM with us tomorrow for part of the time",
+        "scope_page": 115
+      },
+      "id": "stowage/television-out",
+      "case": "signal",
+      "question": "На странице 115 стенограммы NASA обсуждают, можно ли завтра вынуть телевизионную установку из лунного модуля?",
+      "passed": false,
+      "seconds": 12.13
+    },
+    {
+      "status": "no_evidence",
+      "answer": "На странице 153 подтвердить запрошенную фразу не удалось.",
+      "sources": [],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "movement_request",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [],
+        "query": "On page 153 of the NASA Houston transcript, it asks to put the work checklist left on the surface back into the flight documentation folder?, transcript, checklist, surface, folder",
+        "mode": "page",
+        "quote": "",
+        "scope_page": 153
+      },
+      "id": "stowage/checklist-in",
+      "case": "signal",
+      "question": "На странице 153 стенограммы NASA Хьюстон просит положить контрольный список работ на поверхности обратно в папку с полетной документацией?",
+      "passed": true,
+      "seconds": 10.94
+    },
+    {
+      "status": "answered",
+      "answer": "Ближайшее совпадение на странице 544. Время от старта миссии 155:40:32, командир Нил Армстронг. «We know there's a lot of scientists from a number of countries standing by to see the lunar samples, and we thought you'd be interested to see them as they really are here. These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then brought inside the LM and put inside these fiber glass bags, zippered, and resealed around the outside, and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship,»",
+      "sources": [
+        "AP11-544"
+      ],
+      "passages": [],
+      "measurements": [],
+      "tools": [
+        "read_transcript_page",
+        "transcript_terms",
+        "search_transcript",
+        "search_transcript",
+        "rank_transcript",
+        "movement_request",
+        "verify_transcript",
+        "select_transcript"
+      ],
+      "transcript": {
+        "matches": [
+          {
+            "id": 7542,
+            "page": 544,
+            "get": "155:40:32",
+            "speaker": "CDR",
+            "role": "командир Нил Армстронг",
+            "text": "We know there's a lot of scientists from a number of countries standing by to see the lunar samples, and we thought you'd be interested to see them as they really are here. These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then brought inside the LM and put inside these fiber glass bags, zippered, and resealed around the outside, and placed in these receptacles in the side of the command module. These are the two boxes. And as soon as we get onto the ship,",
+            "source_url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11transcript_tec.html#:~:text=We%20know%20there%27s%20a%20lot%20of%20scientists%20from%20a"
+          }
+        ],
+        "query": "On page 544 of the NASA transcript, where the containers with samples were removed from the slots in the command module hull?, NASA transcript, containers, samples, removed",
+        "mode": "page",
+        "quote": "These two boxes are the sample return containers. They - They're vacuum packed containers that were closed in a vacuum on the lunar surface, sealed, and then",
+        "scope_page": 544
+      },
+      "id": "stowage/containers-out",
+      "case": "signal",
+      "question": "Где на странице 544 стенограммы NASA сказано, что контейнеры с образцами вынули из гнезд в борту командного модуля?",
+      "passed": false,
+      "seconds": 10.0
+    }
+  ],
+  "action_token_limit": 2048
+}

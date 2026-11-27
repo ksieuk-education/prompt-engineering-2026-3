@@ -1,0 +1,260 @@
+{
+  "passed": 9,
+  "total": 9,
+  "cases": [
+    {
+      "key": "points",
+      "question": "Что в стенограмме NASA сказано ровно на отметках 102:45:59 и 102:46:06?",
+      "expected_ids": [
+        4369,
+        4371
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4369,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 2,
+        "kind": "points",
+        "stamps": [
+          "102:45:59",
+          "102:46:06"
+        ],
+        "counts": {
+          "102:45:59": 1,
+          "102:46:06": 1
+        }
+      },
+      "answer": "Начала реплик в стенограмме по отдельным меткам. 102:45:59 — 1, 102:46:06 — 1.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "reverse",
+      "question": "В стенограмме NASA найди две отдельные отметки GET 102:46:06 и 102:45:59.",
+      "expected_ids": [
+        4371,
+        4369
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4371,
+        4369
+      ],
+      "clock": {
+        "start": "102:46:06",
+        "end": "102:45:59",
+        "total": 2,
+        "kind": "points",
+        "stamps": [
+          "102:46:06",
+          "102:45:59"
+        ],
+        "counts": {
+          "102:46:06": 1,
+          "102:45:59": 1
+        }
+      },
+      "answer": "Начала реплик в стенограмме по отдельным меткам. 102:46:06 — 1, 102:45:59 — 1.\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "range",
+      "question": "Покажи в стенограмме NASA все реплики между 102:45:59 и 102:46:06.",
+      "expected_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4369,
+        4370,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 3
+      },
+      "answer": "Запрошенное время от старта миссии 102:45:59–102:46:06. Число подходящих строк в стенограмме — 3.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "elapsed",
+      "question": "Сколько секунд прошло по часам миссии NASA с 102:45:59 до 102:46:06?",
+      "expected_ids": [
+        4369,
+        4371
+      ],
+      "expected_seconds": 7,
+      "source_ids": [
+        4369,
+        4371
+      ],
+      "clock": {
+        "start": "102:45:59",
+        "end": "102:46:06",
+        "total": 2,
+        "kind": "elapsed",
+        "stamps": [
+          "102:45:59",
+          "102:46:06"
+        ],
+        "counts": {
+          "102:45:59": 1,
+          "102:46:06": 1
+        },
+        "seconds": 7
+      },
+      "answer": "Разница показаний часов миссии 102:45:59 и 102:46:06 составляет 7 с. Начала реплик в стенограмме по отдельным меткам. 102:45:59 — 1, 102:46:06 — 1.\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "elapsed-empty",
+      "question": "Какая разница по часам миссии NASA между 102:46:05 и 102:46:08?",
+      "expected_ids": [],
+      "expected_seconds": 3,
+      "source_ids": [],
+      "clock": {
+        "start": "102:46:05",
+        "end": "102:46:08",
+        "total": 0,
+        "kind": "elapsed",
+        "stamps": [
+          "102:46:05",
+          "102:46:08"
+        ],
+        "counts": {
+          "102:46:05": 0,
+          "102:46:08": 0
+        },
+        "seconds": 3
+      },
+      "answer": "Разница показаний часов миссии 102:46:05 и 102:46:08 составляет 3 с. Начала реплик в стенограмме по отдельным меткам. 102:46:05 — 0, 102:46:08 — 0. Отсутствие метки начала не доказывает тишину в эфире.",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "elapsed-reverse",
+      "question": "Какая разница по часам миссии NASA между 102:46:06 и 102:45:59?",
+      "expected_ids": [
+        4371,
+        4369
+      ],
+      "expected_seconds": 7,
+      "source_ids": [
+        4371,
+        4369
+      ],
+      "clock": {
+        "start": "102:46:06",
+        "end": "102:45:59",
+        "total": 2,
+        "kind": "elapsed",
+        "stamps": [
+          "102:46:06",
+          "102:45:59"
+        ],
+        "counts": {
+          "102:46:06": 1,
+          "102:45:59": 1
+        },
+        "seconds": 7
+      },
+      "answer": "Разница показаний часов миссии 102:46:06 и 102:45:59 составляет 7 с. Начала реплик в стенограмме по отдельным меткам. 102:46:06 — 1, 102:45:59 — 1.\n102:46:06 · стр. 317 · оператор связи в Хьюстоне. «Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.»\n102:45:59 · стр. 317 · командир Нил Армстронг. «Houston, Tranquility Base here.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "same",
+      "question": "Сколько секунд прошло по часам миссии NASA с 102:46:04 до 102:46:04?",
+      "expected_ids": [
+        4370
+      ],
+      "expected_seconds": 0,
+      "source_ids": [
+        4370
+      ],
+      "clock": {
+        "start": "102:46:04",
+        "end": "102:46:04",
+        "total": 1,
+        "kind": "elapsed",
+        "stamps": [
+          "102:46:04",
+          "102:46:04"
+        ],
+        "counts": {
+          "102:46:04": 1
+        },
+        "seconds": 0
+      },
+      "answer": "Разница показаний часов миссии 102:46:04 и 102:46:04 составляет 0 с. Начала реплик в стенограмме по отдельным меткам. 102:46:04 — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "mixed",
+      "question": "Что сказано в стенограмме NASA в 102:46:04 и в 102:46:05?",
+      "expected_ids": [
+        4370
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        4370
+      ],
+      "clock": {
+        "start": "102:46:04",
+        "end": "102:46:05",
+        "total": 1,
+        "kind": "points",
+        "stamps": [
+          "102:46:04",
+          "102:46:05"
+        ],
+        "counts": {
+          "102:46:04": 1,
+          "102:46:05": 0
+        }
+      },
+      "answer": "Начала реплик в стенограмме по отдельным меткам. 102:46:04 — 1, 102:46:05 — 0. Отсутствие метки начала не доказывает тишину в эфире.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»",
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "key": "both-editions",
+      "question": "Покажи две отметки стенограммы NASA на странице 234: 078:46:31 и 126:46:31.",
+      "expected_ids": [
+        3145
+      ],
+      "expected_seconds": null,
+      "source_ids": [
+        3145
+      ],
+      "clock": {
+        "start": "078:46:31",
+        "end": "126:46:31",
+        "total": 1,
+        "kind": "points",
+        "stamps": [
+          "078:46:31",
+          "126:46:31"
+        ],
+        "counts": {
+          "078:46:31": 1,
+          "126:46:31": 1
+        }
+      },
+      "answer": "Начала реплик на странице 234 по отдельным меткам. 078:46:31 — 1, 126:46:31 — 1.\n078:46:31 · стр. 234 · пилот лунного модуля Эдвин Олдрин. «Roger.»\nВ HTML стоит 05 06 46 31 (126:46:31). На скане напечатано 03 06 46 31 (078:46:31 от старта миссии).",
+      "status": "answered",
+      "passed": true
+    }
+  ]
+}

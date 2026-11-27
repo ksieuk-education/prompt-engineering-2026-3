@@ -1,0 +1,274 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+  "weights": "model_qint8_arm64.onnx",
+  "weights_sha256": "a1da6815c8da542d16381c7d84892d409b4b6604d655bb3054ecb15dd8714e6e",
+  "speaker_included": true,
+  "pair_source": "handwritten English hypotheses, gold source line supplied",
+  "passed": 17,
+  "total": 20,
+  "false_confirmations": 2,
+  "false_rejections": 1,
+  "cases": [
+    {
+      "line_id": 1966,
+      "page": 147,
+      "claim": "The speaker would like to enter Aldrin in an oatmeal eating contest next time.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00067,
+        "entailment": 0.99653,
+        "neutral": 0.0028
+      },
+      "correct": true
+    },
+    {
+      "line_id": 1966,
+      "page": 147,
+      "claim": "Aldrin has won the oatmeal eating contest.",
+      "supported_by_source": false,
+      "model_label": "neutral",
+      "probabilities": {
+        "contradiction": 0.00999,
+        "entailment": 0.0001,
+        "neutral": 0.98991
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7869,
+      "page": 578,
+      "claim": "The speaker had two cups of coffee with breakfast.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00034,
+        "entailment": 0.99777,
+        "neutral": 0.00189
+      },
+      "correct": true
+    },
+    {
+      "line_id": 7869,
+      "page": 578,
+      "claim": "The speaker had three cups of coffee with breakfast.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99412,
+        "entailment": 0.00412,
+        "neutral": 0.00177
+      },
+      "correct": true
+    },
+    {
+      "line_id": 1725,
+      "page": 123,
+      "claim": "The ground team plans to turn a blue-green laser on and off.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00799,
+        "entailment": 0.94731,
+        "neutral": 0.0447
+      },
+      "correct": true
+    },
+    {
+      "line_id": 1725,
+      "page": 123,
+      "claim": "The blue-green laser will be left on continuously.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99835,
+        "entailment": 0.00062,
+        "neutral": 0.00103
+      },
+      "correct": true
+    },
+    {
+      "line_id": 5290,
+      "page": 377,
+      "claim": "The material sticking to the speaker's boots was compared to powdered charcoal.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00064,
+        "entailment": 0.99648,
+        "neutral": 0.00288
+      },
+      "correct": true
+    },
+    {
+      "line_id": 5290,
+      "page": 377,
+      "claim": "The material sticking to the speaker's boots was compared to powdered sugar.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.49461,
+        "entailment": 0.19925,
+        "neutral": 0.30614
+      },
+      "correct": true
+    },
+    {
+      "line_id": 4412,
+      "page": 319,
+      "claim": "The targeting system was taking them into a crater the size of a football field.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00103,
+        "entailment": 0.99499,
+        "neutral": 0.00398
+      },
+      "correct": true
+    },
+    {
+      "line_id": 4412,
+      "page": 319,
+      "claim": "The targeting system was taking them into a crater the size of a football.",
+      "supported_by_source": false,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00458,
+        "entailment": 0.98623,
+        "neutral": 0.00919
+      },
+      "correct": false
+    },
+    {
+      "line_id": 25,
+      "page": 2,
+      "claim": "The speaker was finally given a window to look out of.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00133,
+        "entailment": 0.99317,
+        "neutral": 0.0055
+      },
+      "correct": true
+    },
+    {
+      "line_id": 25,
+      "page": 2,
+      "claim": "The speaker's window was taken away.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.6799,
+        "entailment": 0.30776,
+        "neutral": 0.01234
+      },
+      "correct": true
+    },
+    {
+      "line_id": 4371,
+      "page": 317,
+      "claim": "People on the ground said that they were breathing again.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00183,
+        "entailment": 0.97288,
+        "neutral": 0.02529
+      },
+      "correct": true
+    },
+    {
+      "line_id": 4371,
+      "page": 317,
+      "claim": "People on the ground reported that they would never breathe again.",
+      "supported_by_source": false,
+      "model_label": "contradiction",
+      "probabilities": {
+        "contradiction": 0.99726,
+        "entailment": 7e-05,
+        "neutral": 0.00267
+      },
+      "correct": true
+    },
+    {
+      "line_id": 472,
+      "page": 30,
+      "claim": "The speaker believes that California is two hundred years old.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00228,
+        "entailment": 0.9914,
+        "neutral": 0.00632
+      },
+      "correct": true
+    },
+    {
+      "line_id": 472,
+      "page": 30,
+      "claim": "The speaker believes that Dr Mueller is two hundred years old.",
+      "supported_by_source": false,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.03462,
+        "entailment": 0.93482,
+        "neutral": 0.03055
+      },
+      "correct": false
+    },
+    {
+      "line_id": 37,
+      "page": 2,
+      "claim": "The transmission sounded as clear as a conversation in a living room.",
+      "supported_by_source": true,
+      "model_label": "entailment",
+      "probabilities": {
+        "contradiction": 0.00055,
+        "entailment": 0.97306,
+        "neutral": 0.0264
+      },
+      "correct": true
+    },
+    {
+      "line_id": 37,
+      "page": 2,
+      "claim": "The conversation actually took place inside Bruce's living room.",
+      "supported_by_source": false,
+      "model_label": "neutral",
+      "probabilities": {
+        "contradiction": 0.00453,
+        "entailment": 0.00181,
+        "neutral": 0.99366
+      },
+      "correct": true
+    },
+    {
+      "line_id": 8007,
+      "page": 589,
+      "claim": "The flight was described as a symbol of human curiosity about the unknown.",
+      "supported_by_source": true,
+      "model_label": "neutral",
+      "probabilities": {
+        "contradiction": 0.00705,
+        "entailment": 0.06032,
+        "neutral": 0.93263
+      },
+      "correct": false
+    },
+    {
+      "line_id": 8007,
+      "page": 589,
+      "claim": "The speaker said the flight was only about three men going to the Moon.",
+      "supported_by_source": false,
+      "model_label": "neutral",
+      "probabilities": {
+        "contradiction": 0.34425,
+        "entailment": 0.07311,
+        "neutral": 0.58263
+      },
+      "correct": true
+    }
+  ]
+}

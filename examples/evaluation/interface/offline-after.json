@@ -1,0 +1,110 @@
+[
+  {
+    "browser": "chrome",
+    "version": "158.0.8127.38",
+    "width": 1440,
+    "ollama_online": false,
+    "sample_available": true,
+    "suggestions": [
+      {
+        "question": "Где на копии находится метка «Контрольный тон»?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "A2"
+        ],
+        "answer": "Метка «Контрольный тон» стоит на 00:04 от начала копии."
+      },
+      {
+        "question": "Что в стенограмме NASA на отметке 102:46:04?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "AP11-317"
+        ],
+        "answer": "Запрошенное время от старта миссии 102:46:04. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»"
+      }
+    ],
+    "two_case_drafts": [
+      true,
+      true
+    ],
+    "question_needing_llm": {
+      "http": 503,
+      "restored_after_error": true,
+      "restored_after_switch": true
+    }
+  },
+  {
+    "browser": "webkit",
+    "version": "27.2",
+    "width": 390,
+    "ollama_online": false,
+    "sample_available": true,
+    "suggestions": [
+      {
+        "question": "Где на копии находится метка «Контрольный тон»?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "A2"
+        ],
+        "answer": "Метка «Контрольный тон» стоит на 00:04 от начала копии."
+      },
+      {
+        "question": "Что в стенограмме NASA на отметке 102:46:04?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "AP11-317"
+        ],
+        "answer": "Запрошенное время от старта миссии 102:46:04. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»"
+      }
+    ],
+    "two_case_drafts": [
+      true,
+      true
+    ],
+    "question_needing_llm": {
+      "http": 503,
+      "restored_after_error": true,
+      "restored_after_switch": true
+    }
+  },
+  {
+    "browser": "firefox",
+    "version": "159.0",
+    "width": 1280,
+    "ollama_online": false,
+    "sample_available": true,
+    "suggestions": [
+      {
+        "question": "Где на копии находится метка «Контрольный тон»?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "A2"
+        ],
+        "answer": "Метка «Контрольный тон» стоит на 00:04 от начала копии."
+      },
+      {
+        "question": "Что в стенограмме NASA на отметке 102:46:04?",
+        "http": 200,
+        "status": "answered",
+        "sources": [
+          "AP11-317"
+        ],
+        "answer": "Запрошенное время от старта миссии 102:46:04. Число подходящих строк в стенограмме — 1.\n102:46:04 · стр. 317 · командир Нил Армстронг. «THE EAGLE HAS LANDED.»"
+      }
+    ],
+    "two_case_drafts": [
+      true,
+      true
+    ],
+    "question_needing_llm": {
+      "http": 503,
+      "restored_after_error": true,
+      "restored_after_switch": true
+    }
+  }
+]
